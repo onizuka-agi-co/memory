@@ -142,11 +142,11 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.15;
+  opacity: 0.20;
   z-index: -1;
   pointer-events: none;
 }
 
 .dark .VPHero::before {
-  opacity: 0.10;
+  opacity: 0.12;
 }
