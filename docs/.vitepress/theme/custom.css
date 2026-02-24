@@ -125,3 +125,28 @@
 .custom-block.danger .custom-block-title {
   color: #400707;
 }
+
+/* Home page background image */
+.VPHero {
+  position: relative;
+}
+
+.VPHero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/memory/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.08;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.dark .VPHero::before {
+  opacity: 0.05;
+}
