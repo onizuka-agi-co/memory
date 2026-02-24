@@ -33,7 +33,18 @@ export default defineConfig({
                     { text: 'Tested', link: '/2026/02/23/tested' }
                   ]
                 },
-                { text: '2026-02-24', link: '/2026/02/2026-02-24' }
+                {
+                  text: '2026-02-24',
+                  collapsed: true,
+                  items: [
+                    { text: 'Overview', link: '/2026/02/24/' },
+                    { text: 'Task Management', link: '/2026/02/24/task-management' },
+                    { text: 'VitePress Setup', link: '/2026/02/24/vitepress-setup' },
+                    { text: 'GitHub Pages', link: '/2026/02/24/github-pages' },
+                    { text: 'Security', link: '/2026/02/24/security' },
+                    { text: 'Restructure', link: '/2026/02/24/restructure' }
+                  ]
+                }
               ]
             }
           ]
