@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Memory",
   description: "Daily reports & memory - ONIZUKA AGI",
+  base: "/memory/",
   
   themeConfig: {
     nav: [
