@@ -1,0 +1,127 @@
+/* Custom Theme - Material Design Inspired */
+/* Color Palette: #F2DC99, #F2785C, #BF8275, #F24738, #400707 */
+
+:root {
+  /* Brand Colors */
+  --vp-c-brand-1: #F24738;
+  --vp-c-brand-2: #F2785C;
+  --vp-c-brand-3: #BF8275;
+  --vp-c-brand-soft: rgba(242, 71, 56, 0.14);
+  
+  /* Accent for links and highlights */
+  --vp-c-accent: #F24738;
+  --vp-c-accent-light: #F2785C;
+  --vp-c-accent-dark: #400707;
+  
+  /* Button */
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: #fff;
+  --vp-button-brand-bg: #F24738;
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: #fff;
+  --vp-button-brand-hover-bg: #F2785C;
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: #fff;
+  --vp-button-brand-active-bg: #400707;
+  
+  /* Sponsor Button */
+  --vp-button-sponsor-border: #F2785C;
+  --vp-button-sponsor-text: #F2785C;
+  --vp-button-sponsor-bg: transparent;
+  --vp-button-sponsor-hover-border: #F24738;
+  --vp-button-sponsor-hover-text: #F24738;
+  --vp-button-sponsor-hover-bg: transparent;
+  
+  /* Home Hero */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(135deg, #F24738 0%, #F2785C 50%, #F2DC99 100%);
+  
+  /* Badge */
+  --vp-badge-info-text: #F24738;
+  --vp-badge-info-bg: rgba(242, 71, 56, 0.1);
+  
+  /* Custom block tip */
+  --vp-custom-block-tip-border: #F2785C;
+  --vp-custom-block-tip-text: #400707;
+  --vp-custom-block-tip-bg: rgba(242, 71, 56, 0.05);
+  
+  /* Custom block warning */
+  --vp-custom-block-warning-border: #F24738;
+  --vp-custom-block-warning-text: #400707;
+  --vp-custom-block-warning-bg: rgba(242, 71, 56, 0.08);
+  
+  /* Custom block danger */
+  --vp-custom-block-danger-border: #400707;
+  --vp-custom-block-danger-text: #400707;
+  --vp-custom-block-danger-bg: rgba(64, 7, 7, 0.05);
+}
+
+/* Dark mode adjustments */
+.dark {
+  --vp-c-brand-1: #F2785C;
+  --vp-c-brand-2: #F24738;
+  --vp-c-brand-soft: rgba(242, 120, 92, 0.14);
+  
+  --vp-button-brand-bg: #F24738;
+  --vp-button-brand-hover-bg: #F2785C;
+  --vp-button-brand-active-bg: #400707;
+  
+  --vp-home-hero-name-background: linear-gradient(135deg, #F2785C 0%, #F24738 50%, #BF8275 100%);
+  
+  --vp-custom-block-tip-border: #F2785C;
+  --vp-custom-block-tip-text: #F2DC99;
+  --vp-custom-block-tip-bg: rgba(242, 120, 92, 0.08);
+  
+  --vp-custom-block-warning-border: #F24738;
+  --vp-custom-block-warning-text: #F2DC99;
+  --vp-custom-block-warning-bg: rgba(242, 71, 56, 0.1);
+}
+
+/* Link hover effect */
+.vp-doc a:hover {
+  color: #F24738;
+}
+
+/* Sidebar active item */
+.vp-sidebar-group.is-active > .vp-sidebar-group-title {
+  color: #F24738;
+}
+
+/* Nav link active */
+.VPNavBarMenuLink.active {
+  color: #F24738;
+}
+
+/* Code inline background */
+.vp-doc :not(pre) > code {
+  background-color: rgba(242, 71, 56, 0.08);
+  border-color: rgba(242, 71, 56, 0.15);
+}
+
+/* Custom container colors */
+.custom-block.tip {
+  border-color: #F2785C;
+  background-color: rgba(242, 120, 92, 0.05);
+}
+
+.custom-block.tip .custom-block-title {
+  color: #F24738;
+}
+
+.custom-block.warning {
+  border-color: #F24738;
+  background-color: rgba(242, 71, 56, 0.05);
+}
+
+.custom-block.warning .custom-block-title {
+  color: #F24738;
+}
+
+.custom-block.danger {
+  border-color: #400707;
+  background-color: rgba(64, 7, 7, 0.05);
+}
+
+.custom-block.danger .custom-block-title {
+  color: #400707;
+}
