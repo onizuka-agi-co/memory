@@ -45,6 +45,16 @@ export default defineConfig({
                     { text: 'Security', link: '/2026/02/24/security' },
                     { text: 'Restructure', link: '/2026/02/24/restructure' }
                   ]
+                },
+                {
+                  text: '2026-02-25',
+                  collapsed: true,
+                  items: [
+                    { text: 'Overview', link: '/2026/02/25/' },
+                    { text: 'Theme Customization', link: '/2026/02/25/theme-customization' },
+                    { text: 'Background Image', link: '/2026/02/25/background-image' },
+                    { text: 'Documentation', link: '/2026/02/25/documentation' }
+                  ]
                 }
               ]
             }
