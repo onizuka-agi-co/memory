@@ -24,7 +24,7 @@ Moonshot AI が開発したターミナルベースのAIエージェント「Kim
 **仕様**:
 - GET / - ウェルカムメッセージ (JSON)
 - GET /health - ヘルスチェック
-- GET /greet/<name> - パーソナライズド挨拶
+- GET /greet/`<name>` - パーソナライズド挨拶
 - requirements.txt - Flask依存関係
 - README.md - セットアップ手順
 

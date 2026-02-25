@@ -74,4 +74,4 @@ uv run skills/x-stream/scripts/x_filtered_stream.py stream
 
 - [X Filtered Stream API Docs](https://developer.x.com/en/docs/twitter-api/tweets/filtered-stream/introduction)
 - [Discord Webhook Docs](https://discord.com/developers/docs/resources/webhook)
-- [OpenClaw Discord Docs](/usr/lib/node_modules/openclaw/docs/channels/discord.md)
+- [OpenClaw Discord Docs](https://docs.openclaw.ai/channels/discord)
