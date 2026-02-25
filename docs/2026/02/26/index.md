@@ -1,28 +1,23 @@
 # 2026-02-26
 
 ## 完了
-- [x] Kimi Code CLI テスト
-- [x] Flask Webアプリ作成
-- [x] OpenClaw Skills調査
-- [x] Claude Code Remote Control調査
-- [x] TinyClaw調査・分析
+- [x] Xコミュニティ投稿スキル開発
+- [x] x-community作成
+- [x] sunwood-community作成
+- [x] 引用解説投稿機能実装
+- [x] X関連データ整理（data/x/へ移動）
 
 ## 進行中
-- [ ] Nested Sub-Agents実験準備
-- [ ] agent-toolkit スキル設計
-- [ ] OpenClaw Teams機能構想
+- [ ] スキルの動作テスト
 
 ## 気づき
-- Kimi Code (v1.13.0) で Flask Web アプリを作成。3つのエンドポイント（/
--  /health
--  /greet/<name>）を実装。処理時間約15秒でコード品質高い。OpenClaw Skills について調査（52個の組み込みスキル確認）。Claude Code Remote Control 機能についても調査し、OpenClawとの比較を実施。
+- X API制限: community_id + quote_tweet_id の併用は403エラー
+- 回避策: URLをテキストに含める形式で引用リツイート
+- share_with_followers: true が推奨（フォロワーにも表示）
 
 ## 詳細
 
-### [Kimi Code CLI テスト](./kimi-code-cli)
-説明を追加してください。
 ### [Xコミュニティ投稿スキル開発](./x)
-説明を追加してください。
-
+X（Twitter）のコミュニティ機能への投稿に特化したスキルを開発。sunwood-communityスキルでSunwood AI OSS Hubへの引用解説投稿を実現。
 
 [← 戻る](../)
