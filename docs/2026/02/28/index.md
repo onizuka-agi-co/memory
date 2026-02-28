@@ -1,5 +1,7 @@
 # 2026-02-28 日報
 
+tags: [#nano-banana-2, #スキル, #開発, #ONIZUKA]
+
 ## 概要
 
 **nanobanana2 スキル検証・修正・機能追加**

@@ -1,5 +1,7 @@
 # 2026-02-23
 
+tags: [#X, #スキル, #OAuth, #開発]
+
 ## 完了
 - [x] Claude Code + GLM設定
 - [x] X API スキル作成（x-read / x-write / x-community）

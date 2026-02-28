@@ -1,5 +1,7 @@
 # 2026-02-25
 
+tags: [#Discord, #スキル, #X, #Sub-Agents, #開発]
+
 ## 完了
 - [x] daily-memoryスキルのテスト
 - [x] OpenClaw Skills調査
