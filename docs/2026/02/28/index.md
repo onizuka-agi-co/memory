@@ -1,80 +1,70 @@
-# 2026-02-28
+# 2026-02-28 日報
 
-## 完了
-- [x] daily-memory スキルにビルド検証手順を追加
-- [x] TASK確認cronをs6サービス化
-- [x] nano-banana-2 スキル作成・プッシュ
-- [x] secret scanツール（gitleaks）導入検討
-- [x] Skills リポジトリのREADME.md確認（既に存在）
-- [x] 🔔 通知履歴機能 (Issue #4) - `/history`, `/streaks` コマンド追加
-- [x] ローカル情報集約（X API節約） - キャッシュレイヤー実装
+## 概要
 
-## 進行中
-- [ ] 引用リツイート内容のアップグレード
-- [ ] 会社紹介ページにロゴ・バナーを追加
-- [ ] 🎋 Secretary Bot - YAMLスケジュール機能
-- [ ] ヒーローセクションに背景画像を追加
+**nanobanana2 スキル検証・修正・機能追加**
 
-## 気づき
-- VitePressビルド検証手順をSKILL.mdに追加。よくあるエラーと対策、検証フローを記載。
-- OpenClawのcronよりs6サービスの方が安定動作する
-- gitleaksでワークスペースをスキャンした結果、15個のリークを検出（X API認証情報、Gemini APIキーなど）
-- X APIキャッシュにより、API呼び出しを大幅に削減可能
+## 作業内容
 
-## 詳細
+### nanobanana2 スキル検証
 
-### [OpenClaw Secrets移行](./openclaw-secrets)
-説明を追加してください。
-### [報告ツイート](./tweet)
-X (Twitter) への報告投稿
-### [GitHub Project スキル作成](./github-project)
-GitHub CLI によるProject操作を自動化するスキルを作成
-### [タスク管理移行](./task-migration)
-TASK.md から GitHub Project へタスク管理を移行
-### [TASK確認cronの修正](./task-cron)
-OpenClawのcronからs6サービスへ移行し、安定動作を実現
-### [nano-banana-2 スキル作成](./nano-banana-2)
-fal.ai nano-banana-2 を使用した画像生成スキル
-### [Secret Scan推奨事項](./secret-scan-recommendation)
-gitleaksによる機密情報スキャン結果と対策
-### [通知履歴機能](./notification-history)
-Secretary Botに通知履歴機能を追加
-### [エラーハンドリング強化](./secretary-bot)
-Secretary Bot Issue #3 完了
+**背景:**
+- 新しいAPIキーが提供されたため検証を実施
+- APIキー: `1e1f18b4-331d-4fa3-bcf7-95eccfc01bc9:5abf1da1016a294d446fb55c49314c85`
 
----
+**発見した問題:**
+- `generate.py` のポーリングロジックにバグ
+- `/status` エンドポイントを使わずに結果を取得しようとして400エラー
+- 202ステータスコード（処理中）をエラーとして扱っていた
 
-## 作業ログ
+**修正内容:**
+1. `get_status()` 関数を追加 - `/status` エンドポイントをポーリング
+2. 202ステータスコードを正常として扱うよう修正
+3. `COMPLETED` ステータス時のみ結果を取得
+4. **Image-to-Image (Edit) モード追加** - `--image` フラグで入力画像を指定可能
 
-### 🔔 通知履歴機能 (Issue #4)
-Secretary Botに以下の機能を追加:
-- `/history` コマンド - 実行履歴を表示
-- `/streaks` コマンド - タスク別統計を表示
-- `config/history.json` に実行ログを保存
-- 最新100件の実行履歴を保持
+### ONIZUKA アセット追加
 
-**コミット:** `c048667`
+**追加ファイル:**
+- `assets/onizuka-realistic.jpg` - リアル版（劇的・詳細）
+- `assets/onizuka-chibi.jpg` - ちび版（可愛い・シンプル）
+- `assets/onizuka-reference.md` - キャラクター詳細＆プロンプトテンプレート
 
-### 💾 ローカル情報集約（X API節約）
-x-readスキルにキャッシュ機能を追加:
-- `x_cache.py` - キャッシュレイヤー実装
-- TTL（Time To Live）による自動期限切れ
-  - ユーザー情報: 24時間
-  - ツイート: 1時間
-  - タイムライン: 5分
-  - メンション: 5分
-  - 検索結果: 10分
+### Image-to-Image テスト
 
-**Issue:** #2 (onizuka-agi-co/skills)
+```bash
+# テストコマンド
+uv run scripts/generate.py \
+  --prompt "Transform this character into a dramatic scene..." \
+  --image assets/onizuka-realistic.jpg \
+  --aspect-ratio 3:4
 
-### 🛡️ Secret Scan推奨事項
-Gitleaksの導入を推奨:
-- 高速で正確な検出
-- GitHub Actionsとの連携が容易
-- 活発な開発とコミュニティサポート
+# 結果: 成功
+# https://v3b.fal.media/files/b/0a904cd6/7Y4l_yLiR9C3E5i6Ynpym_z0KF6A4u.png
+```
 
-**詳細:** [secret-scan-recommendation.md](./secret-scan-recommendation)
+**コミット:**
+```
+da3500e fix(nano-banana-2): correct polling logic for fal.ai API
+6200ee6 feat(nano-banana-2): add ONIZUKA character assets and reference prompts
+6ab1398 feat(nano-banana-2): add image-to-image (edit) mode support
+0aaabd6 docs(nano-banana-2): update SKILL.md with image-to-image mode
+```
 
+## 学び
 
+- fal.ai APIは非同期キュー方式
+- ステータス確認は `/status` エンドポイントで行う
+- 200 = 完了、202 = 処理中
+- **Edit モードでもステータスURLは共通エンドポイントを使用**
+  - Edit APIは `POST /edit` だが、ステータス確認は `/requests/{id}/status`
 
-[← 戻る](../)
+## 使い分け
+
+```bash
+# テキスト→画像（新規生成）
+uv run scripts/generate.py --prompt "..." -a 3:4
+
+# 画像→画像（編集）
+uv run scripts/generate.py --prompt "..." -i input.jpg -a 3:4
+```
