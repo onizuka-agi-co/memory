@@ -8,7 +8,17 @@
 - **日報ハッシュタグ追加** - 既存日報ページにタグ追加
 
 ## 🔄 進行中
-- リポジトリ展開タスク
+- （なし - 全タスク完了）
+
+## 📊 定期タスク確認 (07:01)
+- **GitHub Project**: 全25タスクが Done 状態
+- **未着手タスク**: なし
+- **In review**: なし
+
+## 📊 定期タスク確認 (08:01)
+- **GitHub Project**: 全26タスクが Done 状態
+- **未着手タスク**: なし
+- **In review**: なし
 
 ## 📝 メモ
 task-check: ステータス遷移(In progress→In review→Done)、レビューチェックリスト(APIキー漏洩検査含む)、日報記録ルール追加。morning-idea: idea-devスキル使用、github-projectスキルでタスク登録、優先度マッピング(P1/P2/P3)追加。README: ヘッダー画像追加、名前をAKARIに変更。UV実行対応(pyproject.toml追加)。
