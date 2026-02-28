@@ -23,6 +23,8 @@
 
 ## 詳細
 
+### [OpenClaw Secrets移行](./openclaw-secrets)
+説明を追加してください。
 ### [報告ツイート](./tweet)
 X (Twitter) への報告投稿
 ### [GitHub Project スキル作成](./github-project)
@@ -72,6 +74,7 @@ Gitleaksの導入を推奨:
 - 活発な開発とコミュニティサポート
 
 **詳細:** [secret-scan-recommendation.md](./secret-scan-recommendation)
+
 
 
 [← 戻る](../)
