@@ -13,11 +13,12 @@
 
 ## 詳細
 
-### [報告ツイート](./topic)
-説明を追加してください。
+### [報告ツイート](./tweet)
+X (Twitter) への報告投稿
 ### [GitHub Project スキル作成](./github-project)
 GitHub CLI によるProject操作を自動化するスキルを作成
-
+### [タスク管理移行](./task-migration)
+TASK.md から GitHub Project へタスク管理を移行
 ### [TASK確認cronの修正](./task-cron)
 OpenClawのcronからs6サービスへ移行し、安定動作を実現
 
