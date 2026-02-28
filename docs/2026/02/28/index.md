@@ -14,9 +14,9 @@
 ## 詳細
 
 ### [GitHub Project スキル作成](./github-project)
-説明を追加してください。
+GitHub Project の操作方法を文書化し、再利用可能なスキルとして作成。
 ### [タスク管理移行](./topic)
-説明を追加してください。
+TASK.md から GitHub Project へタスク管理を移行し、視覚的な管理を実現。
 
 
 [← 戻る](../)
