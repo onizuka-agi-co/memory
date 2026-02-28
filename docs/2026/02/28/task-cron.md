@@ -35,3 +35,5 @@ docker compose restart
 - s6サービスとして安定動作
 - 1時間ごとにTASK.mdを確認し、未着手タスクを通知
 - TASK.mdがGitHub Projectに移行済みの場合は適切に案内
+### 関連リンク
+- ツイート: https://x.com/onizuka_renjiii/status/2027576221526331582
