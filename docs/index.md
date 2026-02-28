@@ -19,6 +19,7 @@ hero:
 日々の記録・気づき・進捗をまとめたリポジトリ。
 
 **ONIZUKA AGI Co.** の活動を記録し、知見を蓄積・共有する。
+**ONUZUKA** は `README.md` のワークスペース上に設立された AGI カンパニー。
 
 ---
 
@@ -62,6 +63,7 @@ docs/
 | リンク | 説明 |
 |--------|------|
 | [2026年2月](/2026/02/) | 最新の記録 |
+| [アーキテクチャ](/architecture/) | ONIZUKA/ONUZUKA の設計方針 |
 | [GitHub](https://github.com/onizuka-agi-co/memory) | リポジトリ |
 | [ONIZUKA AGI](https://github.com/onizuka-agi-co) | 組織 |
 

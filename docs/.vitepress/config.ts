@@ -8,7 +8,8 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
-      { text: '2026', link: '/2026/' }
+      { text: '2026', link: '/2026/' },
+      { text: 'Architecture', link: '/architecture/' }
     ],
     
     sidebar: {
@@ -58,6 +59,14 @@ export default defineConfig({
                 }
               ]
             }
+          ]
+        }
+      ],
+      '/architecture/': [
+        {
+          text: 'アーキテクチャ',
+          items: [
+            { text: 'Overview', link: '/architecture/' }
           ]
         }
       ]
