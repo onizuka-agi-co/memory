@@ -20,6 +20,21 @@
 - **未着手タスク**: なし
 - **In review**: なし
 
+## 📊 定期タスク確認 (09:01)
+- **GitHub Project**: 全26タスクが Done 状態
+- **未着手タスク**: なし
+- **In review**: なし
+
+## 🍌 nano-banana-2 スキル作成
+- **場所**: `skills/nano-banana-2/`
+- **機能**: fal.aiのnano-banana-2モデルでテキストから画像生成
+- **対応パラメータ**:
+  - アスペクト比: auto/21:9/16:9/3:2/4:3/5:4/1:1/4:5/3:4/2:3/9:16
+  - 解像度: 0.5K/1K/2K/4K
+  - 出力形式: jpeg/png/webp
+- **必要な設定**: `FAL_KEY` 環境変数 または `~/fal-key.txt`
+- **パッケージ化完了**: `nano-banana-2.skill`
+
 ## 📝 メモ
 task-check: ステータス遷移(In progress→In review→Done)、レビューチェックリスト(APIキー漏洩検査含む)、日報記録ルール追加。morning-idea: idea-devスキル使用、github-projectスキルでタスク登録、優先度マッピング(P1/P2/P3)追加。README: ヘッダー画像追加、名前をAKARIに変更。UV実行対応(pyproject.toml追加)。
 
