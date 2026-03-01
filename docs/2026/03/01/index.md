@@ -1,44 +1,18 @@
----
-title: "2026-03-01 日報"
----
-
 # 2026-03-01 日報
 
-## 完了タスク
+**タグ:** #タスク管理 #GitHub #Discord
 
-### 🍌 nano-banana-2 スキル作成
+## ✅ 完了
+- GitHub Projectタスク追加(4件)
+- TASK.md更新
 
-fal.aiのnano-banana-2モデルを使用した画像生成スキルを作成。
+## 🔄 進行中
+- スキル一覧表示Bot
+- 日報スクリプト改善
 
-**作成ファイル:**
-- `skills/nano-banana-2/SKILL.md` - スキル定義
-- `skills/nano-banana-2/scripts/generate.py` - 画像生成スクリプト
-- `skills/nano-banana-2/references/api.md` - API参照
+## 📝 メモ
+GitHub Project移行中。Issue → Project連携確立。secretary-bot, skillsリポジトリに分散配置。
 
-**機能:**
-- テキストプロンプトから画像生成
-- アスペクト比選択（auto, 16:9, 1:1, etc.）
-- 解像度選択（0.5K, 1K, 2K, 4K）
-- 出力形式選択（PNG, JPEG, WebP）
-- 画像ダウンロード機能
+## 詳細
 
-**テスト結果:** 画像生成成功 ✅
-
----
-
-## 進行中タスク
-
-なし（GitHub Projectの全タスク完了）
-
----
-
-## 気づき
-
-- fal.ai APIは `https://fal.run/fal-ai/nano-banana-2` エンドポイントに `sync_mode: true` でPOSTすると同期的に結果が返る
-- FAL_KEYはワークスペースの `fal-key.txt` に保存することで環境変数不要で動作
-
----
-
-## ハッシュタグ
-
-#nano-banana-2 #スキル作成 #画像生成 #fal.ai
+- [GitHub Project移行](github-project.md)
