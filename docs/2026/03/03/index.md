@@ -15,16 +15,24 @@ title: 2026-03-03 日報
 
 ## GitHub Project ステータス
 
-- **Done:** 31件
+- **Done:** 28件
 - **In progress:** 0件
-- **Backlog:** 2件
-  - HuggingFace Daily Papers 図解投稿機能
-  - HF Papers API取得機能
+- **Backlog:** 5件（HuggingFace Daily Papers関連）
+  - 🎋 HuggingFace Daily Papers 図解投稿機能（親タスク）
+  - 🔧 HF Papers API取得機能
+  - 🎨 nano-banana-2図解生成
+  - 📝 解説文章生成
+  - 🚀 自動投稿機能
+
+## 定期タスク確認 (08:00)
+
+- 全タスク完了確認
+- BacklogタスクはHuggingFace Daily Papers機能の実装待ち
 
 ## 次のステップ
 
 - Backlogタスクの優先順位確認
-- HuggingFace Daily Papers機能の実装開始
+- HuggingFace Daily Papers機能の実装開始（要確認）
 
 ---
 
