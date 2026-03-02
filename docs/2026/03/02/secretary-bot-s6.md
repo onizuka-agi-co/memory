@@ -1,0 +1,3 @@
+# secretary-bot s6移行
+
+## 背景\nsecretary-botをDockerからs6サービスに移行\n\n## 問題\n- サービスが起動失敗（exitcode 1）\n- 原因: runスクリプトがrootで実行され、PyYAMLが見つからない\n\n## 解決策\n1. `s6-setuidgid abc`を追加してabcユーザーで実行\n2. `uv run --no-project bot.py`に変更\n3. `UV_CACHE_DIR`環境変数でキャッシュ場所を指定\n\n## 最終的なrunスクリプト\n```bash\n#!/command/execlineb -P\ncd /config/.openclaw/workspace/project/secretary-bot\nfdmove -c 2 1\nexec s6-setuidgid abc env UV_CACHE_DIR=/config/.openclaw/workspace/project/secretary-bot/.cache uv run --no-project bot.py\n```\n\n## サービス構成\n```\n/config/s6-services/secretary-bot\n  → /config/.openclaw/workspace/project/secretary-bot\n```\n\n## 学び\n- s6サービスは適切なユーザー権限で実行する必要がある\n- uv runは`--no-project`でプロジェクトビルドをスキップできる\n- キャッシュ権限問題は環境変数で回避可能

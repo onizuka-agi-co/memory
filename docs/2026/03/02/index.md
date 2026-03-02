@@ -14,3 +14,7 @@
 
 ## 📝 メモ
 s6サービスはabcユーザーで実行,uv run --no-projectでビルドスキップ,UV_CACHE_DIRでキャッシュ場所指定
+
+## 詳細
+
+- [secretary-bot s6移行](secretary-bot-s6.md)
