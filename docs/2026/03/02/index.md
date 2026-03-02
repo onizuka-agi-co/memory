@@ -138,4 +138,35 @@ title: 2026-03-02 日報
 
 ---
 
+---
+
+## secretary-bot s6サービス移行 (21:00)
+
+### Docker volume mount問題
+- Docker Composeで `./config:/app/config:ro` をマウントすると空になる問題
+- `/config` パーティション特有のDocker制限が原因の可能性
+
+### s6サービスへの移行
+- Docker Composeを削除してs6サービスに統一
+- リポジトリ全体をシンボリックリンクで参照:
+  ```
+  /config/s6-services/secretary-bot-shutogarasu → /config/.openclaw/workspace/project/secretary-bot
+  ```
+
+### 修正内容
+- `run`, `finish` スクリプトをリポジトリに追加（git管理）
+- `.gitignore` に `supervise/`, `.venv/`, `uv.lock`, `event/` を追加
+- pythonパスを `/lsiopy/bin/python` に修正
+
+### コミット
+- `1a3f6ab` feat: add s6 service files for folder-level symlink support
+- `a49a437` fix: use correct python path for s6 service
+
+### 気づき
+- Dockerのbind mountは深いパスや特定の条件下で空になることがある
+- s6サービスはシンボリックリンクされたフォルダでも動作可能
+- `supervise/` ディレクトリはs6が内部で管理するため `.gitignore` 必須
+
+---
+
 #ONIZUKA_AGI #タスク管理
