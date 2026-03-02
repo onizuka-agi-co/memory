@@ -31,5 +31,10 @@ tags: [#Discord, #スキル, #X, #Sub-Agents, #開発]
 - [Nested Sub-Agents 実験](./nested-sub-agents-experiment)
 - [X Filtered Stream 構築](./x-filtered-stream)
 - [X Read Skill 改良](./x-read-skill)
+- [背景画像設定](./background-image)
+- [ドキュメント充実化](./documentation)
+- [idea-dev スキル開発](./idea-dev-skill)
+- [定期アイデア提案システム](./idea-proposal-system)
+- [テーマカスタマイズ](./theme-customization)
 
 [← 戻る](../)

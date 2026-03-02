@@ -49,6 +49,36 @@
 
 ---
 
+### [2026-02-26](/2026/02/26/)
+**タスク管理システム構築・Webhook統合**
+
+- TASK.md + cron + Webhookの仕組みを構築
+- task_check.pyスクリプト作成
+- HEARTBEAT.mdイベント処理を追加
+- 403エラー解決（User-Agentヘッダー追加）
+- Kimi Code CLI テスト、TinyClaw調査
+
+**重要な発見:**
+- cron → systemEvent → メインセッション → Python実行 → Webhook通知の構成が安定
+
+---
+
+### [2026-02-28](/2026/02/28/)
+**nano-banana-2 スキル開発・Secretary Bot強化**
+
+- nano-banana-2 スキル作成（fal.ai API）
+- Image-to-Image (Edit) モード追加
+- Secretary Bot エラーハンドリング強化
+- 通知履歴機能追加
+- TASK.md から GitHub Project へ移行
+- OpenClaw Secrets機能調査
+
+**重要な発見:**
+- fal.ai APIは非同期キュー方式（200=完了、202=処理中）
+- EditモードでもステータスURLは共通エンドポイントを使用
+
+---
+
 ## Monthly Summary
 
 | カテゴリ | 進捗 |

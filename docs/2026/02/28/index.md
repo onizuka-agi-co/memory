@@ -70,3 +70,15 @@ uv run scripts/generate.py --prompt "..." -a 3:4
 # 画像→画像（編集）
 uv run scripts/generate.py --prompt "..." -i input.jpg -a 3:4
 ```
+
+## 詳細
+
+- [GitHub Project スキル](./github-project)
+- [nano-banana-2 スキル作成](./nano-banana-2)
+- [通知履歴機能](./notification-history)
+- [OpenClaw Secrets機能](./openclaw-secrets)
+- [Secretary Bot エラーハンドリング](./secretary-bot)
+- [Secret Scan ツール導入検討](./secret-scan-recommendation)
+- [TASK確認cronの修正](./task-cron)
+- [TASK.md から GitHub Project 移行](./task-migration)
+- [X (Twitter) への報告投稿](./tweet)

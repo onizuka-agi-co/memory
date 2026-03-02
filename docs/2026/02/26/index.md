@@ -15,4 +15,12 @@
 
 ## 詳細
 
+- [idea-dev スキル](./idea-dev)
+- [Kimi Code CLI テスト](./kimi-code-cli)
+- [TinyClaw調査](./tinyclaw)
+- [定期アイデア提案](./topic)
+- [Discord Webhook投稿](./webhook)
+- [X Filtered Stream + Discord Webhook](./x-filtered-stream-discord-webhook)
+- [Xコミュニティ投稿スキル](./x)
+
 [← 戻る](../)
