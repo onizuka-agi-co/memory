@@ -37,6 +37,24 @@ title: 2026-03-03 日報
   - 🔧 HF Papers API取得機能 (P1)
 - 実装開始待ち（ユーザー確認中）
 
+## 定期タスク確認 (10:00)
+
+- GitHub Project確認: Done 28件, Backlog 2件
+- Backlogタスク:
+  - 🎋 HuggingFace Daily Papers 図解投稿機能 (P1)
+  - 🔧 HF Papers API取得機能 (P1)
+- すべてのタスクが完了またはBacklog
+- 新規タスクなし
+
+## 定期タスク確認 (11:01)
+
+- GitHub Project確認: Done 32件, Backlog 2件
+- Backlogタスク:
+  - 🎋 HuggingFace Daily Papers 図解投稿機能 (P1)
+  - 🔧 HF Papers API取得機能 (P1)
+- すべてのタスクが完了またはBacklog
+- 新規タスクなし
+
 ## 次のステップ
 
 - Backlogタスクの優先順位確認
