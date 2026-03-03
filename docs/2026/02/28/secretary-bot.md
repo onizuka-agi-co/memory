@@ -68,3 +68,8 @@
 ### 関連
 
 - Issue: https://github.com/onizuka-agi-co/secretary-bot/issues/4
+
+## 関連タスク
+
+- [2026-03-01: プロンプト改良](../../03/01/secretary-bot-enhancement.md)
+- [2026-03-02: s6サービス移行](../../03/02/secretary-bot-s6.md)

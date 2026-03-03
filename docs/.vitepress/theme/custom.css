@@ -150,3 +150,42 @@
 .dark .VPHero::before {
   opacity: 0.12;
 }
+
+/* Hashtag link styles */
+.hashtag-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hashtag-code,
+.vp-doc .hashtag-link code {
+  background: var(--vp-c-brand-soft) !important;
+  color: var(--vp-c-brand-1) !important;
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+  border: none;
+  transition: all 0.2s;
+}
+
+.hashtag-link:hover .hashtag-code,
+.hashtag-link:hover code {
+  background: var(--vp-c-brand-1) !important;
+  color: white !important;
+}
+
+/* Search page styles */
+.search-input {
+  width: 100%;
+  padding: 1rem 1rem 1rem 3rem;
+  font-size: 1.1rem;
+  border: 2px solid var(--vp-c-divider);
+  border-radius: 8px;
+  background: var(--vp-c-bg);
+  transition: border-color 0.2s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--vp-c-brand-1);
+}

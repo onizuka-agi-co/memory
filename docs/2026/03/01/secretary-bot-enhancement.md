@@ -26,3 +26,8 @@
 
 ## GitHub
 https://github.com/onizuka-agi-co/secretary-bot
+
+## 関連タスク
+
+- [2026-02-28: エラーハンドリング強化](../../02/28/secretary-bot.md)
+- [2026-03-02: s6サービス移行](../02/secretary-bot-s6.md)
