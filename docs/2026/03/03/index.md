@@ -29,6 +29,14 @@ title: 2026-03-03 日報
 - 全タスク完了確認
 - BacklogタスクはHuggingFace Daily Papers機能の実装待ち
 
+## 定期タスク確認 (09:00)
+
+- GitHub Project確認: Done 28件, Backlog 2件
+- Backlogタスク:
+  - 🎋 HuggingFace Daily Papers 図解投稿機能 (P1)
+  - 🔧 HF Papers API取得機能 (P1)
+- 実装開始待ち（ユーザー確認中）
+
 ## 次のステップ
 
 - Backlogタスクの優先順位確認
