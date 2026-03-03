@@ -22,6 +22,14 @@ title: 2026-03-03 日報
 
 ## 🕐 定期確認ログ
 
+### 15:00
+- **HF Papers API取得機能** 完了
+  - スキル作成: `skills/hf-papers/`
+  - API: `https://huggingface.co/api/daily_papers`
+  - コマンド: `fetch`, `get`, `top`, `explain`
+- **HuggingFace Daily Papers 図解投稿機能** In progress
+- 次のステップ: 図解画像生成、X投稿統合
+
 ### 13:00
 - 全27タスク完了確認
 - Backlog: 2タスク（HuggingFace Papers関連）
