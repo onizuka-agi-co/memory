@@ -26,6 +26,10 @@ title: 2026-03-03 日報
 
 - [GitHub Project](https://github.com/orgs/onizuka-agi-co/projects/1)
 
+## 📚 記事
+
+- [Star Office UI 使い方ガイド](./star-office-ui-guide.md)
+
 ---
 
 #ONIZUKA_AGI #日報 #タスク管理
