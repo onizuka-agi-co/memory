@@ -6,10 +6,29 @@ title: 2026-03-06 日報
 
 ## 📊 タスク状況
 
-**GitHub Project 確認結果:**
+**GitHub Project 確認結果（20:00）:**
 - **完了**: 33タスク
-- **進行中**: 0タスク
-- **未着手**: 0タスク
+- **進行中**: 1タスク
+- **Backlog**: 1タスク
+
+### 進行中タスク
+- **深読みくん: @hAru_mAki_ch 投稿自動深掘り解説** (Issue #10)
+  - X API Stream: ✅ 実装済み
+  - Community API: ✅ 実装済み
+  - Gemini Vision: ⏳ 未実装
+
+### Backlog
+- **AGI論文図解ライブラリ構築**
+
+## 🔧 20:00 タスク確認
+
+### Gemini Vision スクリプト作成
+- **ファイル:** `skills/gemini-vision/scripts/gemini_vision.py`
+- **機能:**
+  - 画像解析（単一/複数/URL対応）
+  - 動画解析（ffmpegフレーム抽出）
+  - JSON出力オプション
+- **状態:** 作成完了、API制限でテスト保留
 
 ## ✅ 完了したタスク
 
