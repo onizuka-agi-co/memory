@@ -51,6 +51,25 @@ description: 2026年3月8日の作業日報
 - HuggingFace Daily Papers 図解投稿機能
 - HF Papers API取得機能
 
+## 02:00 定期確認
+
+### ステータス更新
+
+| ステータス | 件数 |
+|-----------|------|
+| Done | 33 |
+| In progress | 1 |
+| Backlog | 2 |
+
+**進行中タスク:**
+- 深読みくん: @hAru_mAki_ch 投稿自動深掘り解説
+  - secretary-botリポジトリで管理
+  - 実装は未着手（コード未検出）
+
+**Backlogタスク:**
+- AGI論文図解ライブラリ構築 (P1, L)
+- AGI論文ウォッチャー (P2, M)
+
 ## 次のステップ
 
 新規タスクの追加が必要な場合は、GitHub Project に追加する。
