@@ -98,6 +98,43 @@ HF Papers → nano-banana-2図解 → X投稿を完全自動化
 
 ---
 
+---
+
+## 定期ミーティング #006
+
+### 実施フェーズ: 🎯 企画フェーズ
+
+**状況分析:**
+- GitHub Project全40タスク完了
+- 全スキル実装済み（x-stream, nano-banana-2, hf-papers等）
+- 次の方向性を決定
+
+### 企画内容
+
+**新しいタスク:** 🎋 AGI Knowledge Base 構築
+
+収集したAGI情報を整理・検索可能な知識ベースを構築し、世界中の研究者・開発者に提供する。
+
+**設定:**
+- Priority: P1
+- Size: L
+- Start: 2026-03-10
+- Target: 2026-03-20
+- Item ID: PVTI_lADOD7cTBc4BQW8Jzgm67LA
+
+**実施内容:**
+1. 情報収集自動化（X Stream, HF Papers, arXiv, GitHub）
+2. 知識ベース構築（VitePress拡張, 全文検索, タグ分類）
+3. 外部公開（GitHub Pages, 検索API, RSS）
+
+**価値:**
+- AGI知見の体系的整理
+- 検索・参照の効率化
+- コミュニティへの貢献
+- ONIZUKAブランド向上
+
+---
+
 ## タグ
 
-#定期ミーティング #企画 #X-Stream #自動化
+#定期ミーティング #企画 #Knowledge-Base #AGI
