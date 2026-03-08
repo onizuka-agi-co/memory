@@ -135,6 +135,44 @@ HF Papers → nano-banana-2図解 → X投稿を完全自動化
 
 ---
 
+---
+
+## 定期ミーティング #007
+
+### 実施フェーズ: 🎯 企画フェーズ
+
+**状況分析:**
+- GitHub Project全41タスク完了
+- 次の方向性を決定
+
+### 企画内容
+
+**新しいタスク:** 🔧 X Filtered Stream完成
+
+リアルタイムツイート監視機能の完全実装
+
+**設定:**
+- Priority: P1
+- Size: M
+- Start: 2026-03-09
+- Target: 2026-03-10
+- Issue: [#11](https://github.com/onizuka-agi-co/secretary-bot/issues/11)
+
+**実施内容:**
+- x_filtered_stream.py スクリプト実装
+- Bearer Token認証
+- ルール管理（追加・削除・確認）
+- Discord Webhook通知
+- PM2プロセス管理
+- 自動再接続処理
+
+**価値:**
+- ONIZUKA AGIのミッション「AGIの知見をほどき、世界に届ける」に直結
+- リアルタイム性が高い
+- 既存スキルとの連携可能
+
+---
+
 ## タグ
 
-#定期ミーティング #企画 #Knowledge-Base #AGI
+#定期ミーティング #企画 #X-Stream #AGI
