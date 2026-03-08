@@ -173,6 +173,52 @@ HF Papers → nano-banana-2図解 → X投稿を完全自動化
 
 ---
 
+---
+
+## 定期ミーティング #008
+
+### 実施フェーズ: 🎯 企画フェーズ
+
+**状況分析:**
+- GitHub Project全42タスク完了
+- 全スキル実装済み（hf-papers, nano-banana-2, X系スキル等）
+- 次の方向性を決定
+
+### 企画内容
+
+**新しいタスク:** 🎋 AGI論文の自動図解投稿システム
+
+HuggingFace Daily Papersのトップ論文を毎日自動的に図解し、XとDiscordに投稿するシステム
+
+**設定:**
+- Priority: P1
+- Size: M
+- Start: 2026-03-09
+- Target: 2026-03-11
+- Issue: [#3](https://github.com/onizuka-agi-co/workspace/issues/3)
+
+**実施内容:**
+- cron/s6で毎日決まった時間に実行
+- HF Papersからトップ論文を取得
+- nano-banana-2で図解画像を生成
+- AI解説文を生成
+- X（#ONIZUKA_AGI）に自動投稿
+- Discord #論文解説 チャンネルに投稿
+
+**技術要素:**
+- hf-papers スキル（論文取得）
+- nano-banana-2 スキル（画像生成）
+- x-write スキル（X投稿）
+- message tool（Discord投稿）
+- s6サービス（定期実行）
+
+**価値:**
+- ONIZUKA AGIのミッション「AGIの知見をほどき、世界に届ける」を自動化
+- 最新AGI研究の視覚的解説を毎日提供
+- X/Discordコミュニティへの価値提供
+
+---
+
 ## タグ
 
-#定期ミーティング #企画 #X-Stream #AGI
+#定期ミーティング #企画 #AGI #HuggingFace #自動投稿
