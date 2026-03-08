@@ -66,6 +66,38 @@ HF Papers → nano-banana-2図解 → X投稿を完全自動化
 
 ---
 
+---
+
+## 定期ミーティング #005
+
+### 実施フェーズ: 🎯 企画フェーズ
+
+**状況分析:**
+- GitHub Project全39タスク完了
+- X Filtered Stream: スキルmdのみ（スクリプト未実装）
+
+### 企画内容
+
+**新しいタスク:** 🔧 X Filtered Stream 完成化
+
+リアルタイムツイート監視機能の完全実装
+
+**設定:**
+- Priority: P1
+- Size: M
+- Start: 2026-03-08
+- Target: 2026-03-09
+- Issue: [#7](https://github.com/onizuka-agi-co/skills/issues/7)
+
+**タスク:**
+- x_filtered_stream.py 実装
+- ルール管理機能（追加・削除・一覧）
+- Discord Webhook通知
+- PM2自動起動統合
+- テスト・動作確認
+
+---
+
 ## タグ
 
-#定期ミーティング #企画 #HuggingFace #nano-banana-2 #自動化
+#定期ミーティング #企画 #X-Stream #自動化
