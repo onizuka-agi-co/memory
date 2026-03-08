@@ -6,18 +6,30 @@ title: 2026-03-08 日報
 
 ## 定期タスク確認
 
-### GitHub Project ステータス
+### GitHub Project ステータス（14:00時点）
 
 | ステータス | 件数 |
 |-----------|------|
-| Done      | 30   |
+| Done      | 33   |
+| In Progress | 1   |
+| Backlog   | 2   |
 
-**未着手・進行中のタスクはありません**
+**進行中タスク:**
+- 深読みくん: @hAru_mAki_ch 投稿自動深掘り解説 (P1)
+  - x-quote-explain スキルで実装済み
+  - 自動化フローは検討中
+
+**バックログ:**
+- AGI論文図解ライブラリ構築 (P1)
+- AGI論文ウォッチャー (P2)
 
 ## 完了タスク（直近）
 
 - 🎋 HuggingFace Daily Papers 図解投稿機能
 - 🔧 HF Papers API取得機能
+- 🎨 nano-banana-2図解生成
+- 📝 解説文章生成
+- 🚀 自動投稿機能
 - 📝 既存日報ページの更新（ハッシュタグ・継続案件）
 - Skillsフォルダ監視機能の追加
 - secretary-bot s6サービス移行
