@@ -38,6 +38,34 @@ title: 2026-03-08 日報
 
 ---
 
+---
+
+## 定期ミーティング #004
+
+### 実施フェーズ: 🎯 企画フェーズ
+
+**状況分析:**
+- GitHub Project全30タスク完了
+- hf-papers、nano-banana-2スキル実装済み
+- 次の方向性を決定
+
+### 企画内容
+
+**新しいタスク:** 🎋 HuggingFace Papers 自動図解投稿フロー完成
+
+HF Papers → nano-banana-2図解 → X投稿を完全自動化
+
+**設定:**
+- Priority: P1
+- Size: M
+- Start: 2026-03-08
+- Target: 2026-03-10
+- Issue: [#6](https://github.com/onizuka-agi-co/skills/issues/6)
+
+**目的:** ONIZUKA AGIのミッション「AGIの知見をほどき、世界に届ける」を実現
+
+---
+
 ## タグ
 
-#定期ミーティング #開発 #X-API #Filtered-Stream
+#定期ミーティング #企画 #HuggingFace #nano-banana-2 #自動化
