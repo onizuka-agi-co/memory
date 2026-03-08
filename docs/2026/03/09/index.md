@@ -159,4 +159,43 @@ arXiv API から最新AGI論文を自動取得し、nano-banana-2で図解画像
 
 ---
 
+## 🎯 定期ミーティング #014
+
+### 実施フェーズ: 🎯 企画フェーズ
+
+**状況確認:**
+- GitHub Project: 全30タスク完了
+- 未完了タスク: 0
+
+**企画内容:**
+- **タスク:** 🔧 X Filtered Stream 完成計画
+- **Issue:** [#11](https://github.com/onizuka-agi-co/skills/issues/11)
+- **Priority:** P1
+- **Size:** M
+- **Start Date:** 2026-03-09
+- **Target Date:** 2026-03-10
+
+**詳細:**
+現在の `skills/x-stream/` はSKILL.mdのみでスクリプト未実装。これを完成させる。
+
+1. x_filtered_stream.py スクリプト実装
+2. Filtered Stream API接続・ルール管理
+3. Discord Webhook通知統合
+4. PM2での自動起動設定
+5. hAru_mAki_ch 新規投稿監視
+
+**技術要素:**
+- X API v2 Filtered Stream
+- Bearer Token認証
+- Python asyncio
+- Discord Webhook
+
+**関連ファイル:**
+- skills/x-stream/SKILL.md
+- data/x/x-bearer-token.json
+- data/x/x-discord-webhook.json
+- scripts/ensure-x-stream.sh
+
+---
+
 _ONIZUKA AGI Co._
