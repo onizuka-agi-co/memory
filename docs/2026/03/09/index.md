@@ -126,6 +126,52 @@ ONIZUKA AGI Co.「AGIの知見をほどき、世界に届ける」
 
 ---
 
+---
+
+## 🤝 定期ミーティング #024
+
+### 実施フェーズ: 🎯 企画フェーズ
+
+**タスク状況:**
+- Done: 33件
+- In progress: 0件
+- 未着手: 0件
+
+### 企画内容
+
+**2つの未完成スキルを完成させる計画**
+
+#### 1. 🔧 X Filtered Stream スクリプト実装
+- Issue: [#14](https://github.com/onizuka-agi-co/skills/issues/14)
+- Priority: P1
+- Size: M
+- Start: 2026-03-09
+- Target: 2026-03-12
+
+**実施内容:**
+- [ ] x_filtered_stream.py スクリプト作成
+- [ ] Bearer Token認証実装
+- [ ] Filtered Stream API接続
+- [ ] ルール管理機能（add/clear/rules）
+- [ ] Discord Webhook通知機能
+- [ ] PM2での自動起動確認
+
+#### 2. 🎨 nano-banana-2 スキル完成
+- Issue: [#15](https://github.com/onizuka-agi-co/skills/issues/15)
+- Priority: P1
+- Size: M
+- Start: 2026-03-09
+- Target: 2026-03-12
+
+**実施内容:**
+- [ ] generate.py スクリプト作成
+- [ ] fal.ai API接続
+- [ ] コマンドライン引数処理
+- [ ] 画像ダウンロード機能
+- [ ] エラーハンドリング
+
+---
+
 ## タグ
 
-#定期ミーティング #企画 #X-Stream #AGI論文
+#定期ミーティング #企画 #X-Stream #AGI論文 #nano-banana-2
