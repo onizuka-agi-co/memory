@@ -309,6 +309,103 @@ https://github.com/onizuka-agi-co/workspace/issues/7
 
 ---
 
+---
+
+## 🤝 定期ミーティング #028
+
+### 実施フェーズ: 🎯 企画フェーズ
+
+**タスク状況:**
+- Done: 30件
+- In progress: 0件
+- 未着手: 0件
+
+### 企画内容
+
+**🚀 X Filtered Stream 完成版**
+
+#### 概要
+X（Twitter）のFiltered Stream APIを使って、リアルタイムにツイートを監視・通知・自動反応するシステムを完成させる
+
+#### 機能
+- リアルタイム監視（hAru_mAki_ch等の新規投稿検知）
+- Discord Webhook通知
+- 自動引用リツイート解説生成（sunwood-community連携）
+- PM2プロセス管理
+
+#### 現状
+- SKILL.md: ✅ 完成済み
+- scripts/x_filtered_stream.py: ❌ 未実装
+- 設定ファイル: ✅ 配置済み
+
+#### 技術スタック
+- Python + fal.ai client
+- PM2 プロセス管理
+- Discord Webhook API
+
+#### 設定
+- Priority: P1
+- Size: M
+- Start: 2026-03-10
+- Target: 2026-03-14
+
+#### GitHub Issue
+https://github.com/onizuka-agi-co/skills/issues/16
+
+#### 期待される効果
+- AGI関連の情報をリアルタイムでキャッチ
+- 自動的に深掘り解説を生成
+- コミュニティへの価値提供
+
+---
+
+---
+
+## 🤝 定期ミーティング #029
+
+### 実施フェーズ: 🎯 企画フェーズ
+
+**タスク状況:**
+- Done: 33件
+- In progress: 0件
+- 未着手: 0件
+
+### 企画内容
+
+**🎋 X投稿自動解説Bot**
+
+#### 概要
+hAru_mAki_chの投稿を検知し、自動で解説を生成して引用リツイートする機能
+
+#### 背景
+- 既存のx-streamスキルで投稿監視は可能
+- 既存のx-writeスキルで引用リツイートは可能
+- 解説生成は手動実行だった
+
+#### 新規性
+- 投稿検知 → 解説生成 → 引用リツイートを自動化
+- Web検索で関連情報を収集
+- 充実した解説を自動生成
+
+#### 技術要素
+- x-stream: 投稿監視
+- x-read: 投稿内容取得
+- x-write: 引用リツイート
+- Web検索: 関連情報収集
+- AI解説: 解説文生成
+
+#### GitHub Issue
+https://github.com/onizuka-agi-co/skills/issues/17
+
+#### 設定
+- Priority: P1
+- Size: M
+- Start: 2026-03-10
+- Target: 2026-03-12
+- Status: Ready
+
+---
+
 ## タグ
 
 #定期ミーティング #開発 #X-Stream #Done #AI論文 #企画
