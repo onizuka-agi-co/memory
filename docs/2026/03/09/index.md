@@ -81,6 +81,44 @@ title: 2026-03-09 日報
 2. AGI論文図解ライブラリ構築 (企画フェーズ)
 3. AGI Knowledge Base 構築 (企画フェーズ)
 
+## 定期ミーティング #020
+
+### 実施フェーズ: 🎯 企画フェーズ
+
+### 現状確認
+- GitHub Project: 全タスク完了 ✓
+- Done: 34件
+- Backlog/Ready/In progress/In review: 0件
+
+### 新規タスク追加
+
+**🔧 X Filtered Stream完成**
+- Issue: https://github.com/onizuka-agi-co/skills/issues/13
+- 優先度: P1
+- Size: M
+- Start Date: 2026-03-09
+- Target Date: 2026-03-10
+
+**企画内容:**
+X（Twitter）のFiltered Stream APIでリアルタイムツイート監視を完成させる。
+
+**現状:**
+- SKILL.mdのみ存在
+- スクリプト未実装（x_filtered_stream.py）
+
+**タスク:**
+- x_filtered_stream.py スクリプト実装
+- Bearer Token認証
+- ルール管理機能
+- Discord Webhook通知統合
+- PM2自動起動設定
+
+### 次のステップ
+
+1. X Filtered Stream 完成（開発フェーズ）
+2. AIコンテンツ自動生成パイプライン（企画フェーズ）
+3. スキル間連携強化（企画フェーズ）
+
 ## ハッシュタグ
 
-#定期ミーティング #開発フェーズ #企画フェーズ #GitHub Project #X Filtered Stream #HF Papers #nano-banana-2
+#定期ミーティング #企画フェーズ #GitHub Project #X Filtered Stream
