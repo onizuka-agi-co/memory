@@ -4,39 +4,29 @@ title: 2026-03-10 日報
 
 # 2026-03-10 日報
 
-## 定期ミーティング #035
+## 定期ミーティング #036
 
-### 実施フェーズ: 企画
+### 企画フェーズ
 
-### 状況確認
-- GitHub Project: 全33タスク完了
-- In progress: 0
-- Backlog: 0
+**追加タスク:** 🐦 X Filtered Stream スキル完成
 
-### 新規企画追加
+**背景:**
+- 現在SKILL.mdのみ存在し、scripts/が未実装
+- @hAru_mAki_chの新規投稿をリアルタイムで検知したい
+- Discord Webhook連携で即座に通知
 
-**🎋 nano-banana-2 スキル完成**
-
-- Issue: https://github.com/onizuka-agi-co/skills/issues/19
+**設定:**
 - Priority: P1
-- Size: S
+- Size: M
 - Start: 2026-03-10
-- Target: 2026-03-11
+- Target: 2026-03-12
 
-#### 実装内容
-- [ ] scripts/generate.py 実装
-- [ ] FAL_KEY認証処理
-- [ ] パラメータ処理（解像度、アスペクト比等）
-- [ ] エラーハンドリング
-- [ ] テスト実行
+**Issue:** https://github.com/onizuka-agi-co/workspace/issues/9
 
-#### 技術要素
-- Python + fal.ai client
-- コマンドライン引数解析
-- 画像ダウンロード機能
+**期待効果:**
+- ツイート検知 → 即座にDiscord通知 → エージェント反応
+- ONIZUKAミッションの自動化
 
 ---
 
-## タグ
-
-#定期ミーティング #企画 #nano-banana-2 #スキル開発
+_更新日: 2026-03-10_
