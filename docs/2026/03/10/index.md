@@ -1,49 +1,38 @@
 ---
-title: 2026-03-10 日報
 ---
 
-# 2026-03-10 日報
+# 2026-03-10
 
-## 定期ミーティング #038
+## 🎯 企画フェーズ
 
-### 実施フェーズ
-🎯 **企画フェーズ**
+### 新規タスク: X投稿の図解自動生成機能
 
-### GitHub Project 状況
-- 全タスク完了（Done）を確認
+**Issue:** [#10](https://github.com/onizuka-agi-co/workspace/issues/10)
 
-### 新規企画
-**🤖 AI論文の自動図解投稿パイプライン**
+**概要:**
+x-writeスキルとnano-banana-2スキルを連携させ、X投稿時に図解画像を自動生成する機能
 
-- **Issue:** https://github.com/onizuka-agi-co/skills/issues/20
-- **Priority:** P1
-- **Size:** M
-- **Start Date:** 2026-03-10
-- **Target Date:** 2026-03-12
+**目的:**
+- 投稿の視覚的魅力を向上
+- エンゲージメントを高める
+- ONIZUKA AGI Co.のブランディング強化
 
-#### 概要
-HuggingFace Daily Papersのトップ論文を毎日自動的に図解画像＋解説文章でX/Discordに投稿する機能
+**実装内容:**
+1. `x-write`スキルに`--with-image`オプション追加
+2. 投稿内容から図解プロンプトを自動生成
+3. nano-banana-2で画像生成
+4. 画像付きツイートとして投稿
 
-#### 実装内容
-- cron/s6サービスで毎日定時にトップ論文を取得
-- nano-banana-2で図解画像を生成
-- AIで解説文章を生成
-- X/Discordに自動投稿
-- エラー時の通知機能
-
-#### 技術要素
-- hf-papers スキル（論文取得）
-- nano-banana-2 スキル（図解生成）
-- x-write スキル（X投稿）
-- sunwood-community スキル（コミュニティ投稿）
-- s6サービス or cron（定期実行）
-
-#### 価値
-- 「AGIの知見をほどき、世界に届ける」ミッションに直結
-- 毎日の最新AGI研究を自動拡散
-- 図解で理解しやすく
+**設定:**
+- Priority: P1
+- Size: M
+- Start Date: 2026-03-10
+- Target Date: 2026-03-14
+- Status: Ready
 
 ---
 
-## タグ
-#定期ミーティング #企画 #AI論文 #自動化
+## 📊 タスク状況
+
+- 完了: 30タスク
+- 新規追加: 1タスク
