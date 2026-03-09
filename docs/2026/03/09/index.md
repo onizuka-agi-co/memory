@@ -212,6 +212,103 @@ ONIZUKA AGI Co.「AGIの知見をほどき、世界に届ける」
 
 ---
 
+---
+
+## 🤝 定期ミーティング #026
+
+### 実施フェーズ: 🎯 企画フェーズ
+
+**タスク状況:**
+- Done: 30件
+- In progress: 0件
+- 未着手: 0件
+
+### 企画内容
+
+**🚀 X Filtered Stream 完全実装**
+
+#### 概要
+hAru_mAki_chの新規投稿をリアルタイム監視し、自動で解説・引用リツイートを行う機能
+
+#### 現状
+- SKILL.mdのみ存在
+- x_filtered_stream.py スクリプト未実装
+- 設定ファイル（Bearer Token、Webhook）は準備済み
+
+#### 実装内容
+1. x_filtered_stream.py スクリプト作成
+   - Filtered Stream API接続
+   - ツイート検知時のWebhook通知
+   - PM2での自動起動
+
+2. sunwood-community スキル連携
+   - ツイート検知 → 自動解説生成 → 引用リツイート
+
+3. テスト・動作確認
+
+#### 成果物
+- skills/x-stream/scripts/x_filtered_stream.py
+- 自動起動スクリプト更新
+
+#### 設定
+- Priority: P1
+- Size: M
+- Start: 2026-03-09
+- Target: 2026-03-11
+
+#### GitHub Issue
+https://github.com/onizuka-agi-co/workspace/issues/6
+
+---
+
+---
+
+## 🤝 定期ミーティング #027
+
+### 実施フェーズ: 🎯 企画フェーズ
+
+**タスク状況:**
+- Done: 30件
+- In progress: 0件
+- 未着手: 0件
+
+### 企画内容
+
+**📚 AI論文自動要約・解説システム**
+
+#### 概要
+arXiv等の最新AI論文を自動取得し、要約・解説を生成してDiscord/Xに投稿するシステム
+
+#### 目的
+ONIZUKA AGIのミッション「AGIの知見をほどき、世界に届ける」に合致
+
+#### 機能
+- arXiv API で新着論文を取得
+- AIで要約・解説を生成
+- Discord/X に定期投稿
+- ハッシュタグ #ONIZUKA_AGI
+
+#### 技術スタック
+- Python (arxiv library)
+- OpenClaw message tool
+- 定期実行 (cron/s6)
+
+#### 関連
+- hf-papers スキル (HuggingFace Daily Papers)
+- x-write スキル (X投稿)
+- daily-memory スキル (日報)
+
+#### GitHub Issue
+https://github.com/onizuka-agi-co/workspace/issues/7
+
+#### 設定
+- Priority: P1
+- Size: L
+- Start: 2026-03-09
+- Target: 2026-03-16
+
+---
+
 ## タグ
 
-#定期ミーティング #開発 #X-Stream #Done
+#定期ミーティング #開発 #X-Stream #Done #AI論文 #企画
