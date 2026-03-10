@@ -67,6 +67,40 @@ title: 🤝 2026-03-10 定期ミーティング
 
 ---
 
+## #053 夜の部
+
+### 実施フェーズ：🎯 企画フェーズ
+
+**GitHub Project タスク状況:**
+- 完了: 30タスク
+- 未着手: 0タスク
+
+→ 全タスク完了のため、新規企画を追加
+
+---
+
+### 新規企画：🎋 自動コンテンツ生成パイプライン
+
+**概要:** HuggingFace Daily Papersのトップ論文を自動で図解し、Xに投稿するパイプライン
+
+**フロー:**
+1. **論文取得**: hf-papersスキルでHuggingFace Papersのトップ論文を取得
+2. **図解生成**: nano-banana-2スキルで論文の図解画像を生成
+3. **解説生成**: LLMで論文の解説文章を生成
+4. **X投稿**: x-writeスキルで図解と解説を投稿
+5. **定期実行**: secretary-botで毎日自動実行
+
+**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/17
+
+**設定:**
+- Priority: P1
+- Size: L
+- Start Date: 2026-03-11
+- Target Date: 2026-03-14
+- Status: Ready
+
+---
+
 ## タグ
 
 #定期ミーティング #企画 #自動化 #HF-Papers #nano-banana-2 #パイプライン
