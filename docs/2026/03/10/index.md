@@ -1,34 +1,56 @@
 ---
-title: 🤝 2026-03-10 #050 定期ミーティング
+title: 🤝 2026-03-10 #051 定期ミーティング
 ---
 
-# 🤝 2026-03-10 #050 定期ミーティング
+# 🤝 2026-03-10 #051 定期ミーティング
 
-## 実施フェーズ：🔧 開発フェーズ
+## 実施フェーズ：🎯 企画フェーズ
 
-### 完了タスク
+### GitHub Project タスク状況
 
-#### 🔧 X Filtered Stream 完成
+- **完了:** 33タスク
+- **未着手:** 0タスク
+- **進行中:** 0タスク
 
-**概要:** X（Twitter）のFiltered Stream APIを使ってリアルタイムツイート監視機能を完成
+→ 全タスク完了のため、企画フェーズを実施
 
-**確認内容:**
-- [x] x_filtered_stream.pyスクリプト実装 - 完了
-- [x] PM2/s6での自動起動設定 - PM2で47時間オンライン稼働中
-- [x] Discord Webhook連携 - テスト通知成功
-- [x] テスト・動作確認 - API接続・ルール確認成功
+---
+
+### 新規企画：自動コンテンツ生成パイプライン
+
+**概要:** HuggingFace Daily PapersのTop論文をnano-banana-2で図解し、X + Discordに自動投稿するパイプライン
+
+**フロー:**
+1. **取得**: HF Papers APIでTop論文を取得（hf-papersスキル活用）
+2. **図解**: nano-banana-2で論文の図解画像を生成
+3. **解説**: 論文内容の要約・解説を生成
+4. **投稿**: X（引用形式）+ Discord（カード形式）に投稿
 
 **技術要素:**
-- X Filtered Stream API
-- Bearer Token認証
-- PM2プロセス管理
-- Discord Webhook通知
+- hf-papers スキル（完了済み）
+- nano-banana-2 スキル（完了済み）
+- x-quote-explain スキル（完了済み）
+- cron/定期実行（secretary-bot連携）
 
-**ステータス:** Done に移動
+**サブタスク:**
+- [ ] パイプライン統合スクリプト作成
+- [ ] エラーハンドリング（API制限、生成失敗等）
+- [ ] 投稿キューイング機能
+- [ ] ログ・履歴管理
+
+**設定:**
+- Priority: P1
+- Size: M
+- Start Date: 2026-03-10
+- Target Date: 2026-03-12
+
+**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/15
+
+---
 
 ## タグ
 
-#定期ミーティング #開発 #X-API #Discord
+#定期ミーティング #企画 #自動化 #HF-Papers #nano-banana-2
 
 ---
 
