@@ -135,9 +135,54 @@ X/Discord → 自動投稿
 
 ---
 
+---
+
+## #055 夜の部
+
+### 実施フェーズ：🎯 企画フェーズ
+
+**GitHub Project タスク状況:**
+- 完了: 30タスク
+- 未着手: 0タスク
+
+→ 全タスク完了のため、新規企画を追加
+
+---
+
+### 新規企画：🔄 X Filtered Stream 復活
+
+**概要:** X（Twitter）のFiltered Stream APIでリアルタイムツイート監視システムを完成させる
+
+**機能:**
+1. 指定ユーザーの新規投稿を検知
+2. Discord Webhook で通知
+3. s6サービスで常駐監視
+4. 自動コンテンツ生成パイプラインと連携
+
+**現状:**
+- SKILL.md あり
+- スクリプト未実装
+- Bearer Token 設定済み
+
+**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/18
+
+**設定:**
+- Priority: P1
+- Size: M
+- Start Date: 2026-03-11
+- Target Date: 2026-03-13
+- Status: Ready
+
+**応用例:**
+- @hAru_mAki_ch の新規投稿検知
+- 自動で引用リツイート解説生成
+- Discord に通知
+
+---
+
 ## タグ
 
-#定期ミーティング #企画 #自動化 #HF-Papers #nano-banana-2 #パイプライン
+#定期ミーティング #企画 #自動化 #HF-Papers #nano-banana-2 #パイプライン #X-Stream
 
 ---
 
