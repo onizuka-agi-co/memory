@@ -1,16 +1,17 @@
 ---
-title: 🤝 2026-03-10 #051 定期ミーティング
+title: 🤝 2026-03-10 定期ミーティング
 ---
 
-# 🤝 2026-03-10 #051 定期ミーティング
+# 🤝 2026-03-10 定期ミーティング
 
-## 実施フェーズ：🎯 企画フェーズ
+## #051 朝の部
 
-### GitHub Project タスク状況
+### 実施フェーズ：🎯 企画フェーズ
 
-- **完了:** 33タスク
-- **未着手:** 0タスク
-- **進行中:** 0タスク
+**GitHub Project タスク状況:**
+- 完了: 33タスク
+- 未着手: 0タスク
+- 進行中: 0タスク
 
 → 全タスク完了のため、企画フェーズを実施
 
@@ -32,25 +33,43 @@ title: 🤝 2026-03-10 #051 定期ミーティング
 - x-quote-explain スキル（完了済み）
 - cron/定期実行（secretary-bot連携）
 
-**サブタスク:**
-- [ ] パイプライン統合スクリプト作成
-- [ ] エラーハンドリング（API制限、生成失敗等）
-- [ ] 投稿キューイング機能
-- [ ] ログ・履歴管理
+**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/15
+
+---
+
+## #052 夜の部
+
+### 実施フェーズ：🎯 企画フェーズ
+
+**GitHub Project タスク状況:**
+- 完了: 30タスク
+- 未着手: 0タスク
+
+→ 全タスク完了のため、前回企画の実装タスクを具体化
+
+---
+
+### 新規タスク：🔄 自動コンテンツ生成パイプライン統合
+
+**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/16
 
 **設定:**
 - Priority: P1
 - Size: M
 - Start Date: 2026-03-10
 - Target Date: 2026-03-12
+- Status: In progress
 
-**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/15
+**成果物:**
+- 統合スクリプト: `scripts/auto_content_pipeline.py`
+- 設定ファイル: `config/pipeline.yaml`
+- ログ機能
 
 ---
 
 ## タグ
 
-#定期ミーティング #企画 #自動化 #HF-Papers #nano-banana-2
+#定期ミーティング #企画 #自動化 #HF-Papers #nano-banana-2 #パイプライン
 
 ---
 
