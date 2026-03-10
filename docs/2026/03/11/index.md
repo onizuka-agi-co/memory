@@ -102,4 +102,49 @@ title: 🤝 2026-03-11 定期ミーティング
 
 ---
 
+## #064 朝の部
+
+### 実施フェーズ：🎯 企画フェーズ
+
+**GitHub Project タスク状況:**
+- 完了: 94タスク
+- 未着手: 0タスク
+- 進行中: 0タスク
+
+→ 全タスク完了のため、企画フェーズを実施
+
+---
+
+### 新規企画：🤖 自動コンテンツ生成パイプライン 定期実行化
+
+**概要:** 毎日自動でHuggingFace Papersのトップ論文を図解投稿するs6サービスを作成
+
+**機能:**
+- 毎日指定時刻に自動実行（毎朝9時）
+- HuggingFace Papers APIでトップ論文を取得
+- nano-banana-2で図解画像を生成
+- X + Discordに投稿
+- ログ保存
+
+**技術要素:**
+- s6サービス（/config/s6-services/auto-content-pipeline/）
+- config.envで設定管理
+- secretary-bot連携
+
+**成果物:**
+- /config/s6-services/auto-content-pipeline/run
+- /config/s6-services/auto-content-pipeline/config.env
+- ログファイル
+
+**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/21
+
+**設定:**
+- Priority: P1
+- Size: M
+- Start Date: 2026-03-11
+- Target Date: 2026-03-13
+- Status: Ready
+
+---
+
 _更新日: 2026-03-11_
