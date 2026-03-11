@@ -304,6 +304,55 @@ uv run skills/x-stream/scripts/x_filtered_stream.py stream
 
 ---
 
+---
+
+## #068 定期ミーティング
+
+### 実施フェーズ：🎯 企画フェーズ
+
+**GitHub Project タスク状況:**
+- 完了: 30タスク
+- 未着手: 0タスク
+- 進行中: 0タスク
+
+→ 全タスク完了のため、企画フェーズを実施
+
+---
+
+### 新規企画：🎋 自動コンテンツ生成パイプライン
+
+**概要:** HuggingFace Papers + nano-banana-2 + X投稿を統合した自動コンテンツ生成パイプライン
+
+**実施内容:**
+- cron/s6サービスで定期実行
+- HF Papers API でトップ論文取得
+- nano-banana-2 で図解画像生成
+- AI で解説文章生成（Web検索で関連情報収集）
+- X（Twitter）に自動投稿
+- Discord に通知
+
+**技術要素:**
+- hf-papers スキル（既存）
+- nano-banana-2 スキル（既存）
+- x-write スキル（既存）
+- s6サービス / cron
+
+**価値:**
+- ONIZUKA AGI Co.のミッション「AGIの知見をほどき、世界に届ける」に直結
+- 最新AGI論文の自動解説・発信
+- 継続的なコンテンツ生成
+
+**Issue:** https://github.com/onizuka-agi-co/skills/issues/26
+
+**GitHub Project 設定:**
+- Priority: P1
+- Size: L
+- Start Date: 2026-03-11
+- Target Date: 2026-03-18
+- Status: Backlog
+
+---
+
 ## タグ
 
 #定期ミーティング #企画 #自動化 #コンテンツ生成 #HuggingFace #s6
