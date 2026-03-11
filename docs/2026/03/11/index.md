@@ -147,4 +147,167 @@ title: 🤝 2026-03-11 定期ミーティング
 
 ---
 
+## #065 朝の部
+
+### 実施フェーズ：🔧 開発フェーズ
+
+**GitHub Project タスク状況:**
+- 完了: 30タスク
+- 未着手: 0タスク
+- 進行中: 0タスク
+
+→ Issue #21 を選択して開発実施
+
+---
+
+### 対象タスク：🤖 自動コンテンツ生成パイプライン 定期実行化
+
+**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/21
+
+**実施内容:**
+
+1. **GitHub Project に追加** ✅
+   - Priority: P1
+   - Size: M
+   - Start Date: 2026-03-11
+   - Target Date: 2026-03-13
+
+2. **s6サービス作成** ✅
+   ```
+   /config/s6-services/auto-content-pipeline/
+   ├── config.env
+   └── run
+   ```
+
+3. **パイプラインテスト** ✅
+   - HuggingFace Papers取得: 成功
+   - 解説テキスト生成: 成功
+   - dry-runモード: 正常動作
+
+4. **GitHub Project ステータス更新** ✅
+   - Status: Done に変更
+
+**成果物:**
+- `/config/s6-services/auto-content-pipeline/run` - s6実行スクリプト
+- `/config/s6-services/auto-content-pipeline/config.env` - 設定ファイル
+
+**注意点:**
+- シンボリックリンク登録にはroot権限が必要
+- 手動実行: `uv run scripts/auto_content_pipeline.py`
+
+---
+
+## #066 定期ミーティング
+
+### 実施フェーズ：🔧 開発フェーズ
+
+**GitHub Project タスク状況:**
+- 完了: 33タスク
+- Backlog: 多数
+- Ready: 10タスク
+
+→ Readyタスクから基盤機能を選択して開発実施
+
+---
+
+### 対象タスク：🐦 X Filtered Stream 完成
+
+**Issue:** (Draft Issue)
+
+**実施内容:**
+
+1. **x_filtered_stream.py 実装** ✅
+   - Bearer Token認証
+   - Filtered Stream API接続
+   - ルール管理（setup, rules, clear, add）
+   - Discord Webhook通知
+   - 自動再接続処理
+   - 環境変数サポート
+
+2. **接続テスト** ✅
+   ```
+   ✅ 接続成功 - 現在のルール: 1件
+   ✅ Webhookテスト成功
+   📋 現在のルール:
+     - [haru_maki_new_posts] from:hAru_mAki_ch -is:retweet -is:reply
+   ```
+
+3. **s6サービス確認** ✅
+   - /config/s6-services/x-stream/ 存在
+   - config.env 設定済み
+   - run スクリプト存在
+
+4. **コミット** ✅
+   - skills リポジトリにコミット
+   - メッセージ: `feat(x-stream): implement X Filtered Stream client script`
+
+5. **GitHub Project ステータス更新** ✅
+   - Status: Done に変更
+
+**成果物:**
+- `skills/x-stream/scripts/x_filtered_stream.py` - ストリーミングクライアント
+
+**使用方法:**
+```bash
+# テスト
+uv run skills/x-stream/scripts/x_filtered_stream.py test
+
+# ルール設定
+uv run skills/x-stream/scripts/x_filtered_stream.py setup
+
+# ストリーム開始
+uv run skills/x-stream/scripts/x_filtered_stream.py stream
+```
+
+---
+
+## #067 定期ミーティング
+
+### 実施フェーズ：🎯 企画フェーズ
+
+**GitHub Project タスク状況:**
+- 完了: 95タスク
+- Backlog: 0タスク
+- Ready: 0タスク
+
+→ 全タスク完了のため、企画フェーズを実施
+
+---
+
+### 新規企画：🎋 自動コンテンツ生成パイプラインの定常運用化
+
+**概要:** HuggingFace Papers + nano-banana-2 で論文図解投稿を自動化する定常運用パイプラインを構築
+
+**背景:**
+- hf-papers スキルで論文取得機能はDone
+- nano-banana-2 スキルで画像生成機能はDone
+- これらを組み合わせた自動投稿パイプラインを定常運用化
+
+**実施内容:**
+- [ ] s6サービス作成（定期的に論文取得・画像生成・投稿）
+- [ ] 投稿スケジュール設定（毎日/毎週）
+- [ ] X/Discordへの自動投稿
+- [ ] エラーハンドリング・ログ
+
+**技術要素:**
+- hf-papers スキル
+- nano-banana-2 スキル
+- x-write スキル
+- s6サービス（FUTODAMA）
+
+**GitHub Project 設定:**
+- Priority: P1
+- Size: M
+- Start Date: 2026-03-11
+- Target Date: 2026-03-13
+- Status: Ready
+
+---
+
+## タグ
+
+#定期ミーティング #企画 #自動化 #コンテンツ生成 #HuggingFace #s6
+
+---
+
 _更新日: 2026-03-11_
