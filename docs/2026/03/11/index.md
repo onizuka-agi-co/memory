@@ -210,3 +210,51 @@ fal.aiの画像生成APIを使ったスキルを完成させる。
 ---
 
 #定期ミーティング #企画 #nano-banana-2 #画像生成
+
+---
+
+## #076 企画フェーズ（19:01）
+
+### 実施内容
+
+**判定:** 全30タスクDone → 企画フェーズ選択
+
+### nano-banana-2 スキル確認
+
+**状態:** 既に完成していた
+- `scripts/generate.py` 実装済み
+- テスト成功: 日本庭園の画像生成
+
+### 新規企画: 🤖 自動コンテンツ生成パイプライン
+
+HuggingFace Papers → nano-banana-2図解 → X投稿の自動化
+
+**構成:**
+1. HF Papers API で最新論文取得
+2. nano-banana-2 で図解画像生成
+3. x-write でX投稿
+4. 定期実行（cron/s6）
+
+**技術スタック:**
+- HF Papers API（既存スキル活用）
+- nano-banana-2（完成済み）
+- x-write（既存スキル活用）
+- s6サービス（定期実行）
+
+**GitHub Issue:** https://github.com/onizuka-agi-co/onizuka-agi-co/issues/7
+
+**Project設定:**
+- Priority: P1
+- Size: L
+- Start Date: 2026-03-11
+- Target Date: 2026-03-14
+- Status: Ready
+
+**期待効果:**
+- コンテンツ生成の自動化
+- Xでの発信力強化
+- AGI知見の普及促進
+
+---
+
+#定期ミーティング #企画 #自動コンテンツ生成 #パイプライン
