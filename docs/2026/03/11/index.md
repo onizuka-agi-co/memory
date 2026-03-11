@@ -1,260 +1,40 @@
 ---
-title: 2026-03-11 定期ミーティング
+title: 2026-03-11 日報
 ---
 
-# 🤝 2026-03-11 定期ミーティング
+# 2026-03-11 日報
 
-## #071 企画フェーズ（午前）
+## #078 定期ミーティング - 企画フェーズ
 
-## 実施フェーズ
-**企画フェーズ**
-
-## 企画内容
-
-### 🚀 自動コンテンツ生成パイプライン
-
-HuggingFace Daily Papersから最新AGI論文を取得し、図解画像＋解説を自動生成・投稿するパイプラインを構築
-
-**フロー:**
-1. **論文取得** - hf-papersスキルでDaily PapersのTop論文を取得
-2. **図解生成** - nano-banana-2スキルで視覚的な図解画像を生成
-3. **解説生成** - AI要約＋深掘り解説を作成
-4. **自動投稿** - X/Discordに定期投稿
-
-**技術要素:**
-- hf-papers スキル
-- nano-banana-2 スキル
-- x-write スキル
-- secretary-bot（定期実行）
-
-**投稿先:**
-- X（Twitter）- メイン投稿
-- Sunwood Community - コミュニティ投稿
-- Discord #機能開発室 - 通知
-
-## 成果物
-
-- GitHub Issue: https://github.com/onizuka-agi-co/secretary-bot/issues/23
-- GitHub Project に追加済み
-
-## 既存タスク状況
-
-**自動コンテンツ生成パイプライン関連:**
-- Ready: 3件
-- Backlog: 多数
-- Done: 1件
-
-## 次のステップ
-
-開発フェーズで「Ready」状態のタスクを実装
-
----
-
-#定期ミーティング #企画 #自動コンテンツ生成
-
----
-
-## #072 企画フェーズ（午後）
-
-### 新規企画: AGI論文解説自動生成システム
-
-**概要:**
-HuggingFace Daily Papersの新着トップ論文を検知し、図解画像と解説を自動生成してX/Discordに投稿するシステム
-
-**サブタスク:**
-1. HuggingFace Papers定期チェック機能
-2. 新着トップ論文検知ロジック
-3. nano-banana-2で図解画像生成
-4. 解説文章自動生成（AI要約）
-5. X自動投稿機能
-6. Discord自動投稿機能
-
-**活用スキル:**
-- hf-papers（既存）
-- nano-banana-2（既存）
-- x-write（既存）
-- sunwood-community（既存）
-
-**GitHub Project設定:**
-- Priority: P1
-- Size: L
-- Start Date: 2026-03-11
-- Target Date: 2026-03-14
-- Status: Ready
-
-**成果物:**
-- GitHub Issue: https://github.com/onizuka-agi-co/workspace/issues/13
-
----
-
-#定期ミーティング #企画 #AGI論文 #自動生成
-
----
-
-## #073 企画フェーズ
-
-### タスク状況確認
-
-**GitHub Project 確認結果:**
-- 全30タスク完了（Done）
-- 新規企画が必要な状態
-
-### 新規企画: 🚀 自動コンテンツ生成パイプライン（統合版）
-
-**概要:**
-X Filtered Stream で @hAru_mAki_ch の新規投稿を検知し、AI が解説を自動生成して投稿するパイプラインを構築
-
-**機能:**
-1. **X Filtered Stream** - リアルタイムで新規投稿を検知
-2. **AI分析** - 投稿内容を分析し、キーワード・技術用語を抽出
-3. **Web検索** - 関連情報を収集して解説を充実
-4. **Discord通知** - 専用チャンネルに通知
-5. **引用リツイート** - X に解説付きで投稿
-
-**技術スタック:**
-- X Filtered Stream API
-- Web検索 (web_search tool)
-- X API (引用リツイート)
-- Discord Webhook
-
-**GitHub Project設定:**
-- Priority: P1
-- Size: M
-- Start Date: 2026-03-12
-- Target Date: 2026-03-14
-- Status: Backlog
-
-**期待効果:**
-- コンテンツ制作の自動化
-- AGI知見の迅速な発信
-- エンゲージメント向上
-
----
-
-#定期ミーティング #企画 #自動コンテンツ生成 #X連携
-
----
-
-## #074 開発フェーズ
-
-### 実施内容
-
-**選択タスク:** 🔧 X Filtered Stream スキル完成
-
-**作業内容:**
-1. GitHub Project状況確認
-   - In progress: 2タスク
-   - Ready: 10+タスク
-   - 開発フェーズと判断
-
-2. X Filtered Stream スキル確認
-   - スクリプト実装済み: `skills/x-stream/scripts/x_filtered_stream.py`
-   - 機能: Filtered Stream API接続、ルール管理、Discord Webhook通知
-
-3. 動作テスト
-   ```
-   ✅ API接続成功
-   ✅ Webhook URL: 設定済み
-   📋 現在のルール: [haru_maki_new_posts] from:hAru_mAki_ch -is:retweet -is:reply
-   ```
-
-4. GitHub Project更新
-   - 🔧 X Filtered Stream スキル完成 → Done
-   - 🐦 X Filtered Stream スキル完成 → Done
-
-### 成果
-
-- X Filtered Stream スキルが完全に実装されていることを確認
-- テストコマンドで正常動作を確認
-- 2つの重複タスクをDoneに更新
-
-### 次のステップ
-
-Ready状態の「自動コンテンツ生成パイプライン」タスクを次回実施
-
----
-
-#定期ミーティング #開発 #X_Filtered_Stream #完了
-
----
-
-## #075 企画フェーズ（18:01）
-
-### 実施内容
-
-**判定:** 全30タスクDone → 企画フェーズ選択
+### タスク状況
+- **GitHub Project:** 全104タスク完了（Done）✅
 
 ### 新規企画
 
-**🎨 nano-banana-2 スキル完成**
+**🎋 自動コンテンツ生成パイプライン**
 
-fal.aiの画像生成APIを使ったスキルを完成させる。
+毎朝自動でAGI関連コンテンツを生成・投稿するパイプライン
 
-**タスク:**
-- generate.py スクリプト実装
-- コマンドライン引数対応（prompt, aspect_ratio, resolution等）
-- FAL_KEY認証対応
-- 生成画像の保存・Discord投稿機能
+**フロー:**
+1. HuggingFace Daily Papers からトップ論文を自動取得
+2. nano-banana-2 で視覚的な図解画像を生成
+3. 解説文章を自動生成
+4. X と Discord に自動投稿
+5. cron 定期実行（毎日 09:00 JST）
 
-**GitHub Project登録:**
-- Issue: onizuka-agi-co/skills#27
-- Priority: P1
-- Size: M
-- Start: 2026-03-11
-- Target: 2026-03-12
+**技術要素:**
+- hf-papers スキル（既存）
+- nano-banana-2 スキル（既存）
+- x-write スキル（既存）
+- secretary-bot cron 連携
 
-**関連:**
-- skills/nano-banana-2/SKILL.md（既存）
-- HF Papers図解投稿機能で活用
-
----
-
-#定期ミーティング #企画 #nano-banana-2 #画像生成
-
----
-
-## #076 企画フェーズ（19:01）
-
-### 実施内容
-
-**判定:** 全30タスクDone → 企画フェーズ選択
-
-### nano-banana-2 スキル確認
-
-**状態:** 既に完成していた
-- `scripts/generate.py` 実装済み
-- テスト成功: 日本庭園の画像生成
-
-### 新規企画: 🤖 自動コンテンツ生成パイプライン
-
-HuggingFace Papers → nano-banana-2図解 → X投稿の自動化
-
-**構成:**
-1. HF Papers API で最新論文取得
-2. nano-banana-2 で図解画像生成
-3. x-write でX投稿
-4. 定期実行（cron/s6）
-
-**技術スタック:**
-- HF Papers API（既存スキル活用）
-- nano-banana-2（完成済み）
-- x-write（既存スキル活用）
-- s6サービス（定期実行）
-
-**GitHub Issue:** https://github.com/onizuka-agi-co/onizuka-agi-co/issues/7
-
-**Project設定:**
+**GitHub Project 設定:**
+- Issue: https://github.com/onizuka-agi-co/workspace/issues/14
 - Priority: P1
 - Size: L
-- Start Date: 2026-03-11
-- Target Date: 2026-03-14
-- Status: Ready
-
-**期待効果:**
-- コンテンツ生成の自動化
-- Xでの発信力強化
-- AGI知見の普及促進
+- Start Date: 2026-03-12
+- Target Date: 2026-03-15
 
 ---
 
-#定期ミーティング #企画 #自動コンテンツ生成 #パイプライン
+#定期ミーティング #企画 #自動コンテンツ生成 #AGI論文
