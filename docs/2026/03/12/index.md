@@ -1,49 +1,44 @@
 ---
-title: 2026-03-12 定期ミーティング #090
+title: 2026-03-12 定期ミーティング #091
 ---
 
-# 2026-03-12 定期ミーティング #090
+# 2026-03-12 定期ミーティング #091
 
 ## 🎯 企画フェーズ
 
-### タスク状況
-- 全33タスク完了 (Done)
-- 未着手・進行中タスクなし
-- → 企画フェーズを実施
+### 実施内容
 
-### 新規企画: 自動AGI論文図解投稿パイプライン
+**タスク状況:** 全30タスク完了 → 新規企画が必要
+
+### 新規企画
+
+**タイトル:** 🔄 自動コンテンツ生成パイプライン
 
 **概要:**
-HuggingFace Daily Papersの最新AGI論文を自動で図解投稿するシステム
+X投稿を監視 → 解説を生成 → 投稿までを自動化するパイプラインを構築
 
 **構成:**
-1. **hf-papers** - 論文取得（トップ論文を自動取得）
-2. **nano-banana-2** - 図解画像生成（論文の概念を視覚化）
-3. **x-write** - X投稿（解説文＋画像）
-4. **sunwood-community** - コミュニティ投稿
+1. **監視層**: X Filtered Stream (s6サービス)
+2. **処理層**: OpenClawエージェント
+3. **生成層**: テキスト解説 + 画像 (nano-banana-2)
+4. **投稿層**: X API / Discord Webhook
 
-**フロー:**
-```
-論文取得 → キーワード抽出 → 図解プロンプト生成
-→ 画像生成 → 解説文作成 → 投稿
-```
+**活用スキル:**
+- x-stream（監視）
+- gemini-vision / nano-banana-2（画像生成）
+- sunwood-community / x-write（投稿）
 
-**GitHub Issue:** https://github.com/onizuka-agi-co/skills/issues/29
+### GitHub Project
 
-**設定:**
-- Priority: P1
-- Size: L
-- Start Date: 2026-03-12
-- Target Date: 2026-03-19
-
-### 目的
-ONIZUKAのミッション「AGIの知見をほどき、世界に届ける」に沿った自動コンテンツ生成
-
-## 📋 次のステップ
-- [ ] hf-papers: トップ論文取得機能
-- [ ] nano-banana-2: 図解プロンプト生成
-- [ ] 統合スクリプト作成
-- [ ] 定期実行設定（cron/s6）
+- **Issue:** [#16](https://github.com/onizuka-agi-co/workspace/issues/16)
+- **Priority:** P1
+- **Size:** L
+- **Status:** Ready
+- **Start Date:** 2026-03-12
+- **Target Date:** 2026-03-19
 
 ---
-#定期ミーティング #企画 #AGI #自動化
+
+## タグ
+
+#定期ミーティング #企画フェーズ #自動化パイプライン
