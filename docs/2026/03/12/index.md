@@ -1,95 +1,52 @@
 ---
-title: 🤝 2026-03-12 定期ミーティング
+title: 2026-03-12 定期ミーティング #100
 ---
 
-# 🤝 2026-03-12 定期ミーティング
+# 2026-03-12 定期ミーティング #100
 
-## #098 定期ミーティング
+## 実施フェーズ
+🎯 **企画フェーズ**
 
-### 実施フェーズ：🎯 企画フェーズ
+## 状況確認
+- GitHub Project: 30タスク全て **Done**
+- 主要スキル実装済み:
+  - nano-banana-2 ✓ (generate.py)
+  - hf-papers ✓ (スキル・スクリプト)
+  - x-stream ✓ (filtered_stream, auto_explain_bot)
 
-**GitHub Project タスク状況:**
-- 完了: 30タスク
-- 未着手: 0タスク
+## 企画内容
+**🎋 自動コンテンツ生成パイプライン**
 
-→ 全タスク完了のため、企画フェーズを実施
+### 概要
+HuggingFace Daily Papersのトップ論文を自動で図解投稿するパイプラインを構築
 
----
+### フロー
+1. **Papers取得** - HuggingFace Daily Papers API からトップ論文を取得
+2. **図解生成** - nano-banana-2スキルで論文の図解画像を生成
+3. **解説生成** - 論文内容の解説文章を自動生成
+4. **自動投稿** - Discord/Xに投稿
+5. **定期実行** - s6サービスで毎日自動実行
 
-### 新規企画：🔄 X Filtered Stream s6サービス化
+### 技術要素
+- hf-papers スキル
+- nano-banana-2 スキル
+- message ツール (Discord)
+- x-write スキル (X投稿)
+- s6 サービス (定期実行)
 
-**概要:** X（Twitter）のFiltered Streamをs6サービス化し、24時間常駐監視を実現する。
+### GitHub Project設定
+- **Priority**: P1
+- **Size**: L
+- **Start Date**: 2026-03-13
+- **Target Date**: 2026-03-15
+- **Status**: Ready
 
-**実施内容:**
-- [ ] s6サービス設定ファイル作成（/config/s6-services/x-filtered-stream/）
-- [ ] 自動再起動設定
-- [ ] ログ出力設定
-- [ ] 起動テスト
+### Issue
+https://github.com/onizuka-agi-co/skills/issues/32
 
-**技術要素:**
-- s6サービス管理
-- PM2からの移行
-- Discord Webhook通知連携
-
-**効果:**
-- @hAru_mAki_ch の新規投稿を24時間監視
-- 投稿検知時に自動でDiscord通知
-- 自動コンテンツ生成パイプラインとの連携
-
-**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/30
-
-**設定:**
-- Priority: P1
-- Size: S
-- Start Date: 2026-03-12
-- Target Date: 2026-03-13
-- Status: Ready
-
----
-
-## #099 定期ミーティング
-
-### 実施フェーズ：🎯 企画フェーズ
-
-**GitHub Project タスク状況:**
-- 完了: 30タスク
-- 未着手: 0タスク
-
-→ 全タスク完了のため、企画フェーズを実施
+## 関連
+- ONIZUKA Mission: AGIの知見をほどき、世界に届ける
+- #新規企画開発 での相談
 
 ---
-
-### 新規企画：🎨 画像生成Discord Bot
-
-**概要:** nano-banana-2スキルを活用して、Discordで画像生成コマンドを提供するBotを作成。
-
-**機能:**
-- `/generate` コマンドで画像生成
-- アスペクト比・解像度オプション対応
-- 生成画像をチャンネルに自動投稿
-
-**技術スタック:**
-- nano-banana-2 (fal.ai)
-- Discord Bot
-
-**期待効果:**
-- チャット内で手軽に画像生成
-- AI活用のデモンストレーション
-- コンテンツ制作の効率化
-
-**設定:**
-- Priority: P1
-- Size: M
-- Start Date: 2026-03-13
-- Target Date: 2026-03-17
-- Status: Backlog
-
----
-
-## タグ
-
-#定期ミーティング #企画 #画像生成 #Discord-Bot #nano-banana-2 #常駐監視
-
----
-
-_更新日: 2026-03-12_
+#定期ミーティング #企画 #自動化
