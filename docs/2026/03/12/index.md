@@ -1,8 +1,8 @@
 ---
-title: 2026-03-12 定期ミーティング #091
+title: 2026-03-12 定期ミーティング #092
 ---
 
-# 2026-03-12 定期ミーティング #091
+# 2026-03-12 定期ミーティング #092
 
 ## 🎯 企画フェーズ
 
@@ -12,33 +12,33 @@ title: 2026-03-12 定期ミーティング #091
 
 ### 新規企画
 
-**タイトル:** 🔄 自動コンテンツ生成パイプライン
+**タイトル:** 🎋 自動コンテンツ生成パイプライン v2
 
 **概要:**
-X投稿を監視 → 解説を生成 → 投稿までを自動化するパイプラインを構築
+HF Papers図解投稿機能を拡張し、完全自動化パイプラインを構築
 
-**構成:**
-1. **監視層**: X Filtered Stream (s6サービス)
-2. **処理層**: OpenClawエージェント
-3. **生成層**: テキスト解説 + 画像 (nano-banana-2)
-4. **投稿層**: X API / Discord Webhook
+**機能:**
+- 定期実行: 毎朝9時自動実行
+- マルチ投稿: X + Discord + コミュニティ同時投稿
+- キャッシュ機能: 重複論文のスキップ
+- エラー通知: 失敗時のDiscord通知
 
-**活用スキル:**
-- x-stream（監視）
-- gemini-vision / nano-banana-2（画像生成）
-- sunwood-community / x-write（投稿）
+**技術要素:**
+- s6サービス化（常駐）
+- cron スケジュール設定
+- 投稿履歴のJSON管理
 
 ### GitHub Project
 
-- **Issue:** [#16](https://github.com/onizuka-agi-co/workspace/issues/16)
+- **Issue:** [#30](https://github.com/onizuka-agi-co/skills/issues/30)
 - **Priority:** P1
-- **Size:** L
+- **Size:** M
 - **Status:** Ready
 - **Start Date:** 2026-03-12
-- **Target Date:** 2026-03-19
+- **Target Date:** 2026-03-14
 
 ---
 
 ## タグ
 
-#定期ミーティング #企画フェーズ #自動化パイプライン
+#定期ミーティング #企画フェーズ #自動化パイプライン #HuggingFace
