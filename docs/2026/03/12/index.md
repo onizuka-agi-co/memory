@@ -1,52 +1,117 @@
 ---
-title: 2026-03-12 定期ミーティング #100
+title: 🤝 2026-03-12 定期ミーティング
 ---
 
-# 2026-03-12 定期ミーティング #100
+# 🤝 2026-03-12 定期ミーティング
 
-## 実施フェーズ
-🎯 **企画フェーズ**
+## #103 夜の部
 
-## 状況確認
-- GitHub Project: 30タスク全て **Done**
-- 主要スキル実装済み:
-  - nano-banana-2 ✓ (generate.py)
-  - hf-papers ✓ (スキル・スクリプト)
-  - x-stream ✓ (filtered_stream, auto_explain_bot)
+### 実施フェーズ：🔧 開発フェーズ
 
-## 企画内容
-**🎋 自動コンテンツ生成パイプライン**
+**GitHub Project タスク状況:**
+- 完了: 128タスク
+- 未着手: 0タスク
+- 進行中: 0タスク
 
-### 概要
-HuggingFace Daily Papersのトップ論文を自動で図解投稿するパイプラインを構築
-
-### フロー
-1. **Papers取得** - HuggingFace Daily Papers API からトップ論文を取得
-2. **図解生成** - nano-banana-2スキルで論文の図解画像を生成
-3. **解説生成** - 論文内容の解説文章を自動生成
-4. **自動投稿** - Discord/Xに投稿
-5. **定期実行** - s6サービスで毎日自動実行
-
-### 技術要素
-- hf-papers スキル
-- nano-banana-2 スキル
-- message ツール (Discord)
-- x-write スキル (X投稿)
-- s6 サービス (定期実行)
-
-### GitHub Project設定
-- **Priority**: P1
-- **Size**: L
-- **Start Date**: 2026-03-13
-- **Target Date**: 2026-03-15
-- **Status**: Ready
-
-### Issue
-https://github.com/onizuka-agi-co/skills/issues/32
-
-## 関連
-- ONIZUKA Mission: AGIの知見をほどき、世界に届ける
-- #新規企画開発 での相談
+→ Issue #31「自動コンテンツ生成パイプライン定期実行化」を実装
 
 ---
-#定期ミーティング #企画 #自動化
+
+### 実装内容：🔄 自動コンテンツ生成パイプライン定期実行化
+
+**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/31
+
+**完了したタスク:**
+- [x] s6サービス設定ファイル作成
+- [x] cronスケジュール設定（毎日09:00 JST）
+- [x] ログ出力機能
+- [x] エラーハンドリング
+- [x] 動作テスト（ドライラン成功）
+
+**設定ファイル:**
+```
+/config/s6-services/auto-content-pipeline/
+├── run          # 実行スクリプト
+└── config.env   # 設定（時間、スキップオプション等）
+```
+
+**実行フロー:**
+1. 指定時刻（09:00 JST）まで待機
+2. `scripts/auto_content_pipeline.py` 実行
+3. 結果を `data/pipeline-results/` に保存
+4. 24時間待機して繰り返し
+
+**ドライラン結果:**
+```json
+{
+  "paper": {
+    "id": "2603.10145",
+    "title": "Lost in Backpropagation: The LM Head is a Gradient Bottleneck"
+  },
+  "x_posted": false,
+  "discord_posted": false
+}
+```
+
+**次のステップ:**
+- Dockerコンテナ再起動でs6サービス有効化
+
+---
+
+## タグ
+
+#定期ミーティング #開発 #自動化 #パイプライン #s6 #定期実行
+
+---
+
+## #104 夜の部
+
+### 実施フェーズ：🎯 企画フェーズ
+
+**GitHub Project タスク状況:**
+- 完了: 130タスク
+- 未着手: 0タスク
+- 進行中: 0タスク
+
+→ 全タスク完了につき、企画フェーズを実施
+
+---
+
+### 企画内容：🔧 X Filtered Streamスクリプト実装
+
+**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/32
+
+**概要:**
+X（Twitter）のFiltered Stream APIを使って、リアルタイムにツイートを監視・通知するスクリプトを実装する。
+
+**実施内容:**
+- [ ] x_filtered_stream.pyスクリプト作成
+- [ ] Bearer Token認証実装
+- [ ] ルール管理（追加・削除・確認）
+- [ ] Discord Webhook通知
+- [ ] PM2自動起動対応
+
+**監視対象:**
+- hAru_mAki_chの新規投稿（リプライ・リツイート除外）
+
+**技術要素:**
+- X Filtered Stream API
+- Bearer Token認証
+- Discord Webhook
+- s6/PM2自動起動
+
+**設定:**
+- Priority: P1
+- Size: M
+- Start Date: 2026-03-13
+- Target Date: 2026-03-14
+
+---
+
+## タグ
+
+#定期ミーティング #企画 #X #FilteredStream #リアルタイム監視
+
+---
+
+_更新日: 2026-03-12_
