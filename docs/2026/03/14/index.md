@@ -4,92 +4,53 @@ title: 🤝 2026-03-14 定期ミーティング
 
 # 🤝 2026-03-14 定期ミーティング
 
-## #130 朝の部
+## #133 朝の部
 
 ### 実施フェーズ：🔧 開発フェーズ
 
 **GitHub Project タスク状況:**
-- 完了: 150タスク
-- 未着手: 0タスク
-- 進行中: 0タスク
-
-→ 昨日の企画フェーズで追加されたタスクを実装
+- Done: 66タスク
+- Ready: 37タスク
+- Backlog: 49タスク
+- In progress: 0タスク
 
 ---
 
-### 開発タスク：🎋 自動コンテンツ生成パイプライン定期実行化
+### 実装タスク：🎋 自動コンテンツ生成パイプラインの定常運用化
 
-**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/48
+**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/44
 
-**実施内容:**
+**完了内容:**
 
-1. **GitHub Projectに追加**
-   - Priority: P1
-   - Size: M
-   - Start Date: 2026-03-14
-   - Target Date: 2026-03-17
-   - Status: Done
+1. ✅ パイプライン動作確認（dry-run）
+   - HF Papers API連携: OK
+   - nano-banana-2画像生成: OK
+   - 解説テキスト生成: OK
 
-2. **secretary-botスケジュールに追加**
-   - 毎日09:00に自動実行
-   - プロンプト: パイプライン実行指示
-   - チャンネル: #機能開発室
+2. ✅ s6サービス設定確認
+   - `/config/s6-services/auto-content-pipeline/run`
+   - `/config/s6-services/auto-content-pipeline/config.env`
+   - 実行時刻: 毎日09:00 JST
+   - ログ: `/config/.local/state/futodama/auto-content-pipeline.log`
 
-3. **パイプライン動作確認**
+3. ✅ テスト実行結果
    ```
-   📄 Paper: SurvHTE-Bench
-   🎨 Image: 生成成功
-   📝 Explanation: 生成成功
+   Paper: RubiCap: Rubric-Guided Reinforcement Learning for Dense Image Captioning
+   Image: https://v3b.fal.media/files/b/0a920995/kqXVHxxgpR31QpIWbR6Y3_KyioABLL.png
    ```
-
-**成果物:**
-- `project/secretary-bot/config/schedule-tasks.yaml` 更新
-- s6サービス設定（再起動後に有効化）
 
 **次のステップ:**
-- Docker再起動でs6サービス有効化
-- 実際のX/Discord投稿テスト
+- Dockerコンテナ再起動でs6サービス自動起動
+- ログで動作確認
+
+**Status:** Done
 
 ---
 
-## #131 夜の部
+## タグ
 
-### 実施フェーズ：🎯 企画フェーズ
-
-**GitHub Project タスク状況:**
-- 完了: 30タスク
-- 未着手: 0タスク
-- 進行中: 0タスク
-
-→ 全タスク完了 → 新規企画を検討
+#定期ミーティング #開発 #パイプライン #s6 #自動化
 
 ---
 
-### 新規企画：自動コンテンツ生成パイプライン定期実行化
-
-**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/49
-
-**概要:**
-完成済みのHF Papers → 図解 → 投稿パイプラインをs6サービスとして毎日09:00自動実行
-
-**GitHub Project設定:**
-- Priority: P1
-- Size: M
-- Start Date: 2026-03-14
-- Target Date: 2026-03-16
-
-**期待効果:**
-- 毎日自動的にAGI論文の図解投稿
-- 手動作業の削減
-- コンテンツ発信の継続性向上
-
----
-
-## 📊 サマリー
-
-| 項目 | 朝の部 | 夜の部 |
-|------|--------|--------|
-| フェーズ | 開発 | 企画 |
-| タスク | パイプライン定期実行化 | 同左（新規Issue追加） |
-| 状態 | Done | Backlog |
-| 次回 | - | 開発フェーズ |
+_更新日: 2026-03-14_
