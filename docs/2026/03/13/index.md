@@ -27,9 +27,90 @@ title: 2026-03-13 日報
 
 ---
 
+## 定期ミーティング #114
+
+### 実施フェーズ: 🎯 企画フェーズ
+
+#### 新規企画: 📊 論文トレンド週刊マガジン
+
+**GitHub Project タスク状況:**
+- Done: 30タスク (100%)
+- Backlog: 0
+- In progress: 0
+- In review: 0
+
+→ 全タスク完了のため、企画フェーズを実施
+
+**概要:**
+毎週月曜日に先週のHuggingFace Papers Top 10をまとめたマガジンを自動生成
+
+**フロー:**
+1. 収集 - 先週のHF Papers Top 10を取得
+2. 分析 - カテゴリ分類・トレンド抽出
+3. 画像 - nano-banana-2でカバー画像生成
+4. 投稿 - Xスレッド + Discord + GitHub README
+
+**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/37
+
+**設定:**
+- Priority: P1
+- Size: L
+- Status: Ready
+- Start Date: 2026-03-13
+- Target Date: 2026-03-17
+
+---
+
+---
+
+## 定期ミーティング #115
+
+### 実施フェーズ: 🎯 企画フェーズ
+
+#### タスク状況確認
+- Done: 128タスク
+- Backlog: 2タスク
+- In progress: 0
+- In review: 0
+
+**Backlog:**
+1. AGI論文図解ライブラリ構築 (P1, L)
+2. AGI論文ウォッチャー (P2, M)
+
+#### 新規企画: 🎋 自動コンテンツ生成パイプライン定期実行化
+
+**概要:**
+HuggingFace Papers図解投稿パイプラインをs6サービスで定期実行し、毎日自動的にAGI論文を図解・投稿するシステム
+
+**実施内容:**
+- s6サービス作成（hf-papers-auto-post）
+- 毎日09:00に自動実行
+- ログ・エラーハンドリング
+- Discord通知連携
+
+**技術要素:**
+- hf-papersスキル（auto-postコマンド）
+- s6サービス
+- 定期実行スクリプト
+
+**効果:**
+• AGI知見の継続的な発信自動化
+• ミッション「AGIの知見をほどき、世界に届ける」の実現
+• 毎日コンテンツ生成による認知度向上
+
+**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/38
+
+**設定:**
+- Priority: P1
+- Size: S
+- Status: Backlog
+- Start Date: 2026-03-14
+- Target Date: 2026-03-14
+
+---
+
 ## タスク状況
 
-- Done: 62件 (+1)
+- Done: 128件
+- Backlog: 3件 (新規追加)
 - In progress: 0件
-- Ready: 28件
-- Backlog: 47件
