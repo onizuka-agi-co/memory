@@ -109,8 +109,62 @@ HuggingFace Papers図解投稿パイプラインをs6サービスで定期実行
 
 ---
 
+## 定期ミーティング #116
+
+### 実施フェーズ: 🎯 企画フェーズ
+
+#### タスク状況確認
+- Done: 29タスク
+- Backlog: 0
+- In progress: 0
+- In review: 0
+
+→ 全タスク完了のため、企画フェーズを実施
+
+#### 新規企画: 🔧 X Filtered Stream 完成と常駐化
+
+**概要:**
+X Filtered Stream スキルを完成させ、リアルタイムツイート監視システムを構築する。
+
+**実装内容:**
+1. **x_filtered_stream.py 実装**
+   - Filtered Stream API接続
+   - ルール管理機能
+   - 自動再接続処理
+
+2. **PM2常駐化**
+   - ensure-x-stream.sh で自動起動
+   - クラッシュ時自動復旧
+
+3. **Discord Webhook統合**
+   - ツイート検知時に通知
+   - Embed形式で表示
+
+4. **テストとドキュメント**
+   - 動作確認
+   - SKILL.md更新
+
+**前提:**
+- Bearer Token: data/x/x-bearer-token.json
+- Webhook URL: data/x/x-discord-webhook.json
+
+**期待効果:**
+- @hAru_mAki_ch の新規投稿をリアルタイム検知
+- 自動引用リツイート解説のトリガー
+
+**Issue:** https://github.com/onizuka-agi-co/workspace/issues/18
+
+**設定:**
+- Priority: P1
+- Size: L
+- Status: Ready
+- Start Date: 2026-03-13
+- Target Date: 2026-03-16
+
+---
+
 ## タスク状況
 
-- Done: 128件
-- Backlog: 3件 (新規追加)
+- Done: 29件
+- Backlog: 1件 (新規追加)
 - In progress: 0件
