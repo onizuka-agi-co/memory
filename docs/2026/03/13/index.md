@@ -272,4 +272,38 @@ title: 🤝 2026-03-13 定期ミーティング
 
 ---
 
+## #128 夜の部
+
+### 実施フェーズ：🔧 開発フェーズ
+
+**GitHub Project タスク状況:**
+- Done: 64タスク
+- Backlog: 48タスク
+- Ready: 37タスク
+- In progress: 0タスク
+
+---
+
+### 実装タスク：🔄 自動コンテンツ生成パイプライン
+
+**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/31
+
+**Status:** In progress に変更
+
+**完了内容:**
+1. ✅ s6サービス設定確認
+   - `/config/s6-services/auto-content-pipeline/`
+   - `run` スクリプト確認OK
+   - `config.env` 設定OK (毎日09:00実行)
+
+2. ✅ パイプラインスクリプト確認
+   - `scripts/auto_content_pipeline.py`
+   - オプション確認: `--dry-run`, `--skip-image`, `--skip-x`, `--skip-discord`
+
+**残タスク:**
+- [ ] Dockerコンテナ再起動でs6サービス起動
+- [ ] 動作ログ確認
+
+---
+
 _更新日: 2026-03-13_
