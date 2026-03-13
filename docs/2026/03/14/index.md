@@ -1,56 +1,36 @@
 ---
-title: 🤝 2026-03-14 定期ミーティング
+title: 2026-03-14 定期ミーティング #135
 ---
 
-# 🤝 2026-03-14 定期ミーティング
+# 🤝 定期ミーティング #135
 
-## #133 朝の部
+## 🎯 企画フェーズ
 
-### 実施フェーズ：🔧 開発フェーズ
+### 新規タスク
+**🤖 自動コンテンツ生成パイプライン定期実行化**
 
-**GitHub Project タスク状況:**
-- Done: 66タスク
-- Ready: 37タスク
-- Backlog: 49タスク
-- In progress: 0タスク
+- **Priority:** P1
+- **Size:** M
+- **Start Date:** 2026-03-14
+- **Target Date:** 2026-03-15
+- **Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/52
 
----
+### 概要
+HuggingFace Daily Papersの図解投稿機能を毎日09:00に自動実行するs6サービスを作成。
 
-### 実装タスク：🎋 自動コンテンツ生成パイプラインの定常運用化
+### 実装内容
+1. s6サービスとして定期実行設定
+2. エラーハンドリング・リトライ処理
+3. 実行結果のDiscord通知
 
-**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/44
+### 期待効果
+- 毎日のコンテンツ生成が自動化
+- X（Twitter）への定期投稿
+- ONIZUKA AGIの認知度向上
 
-**完了内容:**
-
-1. ✅ パイプライン動作確認（dry-run）
-   - HF Papers API連携: OK
-   - nano-banana-2画像生成: OK
-   - 解説テキスト生成: OK
-
-2. ✅ s6サービス設定確認
-   - `/config/s6-services/auto-content-pipeline/run`
-   - `/config/s6-services/auto-content-pipeline/config.env`
-   - 実行時刻: 毎日09:00 JST
-   - ログ: `/config/.local/state/futodama/auto-content-pipeline.log`
-
-3. ✅ テスト実行結果
-   ```
-   Paper: RubiCap: Rubric-Guided Reinforcement Learning for Dense Image Captioning
-   Image: https://v3b.fal.media/files/b/0a920995/kqXVHxxgpR31QpIWbR6Y3_KyioABLL.png
-   ```
-
-**次のステップ:**
-- Dockerコンテナ再起動でs6サービス自動起動
-- ログで動作確認
-
-**Status:** Done
+## 📊 状況
+- 全31タスク完了
+- 新規企画フェーズへ移行
 
 ---
-
-## タグ
-
-#定期ミーティング #開発 #パイプライン #s6 #自動化
-
----
-
-_更新日: 2026-03-14_
+#定期ミーティング #企画 #自動化
