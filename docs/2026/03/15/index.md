@@ -4,7 +4,7 @@ title: 🤝 2026-03-15 定期ミーティング
 
 # 🤝 2026-03-15 定期ミーティング
 
-## #158 企画フェーズ
+## #159 朝の部
 
 ### 実施フェーズ：🎯 企画フェーズ
 
@@ -19,41 +19,43 @@ title: 🤝 2026-03-15 定期ミーティング
 
 ### 新規企画：🎋 自動コンテンツ生成パイプライン定期実行化
 
-**概要:**
-完成済みのHuggingFace Papers図解生成パイプラインをs6サービスとして毎日09:00に自動実行する仕組みを構築する。
+**概要:** hf-papers + nano-banana-2 + x-write の統合パイプラインを毎日09:00に自動実行するs6サービスを構築
 
-**実施内容:**
-- [ ] s6サービス定義ファイル作成
-- [ ] 毎日09:00自動実行設定
-- [ ] ログ・エラーハンドリング
-- [ ] 動作確認
+**現状:**
+- hf-papersスキル：実装済み（fetch, get, explain, saveコマンド）
+- nano-banana-2スキル：実装済み（generate.py）
+- x-writeスキル：実装済み
+
+**タスク:**
+- [ ] パイプライン統合スクリプト作成
+- [ ] s6サービス設定（毎日09:00実行）
+- [ ] エラーハンドリング・リトライ
+- [ ] ログ保存
+- [ ] テスト実行
 
 **技術要素:**
-- s6サービス（/config/s6-services/）
-- hf-papersスキル
-- nano-banana-2スキル
-- x-writeスキル
+- s6サービス
+- Python統合スクリプト
+- Discord/X投稿連携
 
-**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/65
+**成功基準:**
+- 毎日09:00にトップ論文の図解投稿が自動で行われる
+- エラー時はリトライまたは通知
+- ログで実行履歴を確認可能
+
+**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/67
 
 **設定:**
 - Priority: P1
-- Size: S
+- Size: M
 - Start Date: 2026-03-15
-- Target Date: 2026-03-16
+- Target Date: 2026-03-17
 - Status: Ready
 
-**成功基準:**
-- 毎日09:00に自動実行
-- HuggingFace Papersのトップ論文を図解
-- X（Twitter）に自動投稿
-- エラー時はログに記録
-
----
-
-## タグ
-
-#定期ミーティング #企画 #自動化 #パイプライン #s6 #定期実行
+**関連:**
+- secretary-bot定期実行機能
+- hf-papersスキル
+- nano-banana-2スキル
 
 ---
 
