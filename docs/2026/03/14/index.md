@@ -54,4 +54,41 @@ title: 🤝 2026-03-14 定期ミーティング
 
 ---
 
+## #146 夜の部
+
+### 実施フェーズ：🎯 企画フェーズ
+
+**GitHub Project タスク状況:**
+- Done: 30タスク
+- 未着手/進行中/レビュー: 0タスク
+
+→ 全タスク完了のため、企画フェーズを実施
+
+---
+
+### 新規企画：📊 週間まとめレポート自動生成
+
+**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/59
+
+**概要:** 毎週金曜日にmemory/docsから週間サマリーを自動生成し、#機能開発室に投稿する機能
+
+**実施内容:**
+- memory/docsの1週間分の日報を集約
+- GitHub Projectの完了タスクを集計
+- 週間サマリーメッセージを生成
+- secretary-botの定期タスクとして追加（毎週金曜日 21:00）
+
+**技術要素:**
+- Python集約スクリプト（weekly_summary.py）
+- GitHub CLI（gh project item-list）
+- secretary-botの定期タスクYAML
+
+**設定:**
+- Priority: P1
+- Size: M
+- Start Date: 2026-03-14
+- Target Date: 2026-03-21
+
+---
+
 _更新日: 2026-03-14_
