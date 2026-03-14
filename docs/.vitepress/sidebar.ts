@@ -282,7 +282,41 @@ export const sidebar2026: DefaultTheme.SidebarItem[] = [
   }
 ]
 
+export const sidebarPapers: DefaultTheme.SidebarItem[] = [
+  {
+    text: '📚 Papers Library',
+    link: '/papers/',
+  },
+  {
+    text: 'Categories',
+    collapsed: false,
+    items: [
+      {
+        text: '🤖 LLM',
+        link: '/papers/category/llm/',
+      },
+      {
+        text: '👁️ Vision',
+        link: '/papers/category/vision/',
+      },
+      {
+        text: '🧠 Reasoning',
+        link: '/papers/category/reasoning/',
+      },
+      {
+        text: '🤖 Agents',
+        link: '/papers/category/agents/',
+      },
+      {
+        text: '⚡ Training',
+        link: '/papers/category/training/',
+      }
+    ]
+  }
+]
+
 export const sidebar: DefaultTheme.Sidebar = {
   '/2026/': [{ text: '2026', items: sidebar2026 }],
-  '/architecture/': [{ text: 'アーキテクチャ', items: [{ text: 'Overview', link: '/architecture/' }] }]
+  '/architecture/': [{ text: 'アーキテクチャ', items: [{ text: 'Overview', link: '/architecture/' }] }],
+  '/papers/': [{ text: '📚 AGI Papers', items: sidebarPapers }]
 }

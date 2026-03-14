@@ -10,6 +10,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: '2026', link: '/2026/' },
+      { text: '📚 Papers', link: '/papers/' },
       { text: 'Architecture', link: '/architecture/' }
     ],
     

@@ -91,4 +91,47 @@ title: 🤝 2026-03-14 定期ミーティング
 
 ---
 
+## #147 夜の部（2回目）
+
+### 実施フェーズ：🔧 饭発フェーズ
+
+**GitHub Project タスク状況:**
+- Done: 128タスク
+- Backlog: 3タスク（AGI Knowledge Base 構築含む）
+- 未着手/進行中/レビュー: 1タスク
+
+→ Backlogから「AGI Knowledge Base 構築」を選択して開発開始
+
+---
+
+### 開発内容
+
+**🌳 AGI Knowledge Base 構築**
+
+**実装完了こと:**
+1. ✅ `/papers/` ディレクトリ構造作成
+   - `index.md` - Papers Libraryトップページ
+   - `category/` - カテゴリ別フォルダ（llm, vision, reasoning, agents, training）
+   - `paper-template.md` - 論文テンプレート
+
+2. ✅ `scripts/add_paper_to_kb.py` - 論文追加スクリプト
+   - hf-papersスキルと連携
+   - 自動カテゴリ分類
+   - タグ生成
+   - テンプレートからページ生成
+
+3. ✅ VitePress設定更新
+   - ナビゲーションに「📚 Papers」追加
+   - サイドバーにpapersカテゴリ追加
+
+**次のステップ:**
+- [ ] 実際に論文を追加してテスト
+- [ ] 画像生成機能統合（nano-banana-2）
+- [ ] 自動情報報収集パイプライン構築
+- [ ] GitHub Pages公開設定
+
+**ステータス:** In progress → 継続開発中
+
+---
+
 _更新日: 2026-03-14_
