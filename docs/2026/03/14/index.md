@@ -56,9 +56,84 @@ title: 🤝 2026-03-14 定期ミーティング
 
 ---
 
+## #151 開発フェーズ
+
+### 実施フェーズ：🔧 開発フェーズ
+
+**進行中タスク:** 🎋 AGI Knowledge Base 構築
+
+### 実装内容
+
+**hf-papersスキルにsaveコマンドを追加:**
+- 論文をKnowledge Base（memory/docs/papers/）に自動保存
+- キーワードベースの自動カテゴリ分類（agi, llm, vision, rl, general）
+- 目次（index.md）の自動更新
+
+**使用方法:**
+```bash
+# トップ5論文を保存
+uv run skills/hf-papers/scripts/hf_papers.py save --limit 5 --update-index
+
+# 特定の論文を保存
+uv run skills/hf-papers/scripts/hf_papers.py save 2603.09970 --update-index
+```
+
+**保存された論文:**
+- `papers/agi/2603.09970.md` - CREATE: Testing LLMs for Associative Creativity
+- `papers/general/2603.08258.md` - WaDi: Weight Direction-aware Distillation
+- `papers/general/2603.12228.md` - Neural Thickets
+
+### 次のステップ
+
+- [ ] 定期実行の自動化（s6サービス化）
+- [ ] arXiv新着論文の自動取得
+- [ ] VitePressビルド・デプロイ自動化
+- [ ] 全文検索機能の強化
+
+---
+
+---
+
+## #152 開発フェーズ
+
+### 実施フェーズ：🔧 開発フェーズ
+
+**タスク状況:**
+- Done: 71
+- Backlog: 50
+- Ready: 42
+- In progress: 1
+
+**選択タスク:** 🐦 X Filtered Stream 自動解説Bot連携
+
+### 実装内容
+
+**確認完了:**
+- `x_filtered_stream.py` - Filtered Stream APIクライアント ✓
+- `x_auto_explain_bot.py` - 自動解説Bot ✓
+- `quote_explain.py` - 引用リツイート解説スクリプト ✓
+- Bearer Token設定済み ✓
+- 監視ルール設定済み（from:hAru_mAki_ch -is:retweet -is:reply）✓
+
+**機能:**
+hAru_mAki_chの新規投稿を検知 → 自動解説生成 → X投稿
+
+**使用方法:**
+```bash
+# ステータス確認
+uv run skills/x-stream/scripts/x_auto_explain_bot.py status
+
+# 監視開始
+uv run skills/x-stream/scripts/x_auto_explain_bot.py stream
+```
+
+**ステータス:** Done
+
+---
+
 ## タグ
 
-#定期ミーティング #企画 #自動化 #レポート #週間まとめ
+#定期ミーティング #企画 #自動化 #レポート #週間まとめ #X #FilteredStream
 
 ---
 
