@@ -98,9 +98,60 @@ title: 🤝 2026-03-15 定期ミーティング
 
 ---
 
+## #155 開発フェーズ
+
+### 実施フェーズ：🔧 開発フェーズ
+
+**GitHub Project タスク状況:**
+- Done: 72
+- Ready: 43
+- Backlog: 50
+- **In progress: 1** → 🎋 AGI Knowledge Base 構築
+
+---
+
+### 進行中タスク: 🎋 AGI Knowledge Base 構築
+
+**現状確認:**
+- ✅ VitePressサイト完成
+- ✅ GitHub Pages公開: https://onizuka-agi-co.github.io/memory/
+- ✅ ローカル検索機能あり
+- ✅ papers/フォルダ存在（3論文）
+- ✅ hf-papersスキル完成
+- ✅ x-streamスキル完成
+- ✅ auto-content-pipelineサービス稼働（毎日09:00）
+
+**開発内容:**
+
+#### 📄 論文ページ追加スクリプト作成
+
+`scripts/add_paper_to_kb.py`を作成
+
+**機能:**
+- HuggingFace PapersデータをVitePressのpapers/フォルダに追加
+- カテゴリ自動判定（cs.AI → agi, cs.CV → general等）
+- テンプレートベースのページ生成
+- index.md自動更新（論文数・カテゴリ統計）
+
+**使用方法:**
+```bash
+# arXiv IDから追加
+uv run scripts/add_paper_to_kb.py --arxiv-id 2603.09970 --title "Paper Title"
+
+# JSONファイルから追加
+uv run scripts/add_paper_to_kb.py --json paper_data.json
+```
+
+**次のステップ:**
+- auto_content_pipeline.pyに統合
+- 毎日自動的にpapers/フォルダに論文を追加
+- VitePressビルド & GitHub Pagesデプロイ
+
+---
+
 ## タグ
 
-#定期ミーティング #企画 #AGI #KnowledgeBase #自動化 #論文 #hf-papers #週間レポート
+#定期ミーティング #企画 #AGI #KnowledgeBase #自動化 #論文 #hf-papers #週間レポート #開発
 
 ---
 
