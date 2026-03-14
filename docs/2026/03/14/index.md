@@ -1,13 +1,58 @@
 ---
-title: 2026-03-14 定期ミーティング #141
+title: 2026-03-14 定期ミーティング #141-142
 ---
 
-# 2026-03-14 定期ミーティング #141
+# 2026-03-14 定期ミーティング #141-142
 
-## 🎯 実施フェーズ
-**企画フェーズ**
+## 🎯 実施フェーズ（夜）
+**開発フェーズ**
 
 ## 📊 タスク状況
+- Done: 71タスク（+1）
+- Backlog: 50タスク
+- Ready: 37タスク（-1）
+- In progress: 0
+
+## ✅ 完了タスク
+
+### 🎨 nano-banana-2 スキル完成
+
+**実施内容:**
+- generate.pyスクリプトの動作確認
+- テスト画像生成成功
+- アスペクト比・解像度・出力形式指定機能確認
+
+**テスト結果:**
+```
+Generated 1 image(s):
+Image 1:
+  URL: https://v3b.fal.media/files/.../png
+  Saved: temp/nano-banana-test/generated_1.png
+```
+
+**機能:**
+- テキストプロンプトから画像生成
+- アスペクト比: auto, 21:9, 16:9, 3:2, 4:3, 5:4, 1:1, 4:5, 3:4, 2:3, 9:16
+- 解像度: 0.5K, 1K, 2K, 4K
+- 出力形式: jpeg, png, webp
+- ローカル保存機能
+- Web検索統合オプション
+
+**使用方法:**
+```bash
+uv run skills/nano-banana-2/scripts/generate.py \
+  --prompt "A serene mountain landscape" \
+  --aspect-ratio 16:9 \
+  --resolution 2K \
+  --save
+```
+
+---
+
+## 🎯 実施フェーズ（昼）
+**企画フェーズ**
+
+## 📊 タスク状況（昼）
 - Done: 128タスク
 - Backlog: 17タスク
 - Ready: 4タスク
