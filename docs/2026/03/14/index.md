@@ -93,7 +93,7 @@ title: 🤝 2026-03-14 定期ミーティング
 
 ## #147 夜の部（2回目）
 
-### 実施フェーズ：🔧 饭発フェーズ
+### 実施フェーズ：🔧 開発フェーズ
 
 **GitHub Project タスク状況:**
 - Done: 128タスク
@@ -108,7 +108,7 @@ title: 🤝 2026-03-14 定期ミーティング
 
 **🌳 AGI Knowledge Base 構築**
 
-**実装完了こと:**
+**実装完了:**
 1. ✅ `/papers/` ディレクトリ構造作成
    - `index.md` - Papers Libraryトップページ
    - `category/` - カテゴリ別フォルダ（llm, vision, reasoning, agents, training）
@@ -127,12 +127,10 @@ title: 🤝 2026-03-14 定期ミーティング
 **次のステップ:**
 - [ ] 実際に論文を追加してテスト
 - [ ] 画像生成機能統合（nano-banana-2）
-- [ ] 自動情報報収集パイプライン構築
+- [ ] 自動情報収集パイプライン構築
 - [ ] GitHub Pages公開設定
 
 **ステータス:** In progress → 継続開発中
-
----
 
 ---
 
@@ -177,6 +175,49 @@ title: 🤝 2026-03-14 定期ミーティング
 - 毎週自動でレポート投稿
 - タスク数・進捗が正確
 - 読みやすいフォーマット
+
+---
+
+## #149 夜の部
+
+### 実施フェーズ：🎯 企画フェーズ
+
+**GitHub Project タスク状況:**
+- Done: 30タスク
+- 未着手/進行中/レビュー: 0タスク
+
+→ 全タスク完了のため、企画フェーズを実施
+
+---
+
+### 新規企画：🐦 X Filtered Stream 復活
+
+**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/61
+
+**概要:** X（Twitter）のFiltered Stream APIを使ってリアルタイムにツイートを監視・通知するシステムを復活させる
+
+**実施内容:**
+- hAru_mAki_chの新規投稿をリアルタイム検知
+- 自動でDiscord通知
+- sunwood-communityスキルと連携して引用リツイート解説
+
+**技術要素:**
+- skills/x-stream/scripts/x_filtered_stream.py 実装
+- Bearer Token認証（data/x/x-bearer-token.json）
+- PM2による自動起動・監視
+- Discord Webhook統合
+
+**設定:**
+- Priority: P1
+- Size: M
+- Start Date: 2026-03-14
+- Target Date: 2026-03-17
+- Status: Ready
+
+**成功基準:**
+- ツイート検知から5分以内にDiscord通知
+- 自動再接続・復旧機能
+- 24時間安定稼働
 
 ---
 
