@@ -1,53 +1,33 @@
 ---
-title: 📚 AGI Papers Library
+layout: doc
 ---
 
-# 📚 AGI Papers Library
+# 📚 Papers Knowledge Base
 
-AGI関連の最新論文を図解付きで解説・蓄積する知識ベース。
-
-## 概要
-
-ONIZUKA AGI Co. のミッション「AGIの知見をほどき、世界に届ける」を実現するため、HuggingFace Daily PapersやarXivから重要なAGI関連論文を自動選定・図解・解説し、体系的に蓄積する。
-
-## ソース
-
-- [HuggingFace Daily Papers](https://huggingface.co/papers)
-- [arXiv cs.AI](https://arxiv.org/list/cs.AI/recent)
-- [arXiv cs.LG](https://arxiv.org/list/cs.LG/recent)
-- [arXiv cs.CL](https://arxiv.org/list/cs.CL/recent)
+AGI関連論文の図解・解説を蓄積するナレッジベース。
 
 ## カテゴリ
 
-| カテゴリ | 説明 |
-|---------|------|
-| [LLM](./category/llm/) | 大規模言語モデル |
-| [Vision](./category/vision/) | 画像・動画生成 |
-| [Reasoning](./category/reasoning/) | 推論・思考 |
-| [Agents](./category/agents/) | エージェント・自律システム |
-| [Training](./category/training/) | 学習手法・効率化 |
+### AGI
 
-## トピックタグ
+- [CREATE: Testing LLMs for Associative Creativity](/agi/2603.09970)
 
-- `#LLM` - 大規模言語モデル
-- `#Vision` - 画像・動画
-- `#Reasoning` - 推論
-- `#Agents` - エージェント
-- `#Training` - 学習
-- `#Inference` - 推論効率化
-- `#Multimodal` - マルチモーダル
-- `#Safety` - AI安全性
+### GENERAL
+
+- [WaDi: Weight Direction-aware Distillation for One-step Image Synthesis](/general/2603.08258)
+- [Neural Thickets: Diverse Task Experts Are Dense Around Pretrained Weights](/general/2603.12228)
+
+### VISION
+
+- [WaDi: Weight Direction-aware Distillation for One-step Image Synthesis](/vision/2603.08258)
 
 ---
 
-## 最新論文
+## 統計
 
-<!-- 自動生成: papers-list -->
+- 総論文数: 4
+- カテゴリ数: 3
 
 ---
 
-## 関連リンク
-
-- [ONIZUKA AGI Co.](https://github.com/onizuka-agi-co)
-- [Memory](/2026/)
-- [Architecture](/architecture/)
+*このナレッジベースは自動的に更新されます。*
