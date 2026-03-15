@@ -77,4 +77,40 @@ title: 2026-03-16 定期ミーティング
 
 ---
 
+---
+
+## #185 企画フェーズ
+
+### 新規企画: 🔔 タスク期限通知機能
+
+**概要:**
+Target Dateが近づいたタスク（3日前・当日）をDiscordに自動通知する機能
+
+**フロー:**
+1. 毎朝09:00に実行
+2. GitHub ProjectからTarget Dateを確認
+3. 期限3日前・当日のタスクを抽出
+4. Discord #機能開発室 に通知
+
+**技術要素:**
+- GitHub Project API連携
+- secretary-bot定期実行
+- Discord Webhook通知
+
+**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/82
+
+**設定:**
+- Priority: P1
+- Size: M
+- Start Date: 2026-03-16
+- Target Date: 2026-03-19
+- Status: Ready
+
+**成功基準:**
+- 毎朝09:00に自動実行
+- 期限切れタスクを確実に通知
+- 見やすい通知フォーマット
+
+---
+
 #定期ミーティング #企画 #自動化 #プロジェクト管理
