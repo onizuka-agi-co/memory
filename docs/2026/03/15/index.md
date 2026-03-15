@@ -107,9 +107,66 @@ title: 🤝 2026-03-15 定期ミーティング
 
 ---
 
+---
+
+## #165 定期ミーティング
+
+### 実施フェーズ：🎯 企画フェーズ
+
+**GitHub Project タスク状況:**
+- Done: 30タスク（表示分）
+- 未完了: 0タスク
+
+→ 全タスク完了のため、企画フェーズを実施
+
+---
+
+### 新規企画：🎋 週間まとめレポート自動生成
+
+**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/71
+
+**概要:** 毎週日曜21:00に週間レポートを自動生成してDiscordに通知する機能
+
+**通知内容:**
+- 今週完了したタスク一覧（Status: Done）
+- 新規追加された企画・Issue
+- 進行中の案件（Status: In progress）
+- 来週の予定（Target Dateが来週のタスク）
+
+**実装方針:**
+- secretary-botの新機能として追加
+- YAMLスケジュール定義: every: sunday at 21:00
+- GitHub Project APIから情報収集
+- Discord Embed形式で見やすく表示
+- #機能開発室 チャンネルに投稿
+
+**技術要素:**
+- GitHub Project API (gh project item-list)
+- 期間フィルタリング（今週/来週）
+- Discord Embed生成
+- 定期実行（cron/s6）
+
+**設定:**
+- Priority: P1
+- Size: M
+- Start Date: 2026-03-15
+- Target Date: 2026-03-17
+- Status: Backlog
+
+**成功基準:**
+- 毎週日曜21:00に自動投稿
+- タスク一覧が正確
+- Embed形式で見やすい
+
+**関連:**
+- secretary-bot リポジトリ
+- GitHub Project管理
+
+---
+
 ## タグ
 
-#定期ミーティング #企画 #トレンド分析 #可視化 #ダッシュボード #AGI
+#定期ミーティング #企画 #週間レポート #自動化 #secretary-bot
 
 ---
 
