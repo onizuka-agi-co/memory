@@ -164,9 +164,57 @@ title: 🤝 2026-03-15 定期ミーティング
 
 ---
 
+## #166 定期ミーティング
+
+### 実施フェーズ：🎯 企画フェーズ
+
+**GitHub Project タスク状況:**
+- Done: 30タスク
+- 未完了: 0タスク
+
+→ 全タスク完了のため、企画フェーズを実施
+
+---
+
+### 新規企画：🍌 nano-banana-2 スキル完成 - fal.ai画像生成
+
+**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/72
+
+**概要:** fal.aiのnano-banana-2モデルを使ったテキストから画像生成スキルを完成させる
+
+**現状:**
+- SKILL.md作成済み
+- scripts/generate.py 未実装
+- references/api.md 未作成
+
+**タスク:**
+- [ ] scripts/generate.py 実装
+- [ ] API認証設定（FAL_KEY）
+- [ ] テスト実行
+- [ ] ドキュメント整備
+
+**技術要素:**
+- fal.ai client SDK
+- テキストプロンプト → 画像生成
+- パラメータ: aspect_ratio, resolution, num_images
+
+**設定:**
+- Priority: P1
+- Size: M
+- Start Date: 2026-03-15
+- Target Date: 2026-03-17
+- Status: Ready
+
+**成功基準:**
+- テキストから画像が生成できる
+- Discordで画像を表示できる
+- パラメータ調整が可能
+
+---
+
 ## タグ
 
-#定期ミーティング #企画 #週間レポート #自動化 #secretary-bot
+#定期ミーティング #企画 #画像生成 #fal.ai #nano-banana-2
 
 ---
 
