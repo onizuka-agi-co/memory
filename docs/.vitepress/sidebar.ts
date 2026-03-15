@@ -277,39 +277,138 @@ export const sidebar2026: DefaultTheme.SidebarItem[] = [
             link: '/2026/03/03/star-office-ui-guide',
           }
         ]
-      }
-    ]
-  }
-]
-
-export const sidebarPapers: DefaultTheme.SidebarItem[] = [
-  {
-    text: '📚 Papers Library',
-    link: '/papers/',
-  },
-  {
-    text: 'Categories',
-    collapsed: false,
-    items: [
-      {
-        text: '🤖 LLM',
-        link: '/papers/category/llm/',
       },
       {
-        text: '👁️ Vision',
-        link: '/papers/category/vision/',
+        text: '2026-03-04',
+        collapsed: true,
+        items: [
+          {
+            text: 'Overview',
+            link: '/2026/03/04/',
+          },
+          {
+            text: 'Idea Discussion',
+            link: '/2026/03/04/idea-discussion',
+          }
+        ]
       },
       {
-        text: '🧠 Reasoning',
-        link: '/papers/category/reasoning/',
+        text: '2026-03-05',
+        collapsed: true,
+        items: [
+          {
+            text: 'Overview',
+            link: '/2026/03/05/',
+          }
+        ]
       },
       {
-        text: '🤖 Agents',
-        link: '/papers/category/agents/',
+        text: '2026-03-06',
+        collapsed: true,
+        items: [
+          {
+            text: 'Overview',
+            link: '/2026/03/06/',
+          },
+          {
+            text: 'Idea Discussion',
+            link: '/2026/03/06/idea-discussion',
+          }
+        ]
       },
       {
-        text: '⚡ Training',
-        link: '/papers/category/training/',
+        text: '2026-03-07',
+        collapsed: true,
+        items: [
+          {
+            text: 'Overview',
+            link: '/2026/03/07/',
+          },
+          {
+            text: 'Idea Proposal',
+            link: '/2026/03/07/idea-proposal',
+          }
+        ]
+      },
+      {
+        text: '2026-03-08',
+        collapsed: true,
+        items: [
+          {
+            text: 'Overview',
+            link: '/2026/03/08/',
+          }
+        ]
+      },
+      {
+        text: '2026-03-09',
+        collapsed: true,
+        items: [
+          {
+            text: 'Overview',
+            link: '/2026/03/09/',
+          }
+        ]
+      },
+      {
+        text: '2026-03-10',
+        collapsed: true,
+        items: [
+          {
+            text: 'Overview',
+            link: '/2026/03/10/',
+          }
+        ]
+      },
+      {
+        text: '2026-03-11',
+        collapsed: true,
+        items: [
+          {
+            text: 'Overview',
+            link: '/2026/03/11/',
+          }
+        ]
+      },
+      {
+        text: '2026-03-12',
+        collapsed: true,
+        items: [
+          {
+            text: 'Overview',
+            link: '/2026/03/12/',
+          }
+        ]
+      },
+      {
+        text: '2026-03-13',
+        collapsed: true,
+        items: [
+          {
+            text: 'Overview',
+            link: '/2026/03/13/',
+          }
+        ]
+      },
+      {
+        text: '2026-03-14',
+        collapsed: true,
+        items: [
+          {
+            text: 'Overview',
+            link: '/2026/03/14/',
+          }
+        ]
+      },
+      {
+        text: '2026-03-15',
+        collapsed: true,
+        items: [
+          {
+            text: 'Overview',
+            link: '/2026/03/15/',
+          }
+        ]
       }
     ]
   }
@@ -317,6 +416,5 @@ export const sidebarPapers: DefaultTheme.SidebarItem[] = [
 
 export const sidebar: DefaultTheme.Sidebar = {
   '/2026/': [{ text: '2026', items: sidebar2026 }],
-  '/architecture/': [{ text: 'アーキテクチャ', items: [{ text: 'Overview', link: '/architecture/' }] }],
-  '/papers/': [{ text: '📚 AGI Papers', items: sidebarPapers }]
+  '/architecture/': [{ text: 'アーキテクチャ', items: [{ text: 'Overview', link: '/architecture/' }] }]
 }

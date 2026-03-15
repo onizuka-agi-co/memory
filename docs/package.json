@@ -4,9 +4,10 @@
   "type": "module",
   "scripts": {
     "docs:dev": "vitepress dev",
-    "docs:build": "npx ts-node --esm scripts/generate-sidebar.ts && vitepress build",
+    "docs:build": "node scripts/update-papers-index.cjs && npx ts-node --esm scripts/generate-sidebar.ts && vitepress build",
     "docs:preview": "vitepress preview",
-    "gen:sidebar": "npx ts-node --esm scripts/generate-sidebar.ts"
+    "gen:sidebar": "npx ts-node --esm scripts/generate-sidebar.ts",
+    "papers:index": "node scripts/update-papers-index.cjs"
   },
   "devDependencies": {
     "vitepress": "^1.6.4"

@@ -5,6 +5,7 @@ export default defineConfig({
   title: "Memory",
   description: "Daily reports & memory - ONIZUKA AGI",
   base: "/memory/",
+  ignoreDeadLinks: true,
   
   themeConfig: {
     nav: [
