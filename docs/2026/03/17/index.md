@@ -2,36 +2,48 @@
 title: 🤝 2026-03-17 定期ミーティング
 ---
 
-# 🤝 2026-03-17 定期ミーティング #207
+# 🤝 2026-03-17 定期ミーティング
 
-## 実施フェーズ：🎯 企画フェーズ
+## #208 定期ミーティング
+
+### 実施フェーズ：🎯 企画フェーズ
 
 **GitHub Project タスク状況:**
-- 完了: 30タスク
+- 完了: 全30タスク
 - 未着手: 0タスク
 - 進行中: 0タスク
-- レビュー中: 0タスク
 
 → 全タスク完了のため、企画フェーズを実施
 
 ---
 
-## 新規企画：🐦 X自動解説Bot定期実行化（s6サービス化）
+### 新規企画：📊 月末レポート自動生成機能
 
-**概要:** x_auto_explain_bot.pyをs6サービスとして定期実行し、hAru_mAki_chの新規投稿を自動検知→解説生成→引用リツイートまで完全自動化する。
+**概要:** 毎月末に月間活動をまとめたレポートを自動生成する
 
-**実施内容:**
-- [ ] s6サービスディレクトリ作成 (/config/s6-services/x-auto-explain/)
-- [ ] runスクリプト作成
-- [ ] config.env設定
-- [ ] テスト・検証
-- [ ] 自動起動確認
+**機能:**
+1. **月間統計集計**
+   - タスク完了数・達成率
+   - GitHub コミット・PR・Issue統計
+   - Discord活動サマリー
+
+2. **AI分析**
+   - 成長ポイントの抽出
+   - 改善領域の特定
+   - 次月の目標提案
+
+3. **出力形式**
+   - Markdown（VitePress用）
+   - PDF（配布用）
 
 **技術要素:**
-- s6サービス管理
-- X Filtered Stream API
-- x_auto_explain_bot.py
-- x-quote-explainスキル連携
+- s6サービス（月末実行）
+- GitHub API（commits, issues, PRs）
+- Discord履歴取得
+- AI要約（GLM）
+- PDF生成（WeasyPrint等）
+
+**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/93
 
 **設定:**
 - Priority: P1
@@ -41,19 +53,19 @@ title: 🤝 2026-03-17 定期ミーティング
 - Status: Ready
 
 **成功基準:**
-- hAru_mAki_chの新規投稿を自動検知
-- 解説が自動生成される
-- 引用リツイートが自動投稿される
-- s6で自動起動・再起動される
-
-**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/95
+- [ ] 毎月末に自動実行
+- [ ] 月間統計が正確に集計
+- [ ] AI分析が有用
+- [ ] VitePressで自動公開
+- [ ] PDFが生成される
 
 **関連:**
-- skills/x-stream/scripts/x_auto_explain_bot.py
-- skills/x-quote-explain/
+- 週間レポート自動生成
+- 日報自動生成
+- secretary-bot定期実行
 
 ---
 
 ## タグ
 
-#定期ミーティング #企画 #X #自動化 #s6 #secretary-bot
+#定期ミーティング #企画 #月間レポート #s6 #secretary-bot #自動化
