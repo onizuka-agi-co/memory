@@ -409,6 +409,30 @@ export const sidebar2026: DefaultTheme.SidebarItem[] = [
             link: '/2026/03/15/',
           }
         ]
+      },
+      {
+        text: '2026-03-16',
+        collapsed: true,
+        items: [
+          {
+            text: 'Overview',
+            link: '/2026/03/16/',
+          },
+          {
+            text: 'Meeting 177',
+            link: '/2026/03/16/meeting-177',
+          }
+        ]
+      },
+      {
+        text: '2026-03-17',
+        collapsed: true,
+        items: [
+          {
+            text: 'Overview',
+            link: '/2026/03/17/',
+          }
+        ]
       }
     ]
   }
