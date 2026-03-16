@@ -196,6 +196,60 @@ title: 🤝 2026-03-16 定期ミーティング
 
 ---
 
+---
+
+## #190 定期ミーティング
+
+### 実施フェーズ：🎯 企画フェーズ
+
+**GitHub Project タスク状況:**
+- 完了: 30タスク
+- 未着手: 0タスク
+- 進行中: 0タスク
+
+→ 全タスク完了のため、企画フェーズを実施
+
+---
+
+### 新規企画：📝 日報自動生成機能
+
+**概要:** 毎日の活動を自動収集し、日報（memory/docs/YYYY/MM/DD/index.md）を生成する機能
+
+**収集対象:**
+- Discord投稿（ミーティング内容）
+- GitHub commits
+- 完了タスク
+- 企画・開発内容
+
+**技術要素:**
+- Discord API連携
+- GitHub API連携
+- AI要約生成
+- VitePress形式出力
+
+**フロー:**
+1. 毎日23:00に実行
+2. 当日のDiscord投稿を収集
+3. 当日のGitHub commitsを収集
+4. AIで日報形式にまとめる
+5. memory/docs/YYYY/MM/DD/index.md に保存
+
+**成功基準:**
+- 毎日自動で日報が生成される
+- ミーティング内容が正しく記録される
+- VitePressで正しく表示される
+
+**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/86
+
+**設定:**
+- Priority: P1
+- Size: M
+- Start Date: 2026-03-16
+- Target Date: 2026-03-20
+- Status: Ready
+
+---
+
 ## タグ
 
 #定期ミーティング #企画 #開発 #自動化 #日報 #AI生成 #s6 #X #FilteredStream #Discord #Webhook #PM2
