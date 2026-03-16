@@ -4,7 +4,7 @@ title: 🤝 2026-03-17 定期ミーティング
 
 # 🤝 2026-03-17 定期ミーティング
 
-## #202 定期ミーティング
+## #203 朝の部
 
 ### 実施フェーズ：🎯 企画フェーズ
 
@@ -17,55 +17,58 @@ title: 🤝 2026-03-17 定期ミーティング
 
 ---
 
-### 新規企画：📊 月末レポート自動生成機能
+### 新規企画：📰 AGI論文要約配信Bot
 
-**概要:** 毎月末に月間活動をまとめたレポートを自動生成
+**概要:** 毎日最新のAGI関連論文を要約してDiscordに配信するBot
 
-**機能:**
-1. **月間統計集計**
-   - タスク完了数・達成率
-   - GitHub コミット・PR・Issue統計
-   - Discord活動サマリー
+**フロー:**
+1. 毎日09:00に起動
+2. HuggingFace PapersからAGI関連論文を取得
+3. AIで要約・解説を生成
+4. #新規企画開発 に配信
+5. Knowledge Baseに保存
 
-2. **AI分析**
-   - 成長ポイントの抽出
-   - 改善領域の特定
-   - 次月の目標提案
-
-3. **出力形式**
-   - Markdown（VitePress用）
-   - PDF（配布用）
+**価値:**
+- ONIZUKA AGI Co.のミッション「AGIの知見をほどき、世界に届ける」に直結
+- 最新AGI動向の自動キャッチアップ
+- コミュニティへの情報提供
 
 **技術要素:**
-- s6サービス（月末実行）
-- GitHub API（commits, issues, PRs）
-- Discord履歴取得
-- AI要約（GLM）
-- PDF生成（WeasyPrint等）
+- s6サービス管理
+- hf-papersスキル連携
+- AI要約生成（GLM）
+- Discord通知（message tool）
+- Knowledge Base保存
 
-**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/93
+**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/94
 
 **設定:**
 - Priority: P1
 - Size: M
 - Start Date: 2026-03-17
-- Target Date: 2026-03-19
+- Target Date: 2026-03-20
 - Status: Ready
 
+**サブタスク:**
+- [ ] s6サービスディレクトリ作成
+- [ ] 論文取得スクリプト作成
+- [ ] 要約生成機能
+- [ ] Discord通知連携
+- [ ] テスト・検証
+
 **成功基準:**
-- [ ] 毎月末に自動実行
-- [ ] 月間統計が正確に集計
-- [ ] AI分析が有用
-- [ ] VitePressで自動公開
-- [ ] PDFが生成される
+- 毎日09:00に自動実行
+- AGI関連論文が正しく取得される
+- 要約がDiscordに配信される
+- Knowledge Baseに保存される
 
 **関連:**
-- 週間レポート自動生成
-- 日報自動生成
-- secretary-bot定期実行
+- hf-papersスキル
+- auto-content-pipeline
+- secretary-bot定期実行機能
 
 ---
 
 ## タグ
 
-#定期ミーティング #企画 #月末レポート #自動化 #s6 #secretary-bot
+#定期ミーティング #企画 #AGI #論文要約 #自動化 #s6 #secretary-bot
