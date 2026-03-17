@@ -23,6 +23,10 @@ export default defineConfig({
     
     search: {
       provider: 'local'
-    }
+    },
+    
+    head: [
+      ['link', { rel: 'alternate', type: 'application/rss+xml', title: 'RSS Feed', href: '/memory/rss.xml' }]
+    ]
   }
 })

@@ -4,12 +4,13 @@
   "type": "module",
   "scripts": {
     "docs:dev": "vitepress dev",
-    "docs:build": "node scripts/update-papers-index.cjs && npx ts-node --esm scripts/generate-sidebar.ts && vitepress build",
+    "docs:build": "node scripts/update-papers-index.cjs && npx ts-node --esm scripts/generate-sidebar.ts && vitepress build && npx ts-node --esm scripts/generate-rss.ts",
     "docs:preview": "vitepress preview",
     "gen:sidebar": "npx ts-node --esm scripts/generate-sidebar.ts",
     "papers:index": "node scripts/update-papers-index.cjs"
   },
   "devDependencies": {
+    "glob": "^13.0.6",
     "vitepress": "^1.6.4"
   }
 }
