@@ -396,6 +396,113 @@ uv run skills/nano-banana-2/scripts/generate.py \
 
 ---
 
+---
+
+## #219 定期ミーティング
+
+### 実施フェーズ：🎯 企画フェーズ
+
+**GitHub Project タスク状況:**
+- 完了: 218タスク
+- 未着手: 0タスク
+- 進行中: 0タスク
+
+→ 全タスク完了のため、企画フェーズを実施
+
+---
+
+### 新規企画：📊 週間まとめレポート自動生成
+
+**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/100
+
+**概要:**
+毎週日曜日の21:00に、その週の活動をまとめたレポートを自動生成・公開する
+
+**機能:**
+1. **活動集約** - その週のGitHub commits、タスク完了、Discord活動を収集
+2. **AI要約** - 活動内容を要約・分析
+3. **レポート生成** - 週間レポート形式でMarkdown生成
+4. **自動公開** - memory/docs/YYYY/WW/weekly-report.md に保存
+5. **Discord通知** - #機能開発室に週間レポートを投稿
+
+**技術要素:**
+- s6サービス（日曜21:00実行）
+- GitHub API（commits, issues, PRs）
+- Discord履歴取得
+- AI要約（GLM）
+- weekly-report.md テンプレート
+
+**設定:**
+- Priority: P1
+- Size: M
+- Start Date: 2026-03-17
+- Target Date: 2026-03-20
+- Status: Ready
+
+**成功基準:**
+- [ ] 毎週日曜21:00に自動実行
+- [ ] その週の活動が見やすくまとまる
+- [ ] VitePressで自動公開
+- [ ] Discordに通知が届く
+
+---
+
+---
+
+## #220 定期ミーティング
+
+### 実施フェーズ：🎯 企画フェーズ
+
+**GitHub Project タスク状況:**
+- 完了: 220タスク
+- 未着手: 0タスク
+- 進行中: 0タスク
+
+→ 全タスク完了のため、企画フェーズを実施
+
+---
+
+### 新規企画：📰 HF Papers 図解投稿の定期実行化
+
+**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/101
+
+**概要:**
+毎朝09:00にHuggingFace Daily Papersから最新論文を取得し、図解を生成してXとDiscordに投稿する機能
+
+**機能:**
+1. 毎朝09:00に自動実行（s6サービス）
+2. HuggingFace Daily Papers APIから最新論文を取得
+3. AIで論文内容を要約・図解
+4. X（Twitter）に投稿
+5. Discordに通知
+
+**技術要素:**
+- s6サービス（定期実行）
+- HF Papers API
+- nano-banana-2（画像生成）
+- X API（投稿）
+- Discord通知
+
+**既存リソース:**
+- hf-papersスキル（既存）
+- nano-banana-2スキル（既存）
+- x-writeスキル（既存）
+
+**設定:**
+- Priority: P1
+- Size: M
+- Start Date: 2026-03-17
+- Target Date: 2026-03-19
+- Status: Ready
+
+**成功基準:**
+- [ ] 毎朝09:00に自動実行
+- [ ] 最新論文が図解付きで投稿される
+- [ ] XとDiscordの両方に通知
+- [ ] エラー時は再試行またはスキップ
+
+---
+
 ## タグ
 
-#定期ミーティング #企画 #週間レポート #自動生成 #s6サービス #secretary-bot #図解生成 #X投稿 #nano-banana-2 #画像生成 #fal.ai
+#定期ミーティング #企画 #週間レポート #自動生成 #s6サービス #secretary-bot #図解生成 #X投稿 #nano-banana-2 #画像生成 #fal.ai #HF-Papers #定期実行
