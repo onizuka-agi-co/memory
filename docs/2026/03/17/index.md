@@ -127,6 +127,102 @@ uv run skills/x-stream/scripts/x_filtered_stream.py stream
 
 ---
 
+---
+
+## #213 定期ミーティング
+
+### 実施フェーズ：🔧 開発フェーズ
+
+**GitHub Project タスク状況:**
+- 完了: 206タスク
+- In progress: 1タスク → Done
+- Backlog: 120タスク
+
+---
+
+### 完了タスク：🔄 自動コンテンツ生成 定期実行設定
+
+**概要:**
+自動コンテンツ生成パイプラインを毎日08:00に自動実行するようsecretary-botに設定した。
+
+**実装内容:**
+- ✅ `config/tasks/auto-content-pipeline.yaml` 作成
+- ✅ 毎日 08:00 JST 実行設定
+- ✅ エラー通知設定（#機能開発室、Maki宛）
+- ✅ 動作テスト実行
+
+**テスト結果:**
+```
+🔄 Auto Content Pipeline
+📄 Paper: ViFeEdit: A Video-Free Tuner...
+🎨 Image generated: https://v3b.fal.media/files/...
+📚 Saved to Knowledge Base: general/2603.15478.md
+✅ Results saved to logs/pipeline-test.json
+```
+
+**設定:**
+- Priority: P1
+- Size: M
+- Start Date: 2026-03-12
+- Target Date: 2026-03-14
+- Status: Done ✅
+
+**残タスク:**
+- secretary-bot再起動（s6サービス）
+- `/test 自動コンテンツ生成` で動作確認
+
+---
+
+---
+
+## #214 定期ミーティング
+
+### 実施フェーズ：🎯 企画フェーズ
+
+**GitHub Project タスク状況:**
+- 完了: 207タスク
+- 未着手: 0タスク
+- 進行中: 0タスク
+
+---
+
+### 新規企画：🎋 自動コンテンツ生成パイプライン定期実行化
+
+**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/98
+
+**概要:**
+hf-papers + nano-banana-2 + x-write を組み合わせた自動投稿パイプラインをs6サービスとして定期実行する。
+
+**目的:**
+- 毎日の自動コンテンツ生成
+- AGI論文の継続的な発信
+- ONIZUKA AGIミッションの推進
+
+**実施内容:**
+- [ ] s6サービス作成（daily-content-generator）
+- [ ] 毎日09:00に自動実行
+- [ ] hf-papersでトップ論文取得
+- [ ] nano-banana-2で図解画像生成
+- [ ] x-writeでXに投稿
+- [ ] Discord通知（完了報告）
+
+**技術要素:**
+- s6サービス
+- Python スクリプト統合
+- エラーハンドリング・リトライ
+
+**設定:**
+- Priority: P1
+- Size: M
+- Start Date: 2026-03-18
+- Target Date: 2026-03-20
+- Status: Backlog
+
+**開発期間:**
+- 見積もり: 1-2日
+
+---
+
 ## タグ
 
-#定期ミーティング #開発 #X #Filtered-Stream #Discord #リアルタイム監視 #企画 #日報自動生成
+#定期ミーティング #企画 #自動コンテンツ生成 #s6サービス #hf-papers #nano-banana-2 #secretary-bot
