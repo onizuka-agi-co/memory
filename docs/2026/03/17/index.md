@@ -75,6 +75,58 @@ uv run skills/x-stream/scripts/x_filtered_stream.py stream
 
 ---
 
+---
+
+## #212 定期ミーティング
+
+### 実施フェーズ：🎯 企画フェーズ
+
+**GitHub Project タスク状況:**
+- 完了: 全タスク完了
+- In review: 0件
+- Backlog/In progress: 0件
+
+---
+
+### 新規企画：📝 日報自動生成機能
+
+**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/97
+
+**概要:**
+毎日の活動（GitHub Project更新、コミット、Discord議論）を自動で集約し、VitePress形式の日報を生成・公開する。
+
+**目的:**
+- 手動日報作成の負担軽減
+- 活動記録の自動化
+- チーム進捗の可視化
+
+**機能:**
+- GitHub Projectの完了タスク自動取得
+- Gitコミット履歴の集約
+- Discordスレッドの重要議論抽出
+- VitePress形式での自動生成
+
+**技術スタック:**
+- Python（daily-report-generator拡張）
+- GitHub API
+- Discord API
+- VitePress
+
+**受け入れ基準:**
+- [ ] 毎日定時に自動実行される
+- [ ] 完了タスク、コミット、議論が含まれる
+- [ ] VitePress形式で生成される
+- [ ] GitHub Pagesに自動デプロイされる
+
+**設定:**
+- Priority: P1
+- Size: L
+- Start Date: 2026-03-17
+- Target Date: 2026-03-21
+- Status: Backlog
+
+---
+
 ## タグ
 
-#定期ミーティング #開発 #X #Filtered-Stream #Discord #リアルタイム監視
+#定期ミーティング #開発 #X #Filtered-Stream #Discord #リアルタイム監視 #企画 #日報自動生成
