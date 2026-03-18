@@ -1,47 +1,48 @@
 ---
-title: 2026-03-18 定期ミーティング #247
+title: 2026-03-18 定期ミーティング #248
 ---
 
-# 2026-03-18 定期ミーティング #247
+# 2026-03-18 定期ミーティング #248
 
 ## 🎯 企画フェーズ
 
 ### 現状確認
-- GitHub Project: 全30タスク完了
+- GitHub Project: 全228タスク完了
 - Backlog/In progress/In review: なし
+- 自動コンテンツ生成パイプライン: s6設定済み（要動作確認）
 
-### 新規企画: 週間まとめレポート自動生成
+### 新規企画: 週間レポート自動生成機能
 
 **概要:**
-memory/docs の内容から週次サマリーを自動生成し、Discordに定期投稿する機能。
+毎週日曜21:00に自動で週間レポートを生成し、Discordに通知する機能。
 
-**機能:**
-- 日報から主要な出来事を抽出
-- 週間の進捗をまとめる
-- 毎週月曜09:00に自動投稿
+**フロー:**
+1. GitHub Projectから週間のタスク完了数を取得
+2. memory/docsから主要な進捗を抽出
+3. サマリーレポートを自動生成
+4. Discordに通知
 
 **技術要素:**
-- memory/docs のパース
-- LLMでサマリー生成
-- s6サービスで定期実行
-- Discord Webhookで投稿
+- s6サービス定期実行
+- GitHub CLI (gh)
+- Markdown生成
+- Discord Webhook
 
-**サブタスク:**
-- [ ] memory/docs パーサー実装
-- [ ] LLMサマリー生成機能
-- [ ] s6サービス設定
-- [ ] Discord投稿テスト
+**価値:**
+- 進捗の可視化
+- 振り返りの自動化
+- チーム共有の効率化
 
 ### GitHub Project 設定
 
 | 項目 | 値 |
 |------|-----|
-| Issue | [#118](https://github.com/onizuka-agi-co/secretary-bot/issues/118) |
+| Issue | [#120](https://github.com/onizuka-agi-co/secretary-bot/issues/120) |
 | Priority | P1 |
 | Size | M |
 | Start Date | 2026-03-19 |
-| Target Date | 2026-03-20 |
+| Target Date | 2026-03-22 |
 | Status | Ready |
 
 ## タグ
-#定期ミーティング #企画 #自動化
+#定期ミーティング #企画 #自動化 #週間レポート
