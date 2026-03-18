@@ -18,7 +18,12 @@ AGI関連論文の図解・解説を蓄積するナレッジベース。
 - [IndexCache: Accelerating Sparse Attention via Cross-Layer Index Reuse](/general/2603.12201)
 - [ViFeEdit: A Video-Free Tuner of Your Video Diffusion Transformer](/general/2603.15478)
 - [WaDi: Weight Direction-aware Distillation for One-step Image Synthesis](/general/2603.08258)
+- [From Passive Observer to Active Critic: Reinforcement Learning Elicits Process Reasoning for Robotic Manipulation](/general/2603.15600)
 - [Neural Thickets: Diverse Task Experts Are Dense Around Pretrained Weights](/general/2603.12228)
+
+### LLM
+
+- [POLCA: Stochastic Generative Optimization with LLM](/llm/2603.14769)
 
 ### VISION
 
@@ -29,8 +34,8 @@ AGI関連論文の図解・解説を蓄積するナレッジベース。
 
 ## 統計
 
-- 総論文数: 8
-- カテゴリ数: 3
+- 総論文数: 10
+- カテゴリ数: 4
 
 ---
 
