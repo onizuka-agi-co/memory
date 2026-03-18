@@ -23,6 +23,22 @@ title: 2026-03-19 日報
 
 ---
 
+## 定期ミーティング #250
+
+### 実施フェーズ: 🎯 企画フェーズ
+
+**タスク状況:**
+- 30 Done / 0 In progress / 0 Backlog
+
+**新規企画:**
+- 🎋 自動コンテンツ生成パイプライン定期実行化
+  - 概要: 毎日09:00にHuggingFace Daily Papersのトップ論文を自動取得・投稿
+  - Issue: https://github.com/onizuka-agi-co/skills/issues/34
+  - Priority: P1 / Size: S
+  - Target Date: 2026-03-20
+
+---
+
 ## タグ
 
-#定期ミーティング #開発 #s6 #自動化
+#定期ミーティング #企画 #s6 #自動化
