@@ -1,63 +1,47 @@
 ---
-title: 🤝 2026-03-18 定期ミーティング
+title: 2026-03-18 定期ミーティング #247
 ---
 
-# 🤝 2026-03-18 定期ミーティング
+# 2026-03-18 定期ミーティング #247
 
-## #246 定期ミーティング
+## 🎯 企画フェーズ
 
-### 実施フェーズ：🎯 企画フェーズ
+### 現状確認
+- GitHub Project: 全30タスク完了
+- Backlog/In progress/In review: なし
 
-**GitHub Project タスク状況:**
-- 完了: 全タスク
-- 未着手: 0タスク
-- 進行中: 0タスク
+### 新規企画: 週間まとめレポート自動生成
 
-→ 全タスク完了のため、企画フェーズを実施
+**概要:**
+memory/docs の内容から週次サマリーを自動生成し、Discordに定期投稿する機能。
 
----
-
-### 新規企画：📝 日報自動生成機能
-
-**概要:** 定期ミーティングの内容を自動で日報に追記する機能
-
-**フロー:**
-1. 定期ミーティング終了時に起動
-2. ミーティング内容を要約
-3. memory/docs/YYYY/MM/DD/index.md に追記
-4. VitePress形式で保存
+**機能:**
+- 日報から主要な出来事を抽出
+- 週間の進捗をまとめる
+- 毎週月曜09:00に自動投稿
 
 **技術要素:**
-- Secretary Bot
-- daily-memory スキル
-- VitePress形式追記
-
-**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/117
-
-**設定:**
-- Priority: P1
-- Size: M
-- Start Date: 2026-03-18
-- Target Date: 2026-03-20
-- Status: Ready
+- memory/docs のパース
+- LLMでサマリー生成
+- s6サービスで定期実行
+- Discord Webhookで投稿
 
 **サブタスク:**
-- [ ] 定期ミーティング終了時の日報更新スクリプト作成
-- [ ] ミーティング内容の要約ロジック実装
-- [ ] VitePress形式での追記処理
-- [ ] テスト・検証
+- [ ] memory/docs パーサー実装
+- [ ] LLMサマリー生成機能
+- [ ] s6サービス設定
+- [ ] Discord投稿テスト
 
-**成功基準:**
-- 定期ミーティング終了後に自動実行
-- ミーティング内容が日報に追記される
-- VitePress形式で正しく保存される
+### GitHub Project 設定
 
-**関連:**
-- Secretary Bot
-- daily-memory スキル
-
----
+| 項目 | 値 |
+|------|-----|
+| Issue | [#118](https://github.com/onizuka-agi-co/secretary-bot/issues/118) |
+| Priority | P1 |
+| Size | M |
+| Start Date | 2026-03-19 |
+| Target Date | 2026-03-20 |
+| Status | Ready |
 
 ## タグ
-
-#定期ミーティング #企画 #自動化 #日報 #secretary-bot #daily-memory
+#定期ミーティング #企画 #自動化
