@@ -44,4 +44,41 @@ Ready状態のタスク（69件）から次の開発タスクを選択
 
 ---
 
-#定期ミーティング #開発 #X_Filtered_Stream
+## 🎯 定期ミーティング #237 - 企画フェーズ
+
+### タスク状況
+- Done: 27タスク
+- In progress: 0
+- Backlog: 0
+- **→ 全タスク完了**
+
+### 新規企画
+
+**📝 自動日報生成機能**
+
+Secretary Botの拡張として、毎日決まった時間に自動で日報を生成・投稿する機能。
+
+**機能概要:**
+- 毎日23:00に自動実行
+- 1日のタスク完了状況を集計
+- memory/docs/YYYY/MM/DD/index.md に自動生成
+- VitePress形式でフロントマター付き
+- #日報 ハッシュタグ付き
+
+**技術仕様:**
+- s6サービスとして定期実行
+- GitHub Project API から完了タスクを取得
+- テンプレートベースでMarkdown生成
+- git commit & push
+
+**スケジュール:**
+- Priority: P1
+- Size: M
+- Start: 2026-03-18
+- Target: 2026-03-20
+
+**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/111
+
+---
+
+#定期ミーティング #企画 #自動日報生成
