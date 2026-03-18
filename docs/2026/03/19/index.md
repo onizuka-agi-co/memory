@@ -1,56 +1,45 @@
 ---
-title: 🤝 2026-03-19 定期ミーティング
+title: 2026-03-19 定期ミーティング #257
 ---
 
-# 🤝 2026-03-19 定期ミーティング #256
+# 🤝 2026-03-19 定期ミーティング #257
 
-## 🎯 企画フェーズ
+## タスク状況
+- **全タスク完了:** 30タスク
+- **フェーズ:** 企画フェーズ
 
-### 現状確認
-- GitHub Project: 全30タスク完了（表示制限あり、実際は228+）
-- Backlog/In progress/In review: なし
-- Open Issues: 79件（企画済み、実装待ち）
+## 新規企画
 
-### 新規企画: 🐦 X Filtered Stream 自動監視システム完成
+### 🎋 自動コンテンツ生成パイプライン定期実行化
 
 **概要:**
-X（Twitter）のFiltered Stream APIを使って、リアルタイムにツイートを監視・通知するシステムを完成させる。
+完成済みの自動コンテンツ生成パイプライン（hf-papers + nano-banana-2）をs6サービスとして定期実行する。
 
-**現状:**
-- skills/x-stream/SKILL.md のみ存在
-- x_filtered_stream.py スクリプト未実装
-- 設定ファイル（bearer token, webhook）は準備済み
+**背景:**
+- hf-papersスキルでHuggingFace Daily Papersを取得可能
+- nano-banana-2スキルで図解画像を生成可能
+- これらを組み合わせたパイプラインは完成済み
+- 定期実行することで、毎日最新のAI/ML論文を自動発信
 
-**実装内容:**
-- [ ] Filtered Stream クライアントスクリプト実装
-- [ ] Discord Webhook 通知機能
-- [ ] PM2 によるプロセス管理
-- [ ] 自動再起動・監視システム
+**実施内容:**
+- s6サービス設定ファイル作成
+- cron設定（毎日09:00実行）
+- Discord通知機能追加
+- エラーハンドリング
+- ログ出力
 
-**期待される効果:**
-- @hAru_mAki_ch の新規投稿をリアルタイム検知
-- 自動的にDiscordへ通知
-- 解説Botへの連携基盤
+**期待効果:**
+- 毎日自動で最新AI論文の図解投稿
+- ONIZUKA AGI Co.の情報発信自動化
+- AGI知見の継続的な届け
 
-**GitHub Project 設定:**
-
-| 項目 | 値 |
-|------|-----|
-| Issue | [#121](https://github.com/onizuka-agi-co/secretary-bot/issues/121) |
-| Priority | P1 |
-| Size | M |
-| Start Date | 2026-03-19 |
-| Target Date | 2026-03-22 |
-| Status | Ready |
-
-**関連ファイル:**
-- skills/x-stream/scripts/x_filtered_stream.py
-- data/x/x-bearer-token.json
-- data/x/x-discord-webhook.json
-- scripts/ensure-x-stream.sh
+**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/123
+**Priority:** P1
+**Size:** M
+**Start Date:** 2026-03-20
+**Target Date:** 2026-03-21
 
 ---
 
-## タグ
-
-#定期ミーティング #企画 #X #FilteredStream #自動化 #リアルタイム監視
+## 次回予定
+- 自動コンテンツ生成パイプラインのs6サービス実装
