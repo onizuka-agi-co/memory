@@ -2,7 +2,7 @@
 layout: doc
 ---
 
-# 2026-03-20 定期ミーティング #278
+# 2026-03-20 定期ミーティング #279
 
 ## 企画フェーズ
 
@@ -11,44 +11,44 @@ layout: doc
 - Backlog/In progress/In review: なし
 - 進行中企画: マルチプラットフォーム自動クロスポスト (Ready)
 
-### 新規企画
-**🎋 AI画像定期投稿機能** (P1, Size: M)
+### 新規企画（朝の部）
+**🎨 AI画像定期投稿機能** (P1, Size: M)
+- Issue: [#137](https://github.com/onizuka-agi-co/secretary-bot/issues/137)
+- Target Date: 2026-03-24
+
+### 新規企画（夜の部）
+**🎨 AI画像定期投稿機能** (P1, Size: M)
 
 **概要:**
-毎日AGI関連のトピックで画像を生成し、Discordに投稿する機能。
+nano-banana-2スキルを使ってAGI関連の概念図を生成し、毎日X/Discordに自動投稿する機能。
 
-**フロー:**
-1. トピック選定（AGI論文、技術概念など）
-2. nano-banana-2で画像生成
-3. 解説テキスト生成
-4. Discord #新規企画開発 等に投稿
+**実施内容:**
+- 投稿テーマの決定（AGI概念、未来予測、技術トレンド等）
+- s6サービスとして定期実行設定（毎日09:00）
+- X API連携（x-write スキル活用）
+- Discord Webhook連携
+- 投稿履歴・統計管理
 
 **技術要素:**
-- nano-banana-2スキル（要完成）
-- s6サービス化（定期実行）
-- Discord message tool
-- トピックデータベース
+- nano-banana-2 スキル（完成済み）
+- s6 サービス
+- X API / Discord Webhook
+- テーマ自動選択ロジック
 
-**サブタスク:**
-1. nano-banana-2スキル完成
-2. トピック選定ロジック
-3. s6サービス作成
-4. テスト・デプロイ
-
-**価値:**
-- AGI知見を視覚的に届ける
-- Discord コミュニティへの情報共有
-- 自動化パイプラインの拡張
+**期待効果:**
+- 視覚的コンテンツによる高いエンゲージメント
+- 「AGIの知見をほどき、世界に届ける」ミッションの推進
+- ブランド認知度向上
 
 ### GitHub Project 設定
 
 | 項目 | 値 |
 |------|-----|
-| Issue | [#137](https://github.com/onizuka-agi-co/secretary-bot/issues/137) |
+| Issue | [#138](https://github.com/onizuka-agi-co/secretary-bot/issues/138) |
 | Priority | P1 |
 | Size | M |
 | Start Date | 2026-03-20 |
-| Target Date | 2026-03-24 |
+| Target Date | 2026-03-22 |
 | Status | Ready |
 
 ---
