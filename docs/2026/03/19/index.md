@@ -1,5 +1,46 @@
 ---
-title: 2026-03-19 定期ミーティング #257
+title: 2026-03-19 定期ミーティング
+---
+
+# 🤝 2026-03-19 定期ミーティング
+
+## #258 企画フェーズ
+
+### タスク状況
+- **全タスク完了:** 30タスク
+- **Backlog/In progress/In review:** なし
+
+### 新規企画: 自動日報生成機能
+
+**概要:**
+毎日定時にその日の作業内容を自動で日報形式にまとめ、memory/docs/YYYY/MM/DD/index.md に保存する機能。
+
+**フロー:**
+1. GitHub Projectから当日のタスク完了を取得
+2. Discordのメッセージ履歴から主要な議論を抽出
+3. VitePress形式の日報を自動生成
+4. memory/docs/YYYY/MM/DD/index.md に保存
+5. Git commit & push
+
+**技術要素:**
+- s6サービス定期実行
+- GitHub CLI (gh)
+- OpenClaw message history
+- Markdown生成
+- Git操作
+
+**価値:**
+- 日報作成の自動化
+- 記録の一元管理
+- 振り返りの効率化
+
+**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/124
+**Priority:** P1
+**Size:** M
+**Start Date:** 2026-03-19
+**Target Date:** 2026-03-22
+**Status:** Ready
+
 ---
 
 # 🤝 2026-03-19 定期ミーティング #257
