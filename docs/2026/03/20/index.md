@@ -2,49 +2,44 @@
 layout: doc
 ---
 
-# 2026-03-20 定期ミーティング #279
+# 2026-03-20 定期ミーティング #281
 
 ## 企画フェーズ
 
 ### 状況確認
-- GitHub Project: 全30タスク完了
+- GitHub Project: 全255タスク完了
 - Backlog/In progress/In review: なし
-- 進行中企画: マルチプラットフォーム自動クロスポスト (Ready)
+- 企画フェーズを実施
 
-### 新規企画（朝の部）
-**🎨 AI画像定期投稿機能** (P1, Size: M)
-- Issue: [#137](https://github.com/onizuka-agi-co/secretary-bot/issues/137)
-- Target Date: 2026-03-24
-
-### 新規企画（夜の部）
-**🎨 AI画像定期投稿機能** (P1, Size: M)
+### 新規企画
+**📊 週間まとめレポート自動生成** (P1, Size: M)
 
 **概要:**
-nano-banana-2スキルを使ってAGI関連の概念図を生成し、毎日X/Discordに自動投稿する機能。
+毎週日曜日に1週間の活動をまとめてX/Discordに自動投稿する機能。
 
 **実施内容:**
-- 投稿テーマの決定（AGI概念、未来予測、技術トレンド等）
-- s6サービスとして定期実行設定（毎日09:00）
+- GitHub Project APIから完了タスク数を取得
+- 週間サマリーのテンプレート作成
+- s6サービスとして定期実行（毎週日曜21:00）
 - X API連携（x-write スキル活用）
 - Discord Webhook連携
-- 投稿履歴・統計管理
 
-**技術要素:**
-- nano-banana-2 スキル（完成済み）
-- s6 サービス
-- X API / Discord Webhook
-- テーマ自動選択ロジック
+**レポート内容:**
+- 完了タスク数
+- 新規企画数
+- 主な成果
+- 次週の予定
 
 **期待効果:**
-- 視覚的コンテンツによる高いエンゲージメント
-- 「AGIの知見をほどき、世界に届ける」ミッションの推進
-- ブランド認知度向上
+- 定期的な振り返り習慣の定着
+- 進捗の可視化
+- モチベーション向上
 
 ### GitHub Project 設定
 
 | 項目 | 値 |
 |------|-----|
-| Issue | [#138](https://github.com/onizuka-agi-co/secretary-bot/issues/138) |
+| Issue | [#140](https://github.com/onizuka-agi-co/secretary-bot/issues/140) |
 | Priority | P1 |
 | Size | M |
 | Start Date | 2026-03-20 |
@@ -53,44 +48,6 @@ nano-banana-2スキルを使ってAGI関連の概念図を生成し、毎日X/Di
 
 ---
 
-## 企画フェーズ（#280 朝の部）
-
-### 新規企画
-**🐦 X Filtered Stream 完成と自動解説Bot** (P1, Size: M)
-
-**概要:**
-X（Twitter）のFiltered Stream APIを使って、@hAru_mAki_ch の新規投稿をリアルタイム監視し、自動で解説投稿を行う機能。
-
-**実装内容:**
-1. x_filtered_stream.py スクリプト完成
-2. PM2/s6サービス化（自動再起動）
-3. ツイート検知 → Discord通知 → 自動解説フロー
-4. x-quote-explain スキル連携
-
-**技術要素:**
-- X Filtered Stream API
-- PM2/s6 プロセス管理
-- Discord Webhook
-- x-quote-explain スキル
-
-**期待効果:**
-- ミッション「@hAru_mAki_ch の投稿を深掘り・補足解説」の自動化
-- リアルタイム性による高いエンゲージメント
-- 知見の迅速な普及
-
-### GitHub Project 設定
-
-| 項目 | 値 |
-|------|-----|
-| Issue | [#139](https://github.com/onizuka-agi-co/secretary-bot/issues/139) |
-| Priority | P1 |
-| Size | M |
-| Start Date | 2026-03-20 |
-| Target Date | 2026-03-23 |
-| Status | Ready |
-
----
-
 ## タグ
 
-#定期ミーティング #企画 #AI画像 #自動化 #nano-banana-2 #AGI #X_Filtered_Stream
+#定期ミーティング #企画 #週間レポート #自動化 #振り返り
