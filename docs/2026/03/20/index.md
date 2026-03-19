@@ -53,6 +53,44 @@ nano-banana-2スキルを使ってAGI関連の概念図を生成し、毎日X/Di
 
 ---
 
+## 企画フェーズ（#280 朝の部）
+
+### 新規企画
+**🐦 X Filtered Stream 完成と自動解説Bot** (P1, Size: M)
+
+**概要:**
+X（Twitter）のFiltered Stream APIを使って、@hAru_mAki_ch の新規投稿をリアルタイム監視し、自動で解説投稿を行う機能。
+
+**実装内容:**
+1. x_filtered_stream.py スクリプト完成
+2. PM2/s6サービス化（自動再起動）
+3. ツイート検知 → Discord通知 → 自動解説フロー
+4. x-quote-explain スキル連携
+
+**技術要素:**
+- X Filtered Stream API
+- PM2/s6 プロセス管理
+- Discord Webhook
+- x-quote-explain スキル
+
+**期待効果:**
+- ミッション「@hAru_mAki_ch の投稿を深掘り・補足解説」の自動化
+- リアルタイム性による高いエンゲージメント
+- 知見の迅速な普及
+
+### GitHub Project 設定
+
+| 項目 | 値 |
+|------|-----|
+| Issue | [#139](https://github.com/onizuka-agi-co/secretary-bot/issues/139) |
+| Priority | P1 |
+| Size | M |
+| Start Date | 2026-03-20 |
+| Target Date | 2026-03-23 |
+| Status | Ready |
+
+---
+
 ## タグ
 
-#定期ミーティング #企画 #AI画像 #自動化 #nano-banana-2 #AGI
+#定期ミーティング #企画 #AI画像 #自動化 #nano-banana-2 #AGI #X_Filtered_Stream
