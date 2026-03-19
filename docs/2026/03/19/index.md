@@ -1,55 +1,47 @@
 ---
-title: 🤝 2026-03-19 定期ミーティング
+title: 2026-03-19 定期ミーティング #260
 ---
 
-# 🤝 2026-03-19 定期ミーティング
+# 2026-03-19 定期ミーティング #260
 
-## #259 定期ミーティング
+## 🎯 企画フェーズ
 
-### 実施フェーズ：🎯 企画フェーズ
+### 現状確認
+- GitHub Project: 全30タスク完了
+- Backlog/In progress/In review: なし
 
-**GitHub Project タスク状況:**
-- 完了: 全259タスク
-- 未着手: 0タスク
-- 進行中: 0タスク
+### 新規企画: 週間レポート自動生成機能
 
-→ 全タスク完了のため、企画フェーズを実施
+**概要:**
+毎週日曜21:00に自動で週間レポートを生成し、Discordに通知する機能。
 
----
-
-### 新規企画：🐦 X自動解説Botの定期実行化
-
-**概要:** x_auto_explain_bot.py をs6サービス化し、新規ツイートを自動解説投稿する
-
-**実施内容:**
-- [ ] s6サービスディレクトリ作成
-- [ ] 定期実行スクリプト作成
-- [ ] X Filtered Stream連携
-- [ ] Discord通知連携
-- [ ] テスト・検証
+**フロー:**
+1. GitHub Projectから週間のタスク完了数を取得
+2. memory/docsから主要な進捗を抽出
+3. サマリーレポートを自動生成
+4. Discordに通知
 
 **技術要素:**
-- s6サービス管理
-- x_auto_explain_bot.py
-- X Filtered Stream
-- sunwood-communityスキル
+- s6サービス定期実行
+- GitHub CLI (gh)
+- Markdown生成
+- Discord Webhook
 
-**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/125
+**価値:**
+- 進捗の可視化
+- 振り返りの自動化
+- チーム共有の効率化
 
-**設定:**
-- Priority: P1
-- Size: M
-- Start Date: 2026-03-19
-- Target Date: 2026-03-21
-- Status: Ready
+### GitHub Project 設定
 
-**成功基準:**
-- 新規ツイート検知時に自動解説投稿
-- s6サービスとして安定動作
-- Discordに通知
-
----
+| 項目 | 値 |
+|------|-----|
+| Draft Issue ID | PVTI_lADOD7cTBc4BQW8JzgnzV5Q |
+| Priority | P1 |
+| Size | M |
+| Start Date | 2026-03-20 |
+| Target Date | 2026-03-23 |
+| Status | Ready |
 
 ## タグ
-
-#定期ミーティング #企画 #X自動解説 #s6 #secretary-bot #自動化
+#定期ミーティング #企画 #自動化 #週間レポート
