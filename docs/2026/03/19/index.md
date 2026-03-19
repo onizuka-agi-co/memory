@@ -1,47 +1,48 @@
 ---
-title: 2026-03-19 定期ミーティング #260
+title: 2026-03-19 定期ミーティング #261
 ---
 
-# 2026-03-19 定期ミーティング #260
+# 2026-03-19 定期ミーティング #261
 
-## 🎯 企画フェーズ
+## 🔧 開発フェーズ
 
-### 現状確認
-- GitHub Project: 全30タスク完了
+### タスク
+**🎋 週間レポート自動生成機能** (#126)
+- Status: Done
+- Priority: P1 / Size: M
+- 期間: 2026-03-19 ~ 2026-03-22
+
+### 実装内容
+
+#### 1. 週間レポート生成スクリプト
+`scripts/weekly_report.py`
+- GitHub Projectから完了タスクを取得（30件）
+- memory/docsから日報を抽出（4件）
+- Markdown形式でレポート生成
+- Discord Webhookで通知
+
+#### 2. s6サービス設定
+`project/secretary-bot/s6-services/weekly-report/`
+- `config.env`: Webhook URL設定
+- `run`: 毎週日曜21:00自動実行
+- シンボリックリンク: `/config/s6-services/weekly-report`
+
+### テスト結果
+```
+✅ 30件の完了タスクを取得
+✅ 4件の日報を抽出
+✅ Discord送信成功
+```
+
+### コミット
+- `1ca879a` #126 週間レポート自動生成スクリプト追加
+- `3039350` #126 週間レポート自動生成機能のs6サービス設定
+
+---
+
+## 📊 現在の状況
+- 全31タスク完了（+1）
 - Backlog/In progress/In review: なし
 
-### 新規企画: 週間レポート自動生成機能
-
-**概要:**
-毎週日曜21:00に自動で週間レポートを生成し、Discordに通知する機能。
-
-**フロー:**
-1. GitHub Projectから週間のタスク完了数を取得
-2. memory/docsから主要な進捗を抽出
-3. サマリーレポートを自動生成
-4. Discordに通知
-
-**技術要素:**
-- s6サービス定期実行
-- GitHub CLI (gh)
-- Markdown生成
-- Discord Webhook
-
-**価値:**
-- 進捗の可視化
-- 振り返りの自動化
-- チーム共有の効率化
-
-### GitHub Project 設定
-
-| 項目 | 値 |
-|------|-----|
-| Draft Issue ID | PVTI_lADOD7cTBc4BQW8JzgnzV5Q |
-| Priority | P1 |
-| Size | M |
-| Start Date | 2026-03-20 |
-| Target Date | 2026-03-23 |
-| Status | Ready |
-
 ## タグ
-#定期ミーティング #企画 #自動化 #週間レポート
+#定期ミーティング #開発 #自動化 #週間レポート #s6
