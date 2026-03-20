@@ -1,57 +1,51 @@
 ---
-layout: doc
+title: 2026-03-21 定期ミーティング #296
+description: 定期ミーティング 企画フェーズ
 ---
 
-# 2026-03-21 定期ミーティング #276
+# 2026-03-21 定期ミーティング #296
 
-## 企画フェーズ
+## 📊 タスク状況
 
-### 状況確認
-- GitHub Project: 全30タスク完了
-- Backlog/In progress/In review: なし
-- 進行中企画: X自動解説Bot定期実行化 (Ready)
+- **完了:** 270タスク
+- **未着手:** 0タスク
+- **進行中:** 0タスク
 
-### 新規企画
-**🎋 マルチプラットフォーム自動クロスポスト** (P1, Size: M)
+## 🎯 実施フェーズ
+
+**企画フェーズ** - 全タスク完了のため新規企画を立案
+
+## 📋 新規企画
+
+### 🌐 マルチプラットフォーム自動クロスポスト機能
 
 **概要:**
-X自動解説Botの投稿をDiscord・ブログ（GitHub Pages）へ自動的にクロスポストする機能。
+X、Discord、Note、Qiitaなど複数プラットフォームへ同時投稿する機能を構築
 
-**フロー:**
-1. Xで自動解説投稿
-2. 同じ内容をDiscord #新規企画開発 等に自動投稿
-3. 将来的にブログ（memory/docs）にも自動展開
+**背景:**
+ONIZUKA AGI Co.は「AGIの知見をほどき、世界に届ける」ことをミッションとしている。現在、Xへの投稿機能やDiscord通知は実装済みだが、複数プラットフォームへの同時投稿には個別の操作が必要。コンテンツを効率的に多くの人に届けるため、ワンアクションで複数プラットフォームへ投稿できる仕組みが必要。
 
-**技術要素:**
-- X Filtered Stream → 解説生成 → クロスポスト
-- Discord message tool での投稿
-- GitHub Pages への自動反映（VitePress）
-- 投稿履歴の管理（重複防止）
+**機能要件:**
+- プラットフォーム対応: X, Discord, Note, Qiita, Medium（初期はX, Discord, Note）
+- フォーマット自動変換（文字数制限、Markdown対応）
+- 投稿プレビュー機能
+- 投稿スケジュール設定
+- 投稿履歴管理
 
-**価値:**
-- 複数プラットフォームでリーチを最大化
-- Discord コミュニティへの情報共有
-- AGI知見の民主化を加速
-- 将来的なメディア展開の基盤
+**技術スタック:**
+- Python バックエンド
+- 各プラットフォームAPI連携
+- Discord Bot インターフェース
+- データ保存: JSON/SQLite
 
-**サブタスク:**
-1. Discord自動投稿機能
-2. 投稿履歴管理
-3. ブログ自動反映（Phase 2）
+**設定:**
+- Priority: P1
+- Size: L
+- Start Date: 2026-03-21
+- Target Date: 2026-03-28
 
-### GitHub Project 設定
-
-| 項目 | 値 |
-|------|-----|
-| Issue | [#135](https://github.com/onizuka-agi-co/secretary-bot/issues/135) |
-| Priority | P1 |
-| Size | M |
-| Start Date | 2026-03-21 |
-| Target Date | 2026-03-24 |
-| Status | Ready |
+**GitHub Project:** [View Project](https://github.com/orgs/onizuka-agi-co/projects/1)
 
 ---
 
-## タグ
-
-#定期ミーティング #企画 #クロスポスト #自動化 #AGI
+_定期ミーティング #296 - 企画フェーズ完了_
