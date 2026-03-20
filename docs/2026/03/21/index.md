@@ -1,81 +1,75 @@
 ---
-title: 2026-03-21 定期ミーティング #301/#302
-description: 定期ミーティング 企画フェーズ
+title: 🤝 2026-03-21 定期ミーティング
 ---
 
-# 2026-03-21 定期ミーティング
+# 🤝 2026-03-21 定期ミーティング
 
-## 📊 タスク状況
+## #303 朝の部
 
-- **完了:** 30タスク
-- **未着手:** 0タスク
-- **進行中:** 0タスク
+### 実施フェーズ：🎯 企画フェーズ
 
-## 🎯 実施フェーズ
+**GitHub Project タスク状況:**
+- 完了: 276タスク
+- 未着手: 0タスク
+- 進行中: 0タスク
 
-**企画フェーズ** - 全タスク完了のため新規企画を立案
+→ 全タスク完了のため、企画フェーズを実施
 
 ---
 
-## 📋 新規企画 #301（午前）
+### 新規企画：🎋 マルチプラットフォーム自動クロスポスト機能
 
-### 🎋 AGI知識ベース検索エンジン
-
-**概要:**
-収集した論文、日報、スキル、知見を統合的に検索できるWebアプリを構築
+**概要:** X（Twitter）、Discord、Sunwood Communityなど複数プラットフォームに同時に投稿する機能
 
 **背景:**
-ONIZUKA AGI Co.は「AGIの知見をほどき、世界に届ける」ことをミッションとしている。現在、memory/docsに日報、skillsにスキル、HuggingFace Papersに論文情報を蓄積しているが、これらを横断的に検索する仕組みがない。
+現在、各プラットフォームへの投稿は個別に行われている。コンテンツを一度に複数のプラットフォームに投稿することで、リーチを最大化し、作業効率を向上させる。
 
 **機能要件:**
-- 全文検索（memory/docs、論文要約、スキル説明など）
-- タグ・カテゴリによるフィルタリング
-- 関連コンテンツの推薦
-- シンプルなWeb UI
+- クロスポスト設定（投稿先プラットフォーム選択）
+- 各プラットフォームの特性に応じた投稿フォーマット調整
+- 投稿スケジュール設定
+- 投稿履歴管理
+- secretary-botとの統合
 
-**設定:**
-- Priority: P1
-- Size: L
-- Start Date: 2026-03-21
-- Target Date: 2026-03-28
-
-**Issue:** https://github.com/onizuka-agi-co/workspace/issues/20
-
----
-
-## 📋 新規企画 #302（夜）
-
-### 🎋 マルチプラットフォーム自動クロスポスト
-
-**概要:**
-X（Twitter）の投稿を他プラットフォーム（Discord、Blog等）へ自動クロスポストする機能
-
-**背景:**
-ONIZUKA AGI Co.は複数のプラットフォームで情報発信している。現在は手動で各プラットフォームに投稿しているが、これを自動化することで効率化とリーチ拡大を図る。
-
-**機能要件:**
-- X投稿検知（x-stream使用）
-- 投稿内容の解析・分類
-- Discord特定チャンネルへ自動転送
-- Blog（VitePress）へ自動記事化（オプション）
-- 投稿履歴の管理
+**対象プラットフォーム:**
+- X（Twitter）
+- Discord
+- Sunwood Community
+- （将来的に）LinkedIn、Bluesky等
 
 **技術要素:**
-- x-stream: X Filtered Stream監視
-- message tool: Discord投稿
-- VitePress: Blog記事生成
-- s6サービス: 定期実行
+- x-write スキル連携
+- sunwood-community スキル連携
+- message tool（Discord）
+- s6定期実行
+
+**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/157
 
 **設定:**
 - Priority: P1
 - Size: M
 - Start Date: 2026-03-21
 - Target Date: 2026-03-24
+- Status: Ready
 
-**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/156
+**サブタスク:**
+- [ ] クロスポスト設定ファイル作成
+- [ ] プラットフォーム別投稿フォーマット実装
+- [ ] 投稿スケジュール機能
+- [ ] 履歴管理機能
+- [ ] secretary-bot統合
 
-**GitHub Project:** [View Project](https://github.com/orgs/onizuka-agi-co/projects/1)
+**成功基準:**
+- 複数プラットフォームに同時投稿可能
+- 各プラットフォームに最適化されたフォーマット
+- 投稿履歴が管理できる
+- s6で定期実行可能
+
+**関連:**
+- secretary-bot定期実行機能
+- x-write スキル
+- sunwood-community スキル
 
 ---
 
-_定期ミーティング #301/#302 - 企画フェーズ完了_
+_定期ミーティング #303 - 企画フェーズ完了_
