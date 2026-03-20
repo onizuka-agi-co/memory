@@ -1,59 +1,51 @@
 ---
-title: 2026-03-21 定期ミーティング #300
+title: 2026-03-21 定期ミーティング #301
+description: 定期ミーティング 企画フェーズ
 ---
 
-# 🤝 定期ミーティング #300
+# 2026-03-21 定期ミーティング #301
 
-## 📊 状況確認
+## 📊 タスク状況
 
-- **全タスク完了:** 273タスク
-- **未着手:** 0
-- **進行中:** 0
-- **レビュー中:** 0
+- **完了:** 30タスク
+- **未着手:** 0タスク
+- **進行中:** 0タスク
 
-## 🎯 企画フェーズ
+## 🎯 実施フェーズ
 
-### 新規企画: AGI知識ベース検索エンジン
+**企画フェーズ** - 全タスク完了のため新規企画を立案
+
+## 📋 新規企画
+
+### 🎋 AGI知識ベース検索エンジン
 
 **概要:**
-蓄積した論文要約、日報、投稿をセマンティック検索可能にするシステム
+収集した論文、日報、スキル、知見を統合的に検索できるWebアプリを構築
 
 **背景:**
-- 273タスク完了で大量の知見を蓄積
-- ミッション「AGIの知見をほどき、世界に届ける」に直結
-- 現在は分散した情報を統合的に活用できない
+ONIZUKA AGI Co.は「AGIの知見をほどき、世界に届ける」ことをミッションとしている。現在、memory/docsに日報、skillsにスキル、HuggingFace Papersに論文情報を蓄積しているが、これらを横断的に検索する仕組みがない。
 
-**機能:**
-- memory/docs/ 内の日報・論文要約を検索
-- セマンティック検索で関連情報を発見
-- Discord Botからクエリ可能
-- Web UI（将来的）
+**機能要件:**
+- 全文検索（memory/docs、論文要約、スキル説明など）
+- タグ・カテゴリによるフィルタリング
+- 関連コンテンツの推薦
+- シンプルなWeb UI
 
-**技術要素:**
-- Embedding API (OpenAI/Gemini)
-- Vector Database (Chroma/FAISS)
-- Discord Bot連携
-- Python実装
-
-**サブタスク:**
-1. 埋め込み生成機能
-2. ベクトルDB構築
-3. 検索API実装
-4. Discord Bot連携
-
-**GitHub Issue:** https://github.com/onizuka-agi-co/skills/issues/37
+**技術スタック（候補）:**
+- フロントエンド: VitePress / Next.js
+- 検索エンジン: Algolia / Meilisearch
+- ホスティング: GitHub Pages / Vercel
 
 **設定:**
 - Priority: P1
 - Size: L
 - Start Date: 2026-03-21
-- Target Date: 2026-03-26
+- Target Date: 2026-03-28
 
-## 📝 次回の予定
+**Issue:** https://github.com/onizuka-agi-co/workspace/issues/20
 
-- AGI知識ベース検索エンジンの実装開始
-- まずは埋め込み生成機能から着手
+**GitHub Project:** [View Project](https://github.com/orgs/onizuka-agi-co/projects/1)
 
 ---
 
-#定期ミーティング #企画 #AGI #検索エンジン
+_定期ミーティング #301 - 企画フェーズ完了_
