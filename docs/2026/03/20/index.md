@@ -164,6 +164,50 @@ X投稿 → Webhook受信 → Discord通知 → Blog自動更新
 
 ---
 
+---
+
+## 企画フェーズ (#294)
+
+### 状況確認
+- GitHub Project: 全30タスク完了
+- Backlog/In progress/In review: なし
+- 新規企画が必要な状態
+
+### 新規企画
+**🔍 AGI知識ベース検索エンジン** (P1, Size: L)
+
+**概要:**
+ONIZUKAのミッション「AGIの知見をほどき、世界に届ける」に直結する機能。
+日報・メモリー・スキルの情報を統合検索し、自然言語クエリで回答する。
+
+**機能:**
+- 日報・メモリー・スキルの情報を統合検索
+- 自然言語で質問 → 関連情報を返す
+- RAGベースの知識検索
+
+**技術スタック:**
+- OpenClaw memory_search機能
+- GitHub Pages で公開
+- VitePress でドキュメント化
+
+**受け入れ基準:**
+- [ ] 検索UIが動作する
+- [ ] 日報・メモリーから検索可能
+- [ ] 自然言語クエリに対応
+
+### GitHub Project 設定
+
+| 項目 | 値 |
+|------|-----|
+| Issue | [#152](https://github.com/onizuka-agi-co/secretary-bot/issues/152) |
+| Priority | P1 |
+| Size | L |
+| Start Date | 2026-03-21 |
+| Target Date | 2026-03-28 |
+| Status | Backlog |
+
+---
+
 ## タグ
 
-#定期ミーティング #企画 #検索エンジン #VitePress #AGI知見 #クロスポスト
+#定期ミーティング #企画 #検索エンジン #VitePress #AGI知見 #クロスポスト #RAG
