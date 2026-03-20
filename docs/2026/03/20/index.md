@@ -38,7 +38,7 @@ memory/docsに蓄積されたAGI関連知見をWeb UIで検索・活用できる
 
 | 項目 | 値 |
 |------|-----|
-| Issue | [#148](https://github.com/onizuka-agi-co/secretary-bot/issues/148) |
+| Issue | [#149](https://github.com/onizuka-agi-co/secretary-bot/issues/149) |
 | Priority | P1 |
 | Size | M |
 | Start Date | 2026-03-20 |
