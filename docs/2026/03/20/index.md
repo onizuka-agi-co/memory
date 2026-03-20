@@ -2,7 +2,7 @@
 layout: doc
 ---
 
-# 2026-03-20 定期ミーティング #289 / #290
+# 2026-03-20 定期ミーティング #289 / #290 / #291
 
 ## 企画フェーズ (#289)
 
@@ -71,6 +71,47 @@ memory/docsに蓄積されたAGI関連知見をWeb UIで検索・活用できる
 
 ### 判定
 両タスクとも問題なし → **Done** に移動
+
+---
+
+## 企画フェーズ (#291)
+
+### 状況確認
+- GitHub Project: 全30タスク完了
+- Backlog/In progress/In review: なし
+- 新規企画が必要な状態
+
+### 新規企画
+**🎋 AGI知識ベース検索エンジン**
+
+**概要:**
+memory/docs/ に蓄積されたAGI知見を検索・活用するためのエンジン
+
+**価値:**
+- ONIZUKAミッション「AGIの知見をほどき、世界に届ける」の実現
+- 蓄積した知見を誰でも検索・活用可能に
+
+**実施内容:**
+- [ ] VitePressの全文検索機能を実装
+- [ ] タグ・カテゴリでのフィルタリング
+- [ ] キーワード・トピックでの検索
+- [ ] 関連ドキュメントの推薦機能
+
+**技術要素:**
+- VitePress + flexsearch / algolia
+- memory/docs/ のインデックス化
+- Web UI / CLI での検索
+
+### GitHub Project 設定
+
+| 項目 | 値 |
+|------|-----|
+| Item ID | PVTI_lADOD7cTBc4BQW8Jzgn6U3s |
+| Priority | P1 |
+| Size | L |
+| Start Date | 2026-03-20 |
+| Target Date | 2026-03-23 |
+| Status | Backlog |
 
 ---
 
