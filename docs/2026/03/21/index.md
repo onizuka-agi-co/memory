@@ -1,13 +1,13 @@
 ---
-title: 2026-03-21 定期ミーティング #307
+title: 2026-03-21 定期ミーティング #308
 description: 定期ミーティング 企画フェーズ
 ---
 
-# 2026-03-21 定期ミーティング #307
+# 2026-03-21 定期ミーティング #308
 
 ## 📊 タスク状況
 
-- **完了:** 280タスク
+- **完了:** 30タスク
 - **未着手:** 0タスク
 - **進行中:** 0タスク
 
@@ -17,39 +17,43 @@ description: 定期ミーティング 企画フェーズ
 
 ## 📋 新規企画
 
-### 🎋 マルチプラットフォーム自動クロスポスト機能
+### 🎋 週間まとめレポート自動生成
 
 **概要:**
-1つのコンテンツ（論文解説、日報、スキル説明等）を複数のプラットフォームに自動投稿する機能
-
-**背景:**
-ONIZUKA AGI Co.は「AGIの知見をほどき、世界に届ける」ことをミッションとしている。現在、各プラットフォームへの投稿は手動で行っているが、効率的に知見を届けるためには自動化が必要。
+毎週日曜日に今週の活動をまとめたレポートを自動生成する機能。
 
 **機能要件:**
-- **対応プラットフォーム**: X、Discord、GitHub Pages（blog）
-- **フォーマット自動変換**:
-  - X用: 280文字以内 + 画像 + リンク
-  - Discord用: カード形式（embed）
-  - Blog用: Markdown詳細版
-- **投稿スケジュール設定**: 即時 / 定期 / 指定日時
-- **投稿履歴管理**: 投稿済みコンテンツの追跡
+- 完了タスク一覧
+- 日報から主要トピックを抽出
+- 投稿したコンテンツのまとめ
+- GitHub Project進捗
+- 次週の予定
 
-**技術スタック（候補）:**
-- X: x-write スキル活用
-- Discord: message tool 活用
-- Blog: VitePress / GitHub Pages
-- スケジューリング: secretary-bot / s6
+**出力先:**
+- memory/docs/YYYY/MM/week-XX.md
+- Discord #機能開発室 に通知
 
-**設定:**
-- Priority: P1
-- Size: L
-- Start Date: 2026-03-21
-- Target Date: 2026-03-28
+**技術要素:**
+- GitHub Project API でタスク取得
+- memory/docs から情報抽出
+- テンプレートベース生成
+- s6サービスで定期実行（毎週日曜 21:00）
 
-**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/161
+**価値:**
+- 活動の可視化と振り返り
+- ONIZUKA AGI Co.の活動記録
+- 継続的な改善サイクル
 
-**GitHub Project:** [View Project](https://github.com/orgs/onizuka-agi-co/projects/1)
+**GitHub Project 設定:**
+
+| 項目 | 値 |
+|------|-----|
+| Issue | [#162](https://github.com/onizuka-agi-co/secretary-bot/issues/162) |
+| Priority | P1 |
+| Size | M |
+| Start Date | 2026-03-21 |
+| Target Date | 2026-03-24 |
 
 ---
 
-#定期ミーティング #企画フェーズ #マルチプラットフォーム #自動投稿
+_定期ミーティング #308 - 企画フェーズ完了_
