@@ -1,45 +1,55 @@
 ---
-title: 2026-03-21 定期ミーティング #306
+title: 2026-03-21 定期ミーティング #307
+description: 定期ミーティング 企画フェーズ
 ---
 
-# 🤝 定期ミーティング #306
+# 2026-03-21 定期ミーティング #307
 
-## 📊 状況確認
+## 📊 タスク状況
 
-- **全タスク完了** → 企画フェーズへ移行
-- GitHub Project: 全30タスクDone
+- **完了:** 280タスク
+- **未着手:** 0タスク
+- **進行中:** 0タスク
 
-## 🎯 企画フェーズ
+## 🎯 実施フェーズ
 
-### 新規企画：AGI論文自動要約Bot
+**企画フェーズ** - 全タスク完了のため新規企画を立案
+
+## 📋 新規企画
+
+### 🎋 マルチプラットフォーム自動クロスポスト機能
 
 **概要:**
-arXiv/HuggingFace Papersから最新AGI論文を自動検出し、要約＋図解を生成してX/Discordに投稿するBot
+1つのコンテンツ（論文解説、日報、スキル説明等）を複数のプラットフォームに自動投稿する機能
 
-**機能:**
-- arXiv AGI論文の自動検出（カテゴリ: cs.AI, cs.LG, cs.CL）
-- 要約＋図解の自動生成（nano-banana-2使用）
-- X/Discordへの自動投稿
-- ハッシュタグ付きで検索可能（#AGI #論文 #要約）
+**背景:**
+ONIZUKA AGI Co.は「AGIの知見をほどき、世界に届ける」ことをミッションとしている。現在、各プラットフォームへの投稿は手動で行っているが、効率的に知見を届けるためには自動化が必要。
 
-**技術要素:**
-- arXiv API（論文取得）
-- nano-banana-2スキル（図解生成）
-- x-writeスキル（X投稿）
-- message tool（Discord投稿）
-- s6サービス（定期実行）
+**機能要件:**
+- **対応プラットフォーム**: X、Discord、GitHub Pages（blog）
+- **フォーマット自動変換**:
+  - X用: 280文字以内 + 画像 + リンク
+  - Discord用: カード形式（embed）
+  - Blog用: Markdown詳細版
+- **投稿スケジュール設定**: 即時 / 定期 / 指定日時
+- **投稿履歴管理**: 投稿済みコンテンツの追跡
+
+**技術スタック（候補）:**
+- X: x-write スキル活用
+- Discord: message tool 活用
+- Blog: VitePress / GitHub Pages
+- スケジューリング: secretary-bot / s6
 
 **設定:**
 - Priority: P1
-- Size: M
+- Size: L
 - Start Date: 2026-03-21
-- Target Date: 2026-03-23
-- Issue: https://github.com/onizuka-agi-co/secretary-bot/issues/160
+- Target Date: 2026-03-28
 
-## 📝 次回予定
+**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/161
 
-- AGI論文自動要約Botの実装開始
+**GitHub Project:** [View Project](https://github.com/orgs/onizuka-agi-co/projects/1)
 
 ---
 
-#定期ミーティング #企画フェーズ #AGI #論文要約 #Bot
+#定期ミーティング #企画フェーズ #マルチプラットフォーム #自動投稿
