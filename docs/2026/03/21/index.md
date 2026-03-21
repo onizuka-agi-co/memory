@@ -63,8 +63,41 @@ description: 定期ミーティング 企画フェーズ
 
 ---
 
-_定期ミーティング #314 - 企画フェーズ完了_
+## 🌙 夜の部 - AI研究論文ナレッジグラフ企画
+
+### 🎋 AI研究論文ナレッジグラフ構築
+
+**概要:**
+HuggingFace/arXivから論文を自動収集し、引用関係やトピック関連を可視化するナレッジグラフを構築。
+
+**実施内容:**
+- 論文収集パイプライン（HF Papers API / arXiv API）
+- 論文メタデータ抽出（タイトル、要約、著者、引用）
+- ナレッジグラフ構築（Neo4j / NetworkX）
+- 可視化UI（Webインターフェース）
+- 検索・探索機能
+
+**技術要素:**
+- Python（収集・処理）
+- Neo4j または NetworkX（グラフDB）
+- VitePress または React（UI）
+- 定期実行（s6サービス）
+
+**目的:**
+ONIZUKA AGI Co.のミッション「AGIの知見をほどき、世界に届ける」に貢献
+
+**設定:**
+- Priority: P1
+- Size: L
+- Start Date: 2026-03-22
+- Target Date: 2026-03-28
+
+**GitHub Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/167
+
+---
+
+_定期ミーティング #314 - 企画フェーズ完了（夜の部）_
 
 ## タグ
 
-#定期ミーティング #企画 #AGI #論文 #Podcast #音声 #TTS
+#定期ミーティング #企画 #AGI #論文 #Podcast #音声 #TTS #ナレッジグラフ
