@@ -1,75 +1,45 @@
 ---
-title: 🤝 2026-03-21 定期ミーティング
+title: 2026-03-21 定期ミーティング #306
 ---
 
-# 🤝 2026-03-21 定期ミーティング
+# 🤝 定期ミーティング #306
 
-## #303 朝の部
+## 📊 状況確認
 
-### 実施フェーズ：🎯 企画フェーズ
+- **全タスク完了** → 企画フェーズへ移行
+- GitHub Project: 全30タスクDone
 
-**GitHub Project タスク状況:**
-- 完了: 276タスク
-- 未着手: 0タスク
-- 進行中: 0タスク
+## 🎯 企画フェーズ
 
-→ 全タスク完了のため、企画フェーズを実施
+### 新規企画：AGI論文自動要約Bot
 
----
+**概要:**
+arXiv/HuggingFace Papersから最新AGI論文を自動検出し、要約＋図解を生成してX/Discordに投稿するBot
 
-### 新規企画：🎋 マルチプラットフォーム自動クロスポスト機能
-
-**概要:** X（Twitter）、Discord、Sunwood Communityなど複数プラットフォームに同時に投稿する機能
-
-**背景:**
-現在、各プラットフォームへの投稿は個別に行われている。コンテンツを一度に複数のプラットフォームに投稿することで、リーチを最大化し、作業効率を向上させる。
-
-**機能要件:**
-- クロスポスト設定（投稿先プラットフォーム選択）
-- 各プラットフォームの特性に応じた投稿フォーマット調整
-- 投稿スケジュール設定
-- 投稿履歴管理
-- secretary-botとの統合
-
-**対象プラットフォーム:**
-- X（Twitter）
-- Discord
-- Sunwood Community
-- （将来的に）LinkedIn、Bluesky等
+**機能:**
+- arXiv AGI論文の自動検出（カテゴリ: cs.AI, cs.LG, cs.CL）
+- 要約＋図解の自動生成（nano-banana-2使用）
+- X/Discordへの自動投稿
+- ハッシュタグ付きで検索可能（#AGI #論文 #要約）
 
 **技術要素:**
-- x-write スキル連携
-- sunwood-community スキル連携
-- message tool（Discord）
-- s6定期実行
-
-**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/157
+- arXiv API（論文取得）
+- nano-banana-2スキル（図解生成）
+- x-writeスキル（X投稿）
+- message tool（Discord投稿）
+- s6サービス（定期実行）
 
 **設定:**
 - Priority: P1
 - Size: M
 - Start Date: 2026-03-21
-- Target Date: 2026-03-24
-- Status: Ready
+- Target Date: 2026-03-23
+- Issue: https://github.com/onizuka-agi-co/secretary-bot/issues/160
 
-**サブタスク:**
-- [ ] クロスポスト設定ファイル作成
-- [ ] プラットフォーム別投稿フォーマット実装
-- [ ] 投稿スケジュール機能
-- [ ] 履歴管理機能
-- [ ] secretary-bot統合
+## 📝 次回予定
 
-**成功基準:**
-- 複数プラットフォームに同時投稿可能
-- 各プラットフォームに最適化されたフォーマット
-- 投稿履歴が管理できる
-- s6で定期実行可能
-
-**関連:**
-- secretary-bot定期実行機能
-- x-write スキル
-- sunwood-community スキル
+- AGI論文自動要約Botの実装開始
 
 ---
 
-_定期ミーティング #303 - 企画フェーズ完了_
+#定期ミーティング #企画フェーズ #AGI #論文要約 #Bot
