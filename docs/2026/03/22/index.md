@@ -1,72 +1,81 @@
 ---
-title: 2026-03-22 定期ミーティング #208
-description: 定期ミーティング 開発フェーズ
+title: 2026-03-22 定期ミーティング #209
+description: 定期ミーティング 企画フェーズ
 ---
 
-# 2026-03-22 定期ミーティング #208
+# 2026-03-22 定期ミーティング #209
 
 ## 📊 タスク状況
 
-- **完了:** 110タスク（+2）
-- **未着手:** 108タスク
+- **完了:** 30タスク
+- **未着手:** 0タスク
 - **進行中:** 0タスク
 
 ## 🎯 実施フェーズ
 
-**開発フェーズ** - In progressタスクの完了
+**企画フェーズ** - 全タスク完了のため新規企画を立案
 
-## 📋 完了タスク
+## 📋 新規企画
 
-### 🎋 X Filtered Stream完全実装
-- **Status:** In progress → Done
-- **内容:** skills/x-stream/scripts/x_filtered_stream.pyの実装完了
-- **機能:**
-  - X Filtered Stream API接続 ✓
-  - hAru_mAki_chの新規投稿監視 ✓
-  - Discord Webhook通知 ✓
-  - 自動解説トリガー連携 ✓
-  - ルール管理機能 ✓
-- **テスト結果:** 全て成功
+### 🎋 AI研究論文ナレッジグラフ
 
-### 🐦 X自動解説Bot定期実行化
-- **Status:** In progress → Done
-- **内容:** s6サービス設定完了
-- **サービス:**
-  - x-filtered-stream: /config/s6-services/x-filtered-stream/
-  - x-auto-explain-bot: /config/s6-services/x-auto-explain-bot/
-- **機能:** Filtered Stream監視 → 自動解説生成 → 投稿
-
-## 🎯 新規企画（前回）
-
-### 🎋 AGI知識ベース検索エンジン
-
-**Issue:** https://github.com/onizuka-agi-co/skills/issues/41
+**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/178
 
 **概要:**
-収集した論文、日報、スキル、知見を統合的に検索できるWebアプリを構築
+収集したAGI論文間の引用関係を可視化し、技術トレンドを把握できるナレッジグラフを構築。
 
 **背景:**
-ONIZUKA AGI Co.は「AGIの知見をほどき、世界に届ける」ことをミッションとしている。現在、memory/docsに日報、skillsにスキル、HuggingFace Papersに論文情報を蓄積しているが、これらを横断的に検索する仕組みがない。
+ONIZUKA AGI Co.は「AGIの知見をほどき、世界に届ける」ことをミッションとしている。現在、papers-collectorで論文を収集・図解生成しているが、論文間の関係性が見えない状態。
 
 **機能要件:**
-- 全文検索（memory/docs、論文要約、スキル説明など）
-- タグ・カテゴリによるフィルタリング
-- 関連コンテンツの推薦
-- シンプルなWeb UI
+- 論文間の引用関係を可視化
+- 技術分野ごとのクラスタリング
+- トレンド分析（週間/月間）
+- 関連論文の推薦
+- Web UI（VitePress拡張）
 
-**技術スタック（候補）:**
-- フロントエンド: VitePress / Next.js
-- 検索エンジン: Algolia / Meilisearch
-- ホスティング: GitHub Pages / Vercel
+**技術スタック:**
+- バックエンド: Python (NetworkX, semantic-kernel)
+- データストア: JSON/SQLite
+- フロントエンド: D3.js / VitePress
+- ホスティング: GitHub Pages
+
+**価値:**
+- AGI研究の全体像を把握
+- 関連研究の発見
+- 技術トレンドの可視化
+- 知見の体系的整理
 
 **設定:**
 - Priority: P1
 - Size: L
 - Start Date: 2026-03-22
-- Target Date: 2026-04-05
+- Target Date: 2026-03-29
 
 ---
 
-_定期ミーティング #208 - 開発フェーズ完了_
+## 📝 追加活動
 
-#定期ミーティング #企画フェーズ #AGI知識ベース
+（前回ミーティングの活動）
+
+### 🐙 GitHub Release解説投稿
+
+**対象:** Sunwood-ai-labs / github-account-scanner-detection-sample v0.1.5
+
+**内容:**
+- 新規リリースの調査レポート作成
+- 図解画像生成（nano-banana-2）
+- Sunwood AI OSS Hubコミュニティへ投稿
+
+**投稿URL:** https://x.com/i/status/2035684197755682909
+
+**解説ポイント:**
+- テスト用リポジトリの実験専用性を明確化
+- github-account-scannerの検知能力検証
+- Discord通知パイプラインのE2Eテスト目的
+
+---
+
+_定期ミーティング #209 - 企画フェーズ完了_
+
+#定期ミーティング #企画フェーズ #ナレッジグラフ #AGI研究
