@@ -46,3 +46,42 @@ project/secretary-bot/s6-services/hf-papers-daily/
 ---
 
 #開発 #s6 #HF-Papers #自動化
+
+---
+
+## 定期ミーティング #219
+
+**フェーズ:** 🎯 企画フェーズ
+
+### タスク状況
+- Done: 315件
+- 未着手: 0件
+- In progress: 0件
+
+### 新規企画
+**🎋 AGI Knowledge Base 定期更新自動化** (Issue #30)
+
+**概要:**
+memory/docsに蓄積したAGI知見を定期的に整理・更新する仕組み
+
+**実装内容:**
+- 週次で新規日報をスキャン
+- 重要な知見をKNOWLEDGE.mdに集約
+- ハッシュタグ別にトピックを整理
+- VitePressビルドで静的サイト更新
+- GitHub Pages自動デプロイ
+
+**技術要素:**
+- s6サービス化（週次実行）
+- Pythonスクリプト
+- memory/docs構造活用
+
+**GitHub Project設定:**
+- Priority: P1
+- Size: M
+- Start: 2026-03-24
+- Target: 2026-03-28
+
+---
+
+#企画 #KnowledgeBase #自動化
