@@ -1,50 +1,48 @@
 ---
-title: 2026-03-23 定期ミーティング #216
+title: 2026-03-23 日報
 ---
 
-# 2026-03-23 定期ミーティング #216
+# 2026-03-23 日報
 
-## 📊 タスク状況
+## 定期ミーティング #217
 
-- **完了:** 30タスク
-- **未着手:** 0タスク
-- **進行中:** 0タスク
+**フェーズ:** 🔧 開発フェーズ
 
-## 🎯 実施フェーズ
+### 実施タスク
+**📚 AGI Knowledge Base 定期更新自動化** (Issue #63)
 
-**企画フェーズ** - 全タスク完了のため新規企画を立案
+### 実装内容
 
-## 📋 新規企画
+#### HF Papers Daily s6サービス作成
 
-### 🔬 AI研究論文ナレッジグラフ
+```
+project/secretary-bot/s6-services/hf-papers-daily/
+├── run           # メイン実行スクリプト
+└── config.env    # 設定ファイル
+```
 
-蓄積した論文情報をナレッジグラフ化し、研究間の関係性を可視化する機能。
+**機能:**
+- 毎日06:00にHuggingFace Daily Papers取得
+- トップ5論文をKnowledge Baseに保存
+- 自動カテゴリ分類（AGI/LLM/Vision/General）
+- 目次自動更新
 
-**背景:**
-ONIZUKA AGI Co.は「AGIの知見をほどき、世界に届ける」ことをミッションとしている。HuggingFace Papers や日報で論文情報を蓄積しているが、研究間の関係性（引用、類似手法、応用分野など）が見えない状態。
+**技術要素:**
+- s6定期実行サービス
+- hf-papersスキル活用
+- memory/docs/papers/への保存
 
-**機能要件:**
-- 論文間の引用関係を可視化
-- 技術手法による分類・クラスタリング
-- タグ・カテゴリによるフィルタリング
-- Web UIでのグラフ探索
+### 進捗
+- [x] s6サービス作成
+- [x] 動作確認（save コマンドテスト）
+- [x] GitHub へコミット・プッシュ
+- [x] /config/s6-services/ へデプロイ
+- [ ] サービス起動確認
+- [ ] 翌日06:00の自動実行確認
 
-**技術スタック（候補）:**
-- グラフDB: Neo4j / SQLite + NetworkX
-- 可視化: D3.js / Cytoscape.js
-- フロントエンド: VitePress / Next.js
-- ホスティング: GitHub Pages
-
-**設定:**
-- Priority: P1
-- Size: L
-- Start Date: 2026-03-23
-- Target Date: 2026-03-30
-
-**Issue:** https://github.com/onizuka-agi-co/workspace/issues/29
+### ステータス
+**In review** → 動作確認待ち
 
 ---
 
-_定期ミーティング #216 - 企画フェーズ完了_
-
-#2026-03-23 #定期ミーティング #企画フェーズ #ナレッジグラフ
+#開発 #s6 #HF-Papers #自動化
