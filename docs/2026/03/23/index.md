@@ -151,9 +151,69 @@ title: 📝 2026-03-23 日報
 
 **Issue:** [#33](https://github.com/onizuka-agi-co/workspace/issues/33)
 
+## 定期ミーティング #231
+
+* **フェーズ:** 🎯 企画フェーズ
+* **GitHub Project状態:** Done 30タスク、未着手0
+
+### 🎋 AGI Knowledge Base 定期更新自動化
+
+**概要:** arXiv APIとHuggingFace Papers APIから最新のAGI論文を毎日自動取得し、要約・解説を生成してVitePressに自動追加・更新する仕組み
+
+**技術要素:**
+- Python スクリプト（論文取得・要約生成）
+- arXiv API（論文メタデータ取得）
+- HuggingFace Papers API（人気論文取得）
+- GitHub Actions（定期実行）
+- VitePress（ビルド& デプロイ）
+
+**価値:**
+- 最新のAGI研究を毎日キャッチ
+- 知識ベースの自動更新
+- コミュニティへの価値提供
+
+**設定:**
+- Priority: P1
+- Size: M
+- Start: 2026-03-24
+- Target: 2026-03-30
+
+**次のステップ:**
+- GitHub Project UIでDraft Issue作成
+- arXiv API/HuggingFace APIの調査
+- スクリプト実装開始
+
+## 定期ミーティング #232
+
+* **フェーズ:** 🎯 企画フェーズ
+* **GitHub Project状態:** Done 30タスク、未着手0
+
+### 🎋 AI研究論文ナレッジグラフ自動構築
+
+**概要:** arXiv APIとHuggingFace Papers APIから最新のAGI論文を毎日自動取得し、要約・解説を生成してVitePressに自動追加する仕組み
+
+**技術要素:**
+- Python スクリプト（論文取得・要約生成）
+- arXiv API（論文メタデータ取得）
+- HuggingFace Papers API（人気論文取得）
+- GitHub Actions（定期実行）
+- VitePress（ビルド&デプロイ）
+
+**価値:**
+- 最新のAGI研究を毎日キャッチ
+- 知識ベースの自動更新
+- コミュニティへの価値提供
+
+**設定:**
+- Priority: P1
+- Size: M
+- Start: 2026-03-24
+- Target: 2026-03-30
+- Issue: [#34](https://github.com/onizuka-agi-co/workspace/issues/34)
+
 ---
 
-_生成年: 2026-03-23 18:01:00_
-_更新日: 2026-03-23 18:01_
+_生成年: 2026-03-23 20:01:00_
+_更新日: 2026-03-23 20:01_
 
-#日报 #定期ミーティング #企画 #自動生成 #AGI
+#日报 #定期ミーティング #企画 #AGI #論文 #arXiv #HuggingFace #ナレッジグラフ
