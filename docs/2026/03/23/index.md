@@ -217,3 +217,36 @@ _生成年: 2026-03-23 20:01:00_
 _更新日: 2026-03-23 20:01_
 
 #日报 #定期ミーティング #企画 #AGI #論文 #arXiv #HuggingFace #ナレッジグラフ
+
+---
+
+## 定期ミーティング #233
+
+* **フェーズ:** 🎯 企画フェーズ
+* **GitHub Project状態:** Done 51, Backlog 6, In progress 0, In review 0
+
+### 🎋 AI研究論文ナレッジグラフ構築
+
+**Issue:** https://github.com/onizuka-agi-co/workspace/issues/35
+
+**概要:**
+arXiv APIとHuggingFace Papers APIから最新のAGI論文を毎日自動取得し、要約・解説を生成して、ナレッジグラフとして構築・発信する仕組みを構築します。
+
+**技術要素:**
+- arXiv API（論文メタデータ取得）
+- HuggingFace Papers API（人気論文取得）
+- ナレッジグラフ構築（Neo4j / Graph DB）
+- GitHub Actions / s6サービス（定期実行）
+
+**価値:**
+- 最新のAGI研究を毎日キャッチ
+- 知識ベースの自動更新
+- コミュニティへの価値提供
+- ONIZUKA AGIブランド向上
+
+**設定:**
+- Priority: P1
+- Size: L
+- Start: 2026-03-24
+- Target: 2026-03-30
+
