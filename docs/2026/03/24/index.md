@@ -1,139 +1,94 @@
 ---
-title: "2026-03-24 #236 定期ミーティング"
+title: "2026-03-24 #239 定期ミーティング"
 date: 2026-03-24
 tags:
   - #定期ミーティング
   - #AGI論文ウォッチャー
-  - #開発
+  - #企画
 ---
 
-# 🎋 2026-03-24 #236 定期ミーティング
+# 🎋 2026-03-24 #239 定期ミーティング
 
 ## 状況確認
 
 - **GitHub Project タスク状況:**
-  - 完了タスク: 30
-  - 未完了タスク: 1 (AGI論文ウォッチャー)
+  - 完了タスク: 331
+  - 未着手タスク: 0
 
-- **本次実施フェーズ: 🔧 開発フェーズ**
+- **フェーズ判定:** 全タスク完了 → 🎯 企画フェーズを選択
 
-## 実施内容
+- **実施フェーズ:** 企画フェーズ
 
-### 1. GitHub Project タスク設定
-- タスク「AGI論文ウォッチャー」を選択
-- ステータス: `In progress` に変更
-- Start Date: 2026-03-24
-- Target Date: 2026-03-31
+- **選定企画:** AGI Knowledge Base 定期更新自動化
+- **理由:** 実装済みパイプラインの拡張として、最も価値が高い
+- 他の企画は新規または進行中
 
-### 2. Issue作成
-- **リポジトリ:** onizuka-agi-co/secretary-bot
-- **Issue番号:** #180
-- **タイトル:** 🎋 AGI論文ウォッチャー実装 - 週次自動投稿システム
-
-### 3. 既存リソース確認
-
-| リソース | 状態 | 詳細 |
-|---------|------|------|
-| hf-papersスキル | ✓ | fetch, explainコマンド実装済み |
-| nano-banana-2スキル | ✓ | generate.py実装済み |
-| fal-key.txt | ✓ | APIキー設定済み |
-
-### 4. テスト実行
-
-```bash
-$ uv run hf_papers.py fetch --limit 3
-Found 3 papers
-1. [2603.17309] ReLMXEL...
-2. [2603.15911] Human-AI Synergy...
-3. [2603.19753] ReLi3D...
-```
-
-## 次のステップ
-
-1. Issue #180のサブタスク作成
-2. 実装開始（論文取得 → 図解生成 → 投稿）
-3. s6定期実行サービス設定
-
-## 関連Issue
-
-- GitHub Project: ONIZUKA AGI Co. Prj
-- secretary-bot#180: AGI論文ウォッチャー実装
+- **GitHub Project情報:**
+  - Project ID: PVT_kwDOD7cTBc4BQW8J
+  - Field IDs: 
+    - Status: PVTSSF_lADOD7cTBc4BQW8Jzg-gICI
+    - Priority: PVTSSF_lADOD7cTBc4BQW8Jzg-gIGo
+    - Size: PVTSSF_ladOD7cTBc4BQW8Jzg-gIG0
+    - start date: PVTF_lADOD7cTBc4BQW8Jzg-gIG0
+    - target date: PVTF_ladOD7cTBc4BQW8Jzg-gIG4
 
 ---
 
-## 🎯 定期ミーティング #237 - 企画フェーズ
+## 🎯 企画フェーズ
+### 1. AGI Knowledge Base 定期更新自動化
+**Issue:** https://github.com/onizuka-agi-co/workspace/issues/39
+**概要:** memory/docsのAGI情報を整理し、 VitePressサイトとして自動ビルド・公開する仕組みを拡張
 
-* **フェーズ:** 企画フェーズ
-* **GitHub Project状態:** Done 30タスク、未着手0
-
-### 📊 AGI Research Dashboard
-
-**Issue:** https://github.com/onizuka-agi-co/workspace/issues/37
-
-**概要:**
-AGI研究の進捗を可視化するダッシュボードを構築。arXiv/HuggingFace Papersから最新論文を自動取得し、トレンド分析・研究者マッピング・マイルストーン追跡を行う。
-
-**機能:**
-- 📈 論文トレンド分析（週間・月間）
-- 👥 研究者・組織貢献度マップ
-- 🎯 AGIマイルストーン進捗追跡
-- 🔍 キーワード・トピック分析
-- 📊 可視化ダッシュボード（Web）
-
+**実施内容:**
+- memory/docsからAGI情報を自動抽出
+- 用語集・トピック別に整理
+- VitePressサイトの自動ビルド
+- GitHub Pagesへの自動デプロイ
+- RSSフィード配信
+- 検索機能の追加
+- 定期更新のs6サービス化
 **技術要素:**
-- Python（データ収集・分析）
-- arXiv API / HF Papers API
-- GitHub Actions（定期実行）
-- VitePress + D3.js（可視化）
-- GitHub Pages（公開）
-
+- Python スクリプト（情報抽出)
+- VitePress(ビルド&デプロイ)
+- GitHub Actions(定期実行)
+- s6サービス(自動更新)
 **価値:**
-- AGI研究の全体像を把握
-- 重要なトレンドを見逃さない
+- 初学者向けAGI情報の提供
 - コミュニティへの価値提供
-- ONIZUKA AGIブランド向上
-
+- ONIZUKA AGiブランド向上
 **設定:**
 - Priority: P1
-- Size: L
+- Size: M
+- Start: 2026-03-25
+- target: 2026-04-01
+
+ **Status:** Draft Issue
+ **GitHub Project追加:** 完了
+
+**Issue:** https://github.com/onizuka-agi-co/workspace/issues/39
+
+**概要:** memory/docsのAGI情報を整理し、VitePressサイトとして自動ビルド・公開する仕組みを拡張
+**実施内容:**
+- memory/docsからAGI情報を自動抽出
+- 用語集・トピック別に整理
+- VitePressサイトの自動ビルド
+- GitHub Pagesへの自動デプロイ
+- RSSフィード配信
+- 検索機能の追加
+- 定期更新のs6サービス化
+
+**技術要素:**
+- Python スクリプト（情報抽出)
+- VitePress（ビルド&デプロイ）
+- GitHub Actions（定期実行）
+- s6サービス（自動更新）
+**価値:**
+- 初学者向けAGI情報の提供
+- コミュニティへの価値提供
+- ONIZUKA AGIブランド向上
+**設定:**
+- Priority: P1
+- Size: M
 - Start: 2026-03-25
 - Target: 2026-04-01
 
----
-
-## 🎯 定期ミーティング #238 - 企画フェーズ
-
-* **フェーズ:** 企画フェーズ
-* **GitHub Project状態:** Done 30タスク、未着手0
-
-### 🎋 X自動解説Bot定期実行化
-
-**Issue:** https://github.com/onizuka-agi-co/workspace/issues/38
-
-**概要:**
-@hAru_mAki_chの新規投稿をX Filtered Streamで監視し、自動で解説ツイートを生成・投稿する仕組み
-
-**実施内容:**
-- X Filtered Streamスキル完成（scripts実装）
-- ツイート検知時の自動解説生成
-- X自動投稿（引用リツイート形式）
-- Discord通知連携
-- s6サービス化（24時間監視）
-
-**技術要素:**
-- X Filtered Stream API
-- nano-banana-2（図解画像）
-- Gemini（解説文章）
-- X Write API
-- s6サービス
-
-**価値:**
-- リアルタイム解説提供
-- コミュニティ価値向上
-- ONIZUKA AGIブランド向上
-
-**設定:**
-- Priority: P1
-- Size: L
-- Start: 2026-03-24
-- Target: 2026-03-28
