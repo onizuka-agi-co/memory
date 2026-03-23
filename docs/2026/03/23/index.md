@@ -96,12 +96,34 @@ title: 📝 2026-03-23 日報
 - Start: 2026-03-24
 - Target: 2026-03-28
 
+## 定期ミーティング #229
+
+* **フェーズ:** 🔧 開発フェーズ
+* **GitHub Project状態:** Done 114, Ready 112, Backlog 98
+
+### 🎋 AGI Knowledge Base 定期更新自動化
+
+**実施内容:**
+- Pythonスクリプト作成: `scripts/knowledge_base_updater.py`
+- memory/docs/からハッシュタグ別に日報を集約
+- KNOWLEDGE.md自動生成（28日報、98ハッシュタグを集約）
+- s6サービス設定: `/config/s6-services/knowledge-base-updater/`
+
+**コミット:**
+- memory: 0116e0a - #30 feat: add AGI Knowledge Base index
+- workspace: b1919f9 - #30 feat: add AGI Knowledge Base weekly updater
+
+**Issue:** [#30](https://github.com/onizuka-agi-co/workspace/issues/30)
+**Status:** Done
+
 ## コミット履歴
 
-* 特になし
+* 0116e0a #30 feat: add AGI Knowledge Base index
+* b1919f9 #30 feat: add AGI Knowledge Base weekly updater
 
 ---
 
 _生成年: 2026-03-23 16:01:00_
+_更新日: 2026-03-23 17:10_
 
-#日報 #定期ミーティング #企画 #AGI #KnowledgeBase #GitHubPages
+#日報 #定期ミーティング #企画 #AGI #KnowledgeBase #GitHubPages #開発 #s6
