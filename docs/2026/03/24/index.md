@@ -3,30 +3,32 @@
 
 # 2026-03-24
 
-## 定期ミーティング #248
+## 定期ミーティング #249
 
-### 開発フェーズ
+### 企画フェーズ
 
-**完了タスク:**
-- 🎋 **nano-banana-2 スキル完成**
-  - Status: Backlog → Done
-  - Size: S
-  - 実装内容:
-    - generate.py スクリプト確認（既存）
-    - テスト実行成功
-    - 猫の侍イラスト生成確認
+**新規企画: AGI Weekly Newsletter 自動生成機能**
 
-**テスト結果:**
-```
-Prompt: A cute cat samurai in traditional Japanese armor
-Output: temp/nano-test/generated_1.png
-Status: Success
-```
+**概要:**
+毎週、収集したAGI関連情報をまとめてニュースレター形式で公開する機能
+
+**目的:**
+- AGI知見の定期的な発信・共有
+- 継続的な情報発信でコミュニティ形成
+- HuggingFace Papers + X解説 + 論文要約の統合
+
+**構成要素:**
+1. 週間まとめレポート自動生成
+2. Discord/X/ブログへの自動投稿
+3. アーカイブ機能（VitePress）
 
 **GitHub Project:**
-- 未着手タスク: 26個（27 → 26）
-- 完了タスク: 310個（309 → 310）
+- Issue: #41
+- Priority: P1
+- Size: M
+- Start Date: 2026-03-24
+- Target Date: 2026-03-28
 
 ## ハッシュタグ
 
-#定期ミーティング #開発フェーズ #nano-banana-2 #画像生成
+#定期ミーティング #企画フェーズ #AGIWeekly #Newsletter
