@@ -3,6 +3,96 @@
 
 # 2026-03-24
 
+## 定期ミーティング #259
+
+### 状況確認
+- Project 1: 全30タスク Done
+- → 全タスク完了状態
+- → **企画フェーズ**を実施
+
+### 企画フェーズ
+
+**新規企画: 🤖 X自動解説Bot定期実行化**
+
+**GitHub Issue:** https://github.com/onizuka-agi-co/onizuka-agi-co/issues/13
+
+**設定:**
+- Priority: P1
+- Size: M
+- Start: 2026-03-25
+- Target: 2026-03-27
+- Status: Ready
+
+**概要:**
+hAru_mAki_chの新規投稿を監視し、深掘り解説をDiscordに自動投稿する機能
+
+**目的:**
+- ONIZUKAミッション「AGIの知見をほどき、世界に届ける」の自動化
+- 投稿内容の深掘り・補足解説
+- 手動解説の負荷軽減
+
+**機能:**
+- X Filtered Stream で新規投稿監視
+- Gemini/Gemini Vision で内容分析
+- Discord Embed形式で解説投稿
+- オプション: 引用リツイート解説
+
+**技術要素:**
+- skills/x-stream: Filtered Stream API
+- skills/gemini-vision: 画像分析
+- skills/x-write: 引用リツイート（オプション）
+- Discord Webhook
+- s6サービス
+
+**サブタスク:**
+1. X Filtered Stream 設定 - Size: S
+2. 解説生成スクリプト作成 - Size: M
+3. Discord Webhook統合 - Size: S
+4. s6サービス化 - Size: S
+5. テスト・検証 - Size: S
+
+**見積もり:**
+2-3日 (Size: M)
+
+---
+
+## 定期ミーティング #258
+
+### 状況確認
+- Project 1: 全30タスク Done
+- → 全タスク完了状態
+
+### 企画フェーズ
+
+**新規企画: 🎯 AGI論文ナレッジグラフ構築**
+
+**GitHub Issue:** https://github.com/onizuka-agi-co/onizuka-agi-co/issues/12
+**設定:**
+- Priority: P2
+- Size: M
+- Start: 2026-03-25
+- Target: 2026-03-28
+- Status: In progress
+
+**概要:**
+HuggingFace Daily Papersで取得した論文をローカルでナレッジグラフとして蓄積・検索可能にする
+
+**関連:**
+- 🎋 HuggingFace Daily Papers 図解投稿機能 (完了)
+- ローカル情報集約
+
+**実施内容:**
+- [ ] 論文メタデータの保存
+- [ ] エンティティ抽出
+- [ ] 関係性の定義
+- [ ] ローカル検索API
+- [ ] 検索結果表示
+
+**開発期間:**
+2-3日 (Size: L)
+
+---
+
 ## 定期ミーティング #257
 
 ### 状況確認
