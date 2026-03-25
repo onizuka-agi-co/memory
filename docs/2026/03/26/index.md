@@ -86,4 +86,48 @@ project/agi-knowledge-graph/
 
 ---
 
+## 定期ミーティング #288
+
+### 状況確認
+- Project 1: 全30タスク Done
+- → 全タスク完了状態
+- → **企画フェーズ**を実施
+
+### 🎯 企画フェーズ
+
+**新規企画:** 📊 週間AGI論文まとめレポート
+
+**GitHub Issue:** https://github.com/onizuka-agi-co/onizuka-agi-co/issues/19
+
+**設定:**
+- Priority: P1
+- Size: M
+- Status: Backlog
+- Start: 2026-03-26
+- Target: 2026-03-28
+
+**概要:**
+毎週末にその週の主要なAGI論文をまとめてDiscordに投稿する機能
+
+**機能:**
+- HuggingFace Daily Papersから週間トップ論文を取得
+- カテゴリ別に分類（LLM、Vision、Agents等）
+- 要約・ハイライトを生成
+- Discord Embed形式で投稿
+
+**技術要素:**
+- skills/hf-papers (既存)
+- skills/nano-banana-2 (図解生成)
+- Discord Webhook
+- s6サービス (週次実行)
+
+**サブタスク:**
+1. 週間論文取得スクリプト作成
+2. カテゴリ分類ロジック実装
+3. Discord Embed生成
+4. s6サービス設定
+5. テスト・検証
+
+---
+
 _更新日: 2026-03-26_
