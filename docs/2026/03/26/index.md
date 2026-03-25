@@ -1,45 +1,89 @@
 ---
-title: "2026-03-26 定期ミーティング #285"
 ---
 
-# 🎋 2026-03-26 定期ミーティング #285
+# 2026-03-26
 
-## 📊 タスク状況
+## 定期ミーティング #287
 
-- **Done**: 117
-- **Ready**: 114
-- **In progress**: 4 → 3
+### 状況確認
+- Project 1: 全357タスク Done
+- → 全タスク完了状態
+- → **企画フェーズ**を実施
 
-## 🔧 実施フェーズ: 開発フェーズ
+### 🎯 企画フェーズ
 
-### 完了タスク
+**Issue #18 をProjectに追加:フィールド設定:**
 
-#### 🎋 AGI Knowledge Base 定期更新自動化
+**GitHub Issue:** https://github.com/onizuka-agi-co/onizuka-agi-co/issues/18
+
+**設定:**
+- Priority: P1
+- Size: L
+- Status: Backlog
+- Start: 2026-03-26
+- Target: 2026-04-02
 
 **概要:**
-毎日決まった時間にHuggingFace Daily Papersを自動取得し、図解・解説を生成してDiscord/GitHubに投稿するs6サービスを構築。
+HuggingFace Papers APIから最新のAGI関連論文を自動収集し、著者・機関・引用関係をナレッジグラフとして構築
 
-**確認結果:**
-既存のs6サービスとして実装済み：
-- `/config/s6-services/hf-papers-daily/` - 毎日09:00実行
-- `/config/s6-services/knowledge-base-updater/` - 週次更新
+**実装フェーズ:**
+1. Phase 1: 基盤構築（Neo4j環境構築、スキーマ定義）
+2. Phase 2: データ収集（API統合、グラフデータ投入）
+3. Phase 3: 可視化（グラフUI実装）
+4. Phase 4: 検索・分析（キーワード・著者・機関検索）
+5. Phase 5: 自動化（日次s6サービス、週次レポート、Discord通知）
 
-**実施内容:**
-- [x] s6サービス作成（run/finishスクリプト）
-- [x] cron設定（毎日09:00実行）
-- [x] Discord自動投稿
-- [x] GitHub自動コミット
-- [x] エラーハンドリング
-
-**GitHub Project ステータス:** In progress → Done
-
-## 📝 次のステップ
-
-残りの In progress タスク:
-1. 📚 AGI Knowledge Base 定期更新自動化 (P1, Target: 2026-03-26)
-2. 🎯 AGI論文ナレッジグラフ構築 (P2, Target: 2026-03-28)
-3. 🤖 X自動解説Bot定期実行化 (P1, Target: 2026-03-28)
+**技術スタック:**
+- データ収集: Python + HuggingFace Papers API
+- グラフDB: Neo4j
+- 可視化: React + D3.js / Cytoscape.js
 
 ---
 
-#hashtags: #定期ミーティング #開発フェーズ #s6サービス #HuggingFace #AGI
+## 定期ミーティング #286
+
+### 状況確認
+- Project 1: 全30タスク Done
+- → 全タスク完了状態
+- → **企画フェーズ**を実施
+
+### 🎯 企画フェーズ
+
+**新規タスク:** 🧠 AGI論文ナレッジグラフ構築
+
+**GitHub Issue:** https://github.com/onizuka-agi-co/onizuka-agi-co/issues/18
+
+**設定:**
+- Priority: P1
+- Size: XL
+- Status: In progress
+- Start: 2026-03-26
+- Target: 2026-04-02
+
+### 🔧 開発フェーズ開始
+
+**Phase 1: 基盤構築**
+
+作成ファイル:
+```
+project/agi-knowledge-graph/
+├── README.md          # プロジェクト概要
+├── schema.md          # Neo4jスキーマ定義
+├── neo4j-setup.md     # Neo4j Aura設定ガイド
+└── paper_collector.py # データ収集スクリプト基盤
+```
+
+**技術スタック:**
+- データ収集: Python + HuggingFace Papers API
+- グラフDB: Neo4j Aura Free
+- 可視化: React + D3.js
+
+**次のステップ:**
+1. Neo4j Aura アカウント作成
+2. 接続情報を `data/neo4j-credentials.json` に保存
+3. スキーマ初期化スクリプト実行
+4. HuggingFace Papers API統合
+
+---
+
+_更新日: 2026-03-26_
