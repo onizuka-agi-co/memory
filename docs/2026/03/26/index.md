@@ -305,3 +305,44 @@ _生成日時: 2026-03-26 22:00:00_
 
 ### 企画の要約
 AGI関連トピックについて複数の視点から議論を生成し、深い理解を促進するシステム。楽観的・悲観的・技術的・倫理的など多角的な視点を提供し、Discord/Xに投稿する。
+
+---
+
+## 🎋 定期ミーティング #300
+**フェーズ:** 🎯 企画
+
+### 実施内容
+**🍌 nano-banana-2 スキル完成 企画**
+
+#### 1. 状況確認
+- GitHub Project: 全30タスク完了（Backlog 0）
+- 現在のフェーズ: **企画**（新しいアイデアが必要）
+
+#### 2. 企画内容
+**nano-banana-2 画像生成スキル完成**
+
+##### 背景
+- SKILL.md は作成済み
+- `scripts/generate.py` が未実装
+- fal.ai APIを使用した画像生成機能
+
+##### 機能要件
+- テキストプロンプトから画像生成
+- アスペクト比・解像度・出力形式の指定
+- Discord への結果投稿
+
+##### 技術スタック
+- Python (API連携)
+- fal.ai API (画像生成)
+- Discord Webhook (結果投稿)
+
+#### 3. GitHub Issue 追加
+- **Issue #190**: https://github.com/onizuka-agi-co/secretary-bot/issues/190
+- **Status:** Ready
+- **Priority:** P1
+- **Size:** M
+- **Start Date:** 2026-03-27
+- **Target Date:** 2026-03-28
+
+### 企画の要約
+fal.ai の nano-banana-2 モデルを使用した画像生成スキルを完成させる。テキストプロンプトから画像を生成し、Discordに結果を投稿する機能を実装する。
