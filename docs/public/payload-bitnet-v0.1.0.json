@@ -1,0 +1,23 @@
+{
+  "main_post": {
+    "text": "🔍 BitNet on Android: First Public Lab Release\n\nSunwood-ai-labs just shipped bitnet-android-lab v0.1.0—the first reproducible public lab kit for running QVAC Fabric BitNet LoRA experiments on real Android hardware.\n\n🎯 What's Inside:\n• Termux-side helper scripts for fine-tuning & inference\n• Minimal Android-specific Vulkan patches\n• Sanitized evidence with dated rerun snippets\n• Split monitoring: Termux TUIs + Windows adb watcher\n\n📊 Scope Notes:\nThis release documents ONE real device with explicit caveats. Not a ready-to-run bundle—single-run tok/s references, not benchmark medians.\n\nWhy it matters: Evidence-backed claims instead of prose assertions. The repo proves BitNet LoRA can run on consumer Android, with reproducibility as the priority.\n\n$ONIAGI",
+    "image_path": "memory/docs/public/bitnet-android-lab-v0.1.0-explainer.jpg"
+  },
+  "replies": [
+    {
+      "id": "release",
+      "reply_to": "main",
+      "text": "📎 Release v0.1.0\nFirst public release with full shipped history from root commit.\nhttps://github.com/Sunwood-ai-labs/bitnet-android-lab/releases/tag/v0.1.0"
+    },
+    {
+      "id": "repo",
+      "reply_to": "main",
+      "text": "🔗 Repository\nPublic lab notes, patches, and monitoring helpers.\nhttps://github.com/Sunwood-ai-labs/bitnet-android-lab"
+    },
+    {
+      "id": "docs",
+      "reply_to": "main",
+      "text": "📚 Bilingual Docs (EN/JA)\nVitePress site with setup guides and evidence map.\nhttps://sunwood-ai-labs.github.io/bitnet-android-lab/"
+    }
+  ]
+}

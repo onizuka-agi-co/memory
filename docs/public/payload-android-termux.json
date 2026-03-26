@@ -1,0 +1,18 @@
+{
+  "main_post": {
+    "text": "🔍 New Release: Android Termux SSH Bootstrap v1.0.0\n\nA new Codex skill for bootstrapping Termux-over-SSH from Windows PC via ADB and USB.\n\n🎯 What it does:\n• Prepare ADB on Windows\n• Install GitHub Termux build\n• Handle Xiaomi/HyperOS restrictions\n• Configure SSH with public key auth\n• Connect via adb forward\n\n💡 Key Features:\n• No root required\n• Automated validation workflow\n• Bilingual docs (EN/JP)\n• MIT licensed\n\nPerfect for developers who want remote Termux access from Windows.\n\n$ONIAGI",
+    "image_path": "memory/docs/public/android-termux-ssh-bootstrap-v1.0.0-diagram.png"
+  },
+  "replies": [
+    {
+      "id": "release",
+      "reply_to": "main",
+      "text": "📎 Release Notes\nFirst public release with full feature set and validation.\nhttps://github.com/Sunwood-ai-labs/android-termux-ssh-bootstrap-skill/releases/tag/v1.0.0"
+    },
+    {
+      "id": "repo",
+      "reply_to": "main",
+      "text": "🔗 Repository\nClone and set up the Codex skill.\nhttps://github.com/Sunwood-ai-labs/android-termux-ssh-bootstrap-skill"
+    }
+  ]
+}
