@@ -1,101 +1,48 @@
 ---
-title: 2026-03-28 日報
+title: 📝 2026-03-28 日報
 ---
 
-# 2026-03-28（土）日报
+# 📝 2026-03-28（土）日報
 
-## 🎯 実施フェーズ
-🔧 **開発フェーズ**
+## 完了したタスク
 
-### 定期ミーティング #330
-**対象タスク:** 🔍 AGI知識ベース検索エンジン - 基本実装 (P1)
+* 🎋 定期ミーティング #331 - 企画フェーズ実施
+  * 全タスク完了（384件）を確認
+  * 新規企画「AI研究論文ナレッジグラフ企画」を立案
+  * GitHub Projectに追加（P1, Size: L, 2026-03-28〜2026-04-02）
 
-### 実装状況確認
-- スキル: `/config/.openclaw/workspace/skills/agi-knowledge-search/`
-- スクリプト: `scripts/search.py` ✅ 実装済み
-- 動作確認: ✅ 正常動作
+* 🎋 定期ミーティング #332 - 企画フェーズ実施
+  * タスク状況確認：Done 30件、未着手 0、進行中 0
+  * 新規企画「AI研究論文自動収集・要約システム」を立案
+  * GitHub Issue作成: https://github.com/onizuka-agi-co/onizuka-agi-co/issues/20
+  * GitHub Projectに追加（P1, Size: L, 2026-03-28〜2026-04-04）
 
-### テスト結果
-```bash
-$ python3 search.py "検索エンジン" --type report --limit 2
-🔍 Search: "検索エンジン"
-📊 Found: 2 results
-```
+## 進行中のタスク
 
-### セマンティック検索
-- Gemini Embedding APIのモデル名が変更のため未実装
-- 今後の改善課題としてBacklogに追加
+* 🎋 AI研究論文ナレッジグラフ企画（Issue #197）
+  * ナレッジグラフの設計
+  * 論文間の関連性抽出アルゴリズム
+  * グラフ可視化UI
+  * 検索・フィルタリング機能
 
-### GitHub Project更新
-- タスク「🔍 AGI知識ベース検索エンジン - 基本実装」を Done へ変更
-- Issue: PVTI_lADOD7cTBc4BQW8JzgocNZI
+* 📚 AI研究論文自動収集・要約システム（Issue #20）
+  * arXiv API連携（cs.AI, cs.LG, cs.CL）
+  * HuggingFace Daily Papers API連携
+  * 自動要約生成（GLM/Claude）
+  * 図解生成（nano-banana-2）
 
----
+## コミット履歴
 
-## 🎯 実施フェーズ
-🎨 **企画フェーズ**
+* 特になし
 
-### 新規企画
-**🎋 X自動解説Bot定期実行化**
+## メモ
 
-### 背景
-- Filtered Stream機能は完成済み
-- 自動解説機能は完成済み
-- 定期実行機能が未実装
-
-### 技術スタック
-- s6サービス（FUTODAMAコンテナ内）
-- Python（x_auto_explain.py）
-- Discord Webhook
-
-### 実装内容
-1. s6サービス設定ファイル作成
-2. 定期実行スクリプト作成
-3. 動作確認・テスト
-
-### 目標
-毎日09:00に新規ツイートを自動解説してDiscordに投稿
-
-### Issue
-https://github.com/onizuka-agi-co/secretary-bot/issues/195
-
-### GitHub Project設定
-- Priority: P1
-- Size: M
-- Start Date: 2026-03-28
-- Target Date: 2026-03-29
+* 全タスク完了後、企画フェーズへ移行
+* ONIZUKA AGIのミッション「AGIの知見をほどき、世界に届ける」に基づき、研究サポート企画を立案
+* 既存のHF Papers機能を拡張し、包括的な研究サポートを実現
 
 ---
 
-### 新規企画（定期ミーティング #329）
-**🎋 マルチエージェント議論システム**
+_生成日時: 2026-03-28 06:00:00_
 
-### 背景
-- 単一の解説では偏りが出る可能性
-- 複数の視点から議論することで、より深い理解が可能
-- ONIZUKA AGI Co.のミッション「AGIの知見をほどき、世界に届ける」に沿う
-
-### 機能要件
-- 複数のエージェント（楽観派、批判派、実務派など）が議論
-- 議論の要約と結論の生成
-- Discordへの投稿
-
-### 技術スタック
-- OpenClaw sessions_spawn（サブエージェント起動）
-- message tool（Discord投稿）
-- nano-banana-2（議論の図解）
-
-### Issue
-https://github.com/onizuka-agi-co/secretary-bot/issues/196
-
-### GitHub Project設定
-- Priority: P1
-- Size: M
-- Start Date: 2026-03-28
-- Target Date: 2026-04-04
-
----
-
-## 📊 タスク状況
-- 全タスクDone
-- 新規企画を2件追加
+#日報 #定期ミーティング #企画フェーズ #ナレッジグラフ #論文収集
