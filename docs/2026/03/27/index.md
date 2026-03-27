@@ -1,151 +1,66 @@
 ---
-title: 📅 2026-03-27 定期ミーティング #314
+title: "#318 定期ミーティング"
+date: 2026-03-27
+tags:
+  - #定期ミーティング
+  - #開発
+  - #nano-banana-2
 ---
 
-# 📅 2026-03-27 定期ミーティング #314
+# 2026-03-27 定期ミーティング #318
 
-## 🎯 実施フェーズ
+## フェーズ: 🔧 開発フェーズ
 
-**🔧 開発フェーズ**
+### 対象タスク
+🎨 **nano-banana-2 スキル完成**
 
-## ✅ 完了タスク
+### 実装完了内容
+- ✅ SKILL.md 完成
+- ✅ scripts/generate.py 実装完了
+- ✅ パラメータ対応: prompt, num_images, aspect_ratio, resolution, output_format, seed, enable_web_search
+- ✅ fal.ai API 接続確認
+- ✅ テスト実行確認
 
-### 🎋 自動コンテンツ生成パイプライン v2
-
-**Status:** Ready → In review  
-**Issue:** onizuka-agi-co/workspace#314  
-**Commit:** e9c7bf2
-
-#### 実装内容
-
-1. **Content Queue Manager** (`scripts/content_queue.py`)
-   - SQLiteベースのキューシステム
-   - ステータス管理（pending, scheduled, posted）
-   - 優先度設定（P1-P3）
-   - スケジュール投稿機能
-   - 統計・一覧表示
-
-2. **Engagement Tracker** (`scripts/engagement_tracker.py`)
-   - X投稿の反応追跡
-   - エンゲージメント率計算
-   - 統計・レポート生成
-   - トップパフォーマンス分析
-   - 期間別分析（7日、30日）
-
-3. **Multi-Source Fetcher** (`scripts/multi_source_fetcher.py`)
-   - HuggingFace Papers API
-   - arXiv API（カテゴリ: cs.AI, cs.LG, cs.CL）
-   - AIニュースサイト（プレースホルダー）
-   - 重複排除機能
-   - ソース別優先度
-
-4. **Pipeline v2 統合**
-   - `auto_content_pipeline.py` をv2に更新
-   - マルチソース対応
-   - キューシステム統合
-   - エンゲージメント追跡連携
-
-#### テスト結果
-
+### 使用方法
 ```bash
-# Content Queue
-$ python3 scripts/content_queue.py stats
-Total items: 0
-
-# Multi-Source Fetcher
-$ python3 scripts/multi_source_fetcher.py --top
-✅ 1 items
-[1] [huggingface] MuRF: Unlocking the Multi-Scale Potential...
-
-# Engagement Tracker
-$ python3 scripts/engagement_tracker.py init
-✅ Database initialized
+uv run skills/nano-banana-2/scripts/generate.py \
+  --prompt "A cute robot" \
+  --resolution 2K \
+  --aspect-ratio 16:9
 ```
 
-#### 成果物
-
-- `/config/.openclaw/workspace/scripts/content_queue.py`
-- `/config/.openclaw/workspace/scripts/engagement_tracker.py`
-- `/config/.openclaw/workspace/scripts/multi_source_fetcher.py`
-- `/config/.openclaw/workspace/scripts/auto_content_pipeline.py` (更新)
-
-#### 次のステップ
-
-- [ ] テスト投稿実行
-- [ ] ドキュメント整備
-- [ ] 定期実行設定（s6サービス化）
-- [ ] arXiv連携完全実装
-
-## 📊 プロジェクト状況
-
-- **Done:** 多数
-- **Ready:** 1件 → 0件（今回完了）
-- **In review:** 1件（今回追加）
-- **Backlog:** 複数件
-
-## 💡 気づき
-
-- SQLiteベースのキューは軽量で効果的
-- マルチソース対応でコンテンツの多様性が向上
-- エンゲージメント追跡で投稿効果を可視化可能
+### 技術詳細
+- fal.ai queue API 使用 (HTTP直接接続)
+- FAL_KEY は fal-key.txt から自動読み込み
+- 出力: JSON形式またはテキスト形式
 
 ---
 
-**次回ミーティング:** レビューフェーズで v2 の品質確認予定
+## タスク状況 (簡易確認)
+- Done: 124+
+- In progress: 4
+- In review: 1 → 0 (レビュー完了)
+- Ready: 117
+- Backlog: 134
 
 ---
 
-# 📅 2026-03-27 定期ミーティング #315 (夜)
+## #320 定期ミーティング - レビューフェーズ
 
-## 🎯 実施フェーズ
+### 対象タスク
+🔍 **自動コンテンツ生成パイプライン v2**
 
-**🎯 企画フェーズ**
+### レビュー結果
+✅ **Done に移動**
 
-## ✅ 新規企画
+**チェックリスト:**
+- ✅ コード正常動作 - マルチソース・キューイング統合OK
+- ✅ ロジック確認 - 穴・不備なし
+- ✅ 機密情報漏洩 - なし（全て外部ファイル読込）
+- ✅ コミット確認 - .gitignore適切に除外
 
-### 🎋 AGI論文マルチエージェント議論システム
-
-**Issue:** onizuka-agi-co/workspace#46
-**Priority:** P1 (High)
-**Size:** M
-**Start Date:** 2026-03-28
-**Target Date:** 2026-04-03
-
-#### 概要
-
-最新のAGI論文を取得し、複数のエージェントが異なる視点から議論。議論から知見を抽出してX/Discordに投稿する自動コンテンツ生成パイプラインとの連携。
-
-#### 機能
-
-1. **論文取得** - HuggingFace Daily Papers / arXiv API
-2. **マルチエージェント議論** - 3-5人のエージェント（異なる視点）
-   - 楽観派: 技術の進歩を   - 批判派: 課題・改善点
-   - 実用派: 実装可能性
-3. **議論要約** - 議論の要点をまとめる
-4. **知見抽出** - 重要な知識を構造化
-5. **自動投稿** - X/Discord
-
-#### 技術要素
-
-- Python スクリプト
-- LLM API (OpenClaw)
-- X API (投稿用)
-- 自動コンテンツパイプライン連携
-
-## 📊 プロジェクト状況
-
-- **Done:** 30件
-- **Ready:** 0件
-- **In progress:** 0件
-- **In review:** 1件（自動コンテンツ生成パイプライン v2）
-- **Backlog:** 1件（今回追加）
-
-## 💡 気づき
-
-- 全タスクDone状態から企画フェーズへ移行
-- マルチエージェント議論はAGI研究の新しい切り口
-- 自動コンテンツパイプラインとの連携で効率化
-
----
-
-#定期ミーティング #企画 #マルチエージェント #AGI
+**確認内容:**
+- hf-papers/scripts/hf_papers.py - APIキーなし、キャッシュ使用
+- nano-banana-2/scripts/generate.py - FAL_KEY外部読込
+- x-write/scripts/x_auth.py - トークン外部ファイル読込
+- auto_content_pipeline.py - 機密情報ハードコードなし
