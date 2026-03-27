@@ -13,10 +13,15 @@ AGI関連論文の図解・解説を蓄積するナレッジベース。
 - [RoboAlign: Learning Test-Time Reasoning for Language-Action Alignment in Vision-Language-Action Models](/agi/2603.21341)
 - [Unleashing Spatial Reasoning in Multimodal Large Language Models via Textual Representation Guided Reasoning](/agi/2603.23404)
 - [Strategic Navigation or Stochastic Search? How Agents and Humans Reason Over Document Collections](/agi/2603.12180)
+- [The Pulse of Motion: Measuring Physical Frame Rate from Visual Dynamics](/agi/2603.14375)
 - [CREATE: Testing LLMs for Associative Creativity](/agi/2603.09970)
 - [VISion On Request: Enhanced VLLM efficiency with sparse, dynamically selected, vision-language interactions](/agi/2603.23495)
 - [The Y-Combinator for LLMs: Solving Long-Context Rot with λ-Calculus](/agi/2603.20105)
 - [What Really Controls Temporal Reasoning in Large Language Models: Tokenisation or Representation of Time?](/agi/2603.19017)
+
+### AGI-WATCHER
+
+- [🔬 AGI論文ウォッチャー](/agi-watcher/2026-03-27)
 
 ### GENERAL
 
@@ -44,8 +49,8 @@ AGI関連論文の図解・解説を蓄積するナレッジベース。
 
 ## 統計
 
-- 総論文数: 20
-- カテゴリ数: 4
+- 総論文数: 22
+- カテゴリ数: 5
 
 ---
 
