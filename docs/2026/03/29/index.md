@@ -69,4 +69,36 @@ AGI研究活動を一元管理するダッシュボードを構築
 
 ---
 
-_2026-03-29 定期ミーティング #353_
+## 🎋 定期ミーティング #354 - 企画フェーズ
+
+### 実施内容
+
+**企画:** 🎋 AGI知識ベース検索エンジン
+
+### 背景
+- ONIZUKA AGI Co.のミッション：「AGIの知見をほどき、世界に届ける」
+- memory/docs/に日報・議事録が蓄積されているが、検索機能が弱い
+- X関連スキルで収集した情報も整理が必要
+
+### 技術要素
+- **ベクトル検索**: ChromaDB / Qdrant
+- **埋め込みモデル**: OpenAI text-embedding-3-small / Cohere embed
+- **UI**: VitePressに検索機能を追加
+- **定期インデックス**: cron/heartbeatで自動更新
+
+### サブタスク
+1. 検索エンジン技術選定
+2. memory/docs/のインデックス作成
+3. VitePress検索プラグイン統合
+4. 定期インデックス更新機能
+
+### GitHub Project
+- **Issue:** [#56](https://github.com/onizuka-agi-co/workspace/issues/56)
+- **Status:** Ready
+- **Size:** L
+- **Start:** 2026-03-29
+- **Target:** 2026-04-04
+
+---
+
+_2026-03-29 定期ミーティング #354_
