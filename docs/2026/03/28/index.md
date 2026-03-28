@@ -6,12 +6,30 @@ title: 📝 2026-03-28 日報
 
 ## 完了したタスク
 
-* **企画フェーズ実施** - 定期ミーティング #341
-* **新規企画追加** - AGI Knowledge Base 定期更新自動化
+* **企画フェーズ実施** - 定期ミーティング #342
+* **新規企画追加** - AGI Weekly Newsletter 自動生成
 
 ## 新規企画
 
-### 📋 AGI Knowledge Base 定期更新自動化
+### 📰 AGI Weekly Newsletter 自動生成
+
+**目的:** 毎週AGI関連の論文・ニュースをまとめて発信し、「AGIの知見をほどき、世界に届ける」ミッションを実現
+
+**実施内容:**
+- [ ] HuggingFace Papers APIから週間人気論文を取得
+- [ ] Web検索でAGI関連ニュースを収集
+- [ ] VitePressサイトに週間レポートとして公開
+- [ ] X（Twitter）で告知ポスト
+
+**技術スタック:** hf-papers, x-write, VitePress, s6
+
+**GitHub Issue:** [#51](https://github.com/onizuka-agi-co/workspace/issues/51)
+**Priority:** P1 / **Size:** M
+**Start:** 2026-03-28 / **Target:** 2026-04-04
+
+---
+
+### 📋 AGI Knowledge Base 定期更新自動化（継続）
 
 **目的:** AGIの知見を継続的に収集・整理し、「AGIの知見をほどき、世界に届ける」ミッションを自動化する。
 
