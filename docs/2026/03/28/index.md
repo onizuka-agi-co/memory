@@ -6,6 +6,8 @@ title: 📝 2026-03-28 日報
 
 ## 完了したタスク
 
+* **企画フェーズ実施** - 定期ミーティング #345
+* **新規企画追加** - AGI Knowledge Base検索エンジン
 * **企画フェーズ実施** - 定期ミーティング #342
 * **新規企画追加** - AGI Weekly Newsletter 自動生成
 * **企画フェーズ実施** - 定期ミーティング #343
@@ -45,6 +47,24 @@ title: 📝 2026-03-28 日報
 **GitHub Issue:** [#50](https://github.com/onizuka-agi-co/workspace/issues/50)
 **Priority:** P1 / **Size:** L
 **Start:** 2026-03-29 / **Target:** 2026-04-02
+
+---
+
+### 🔍 AGI Knowledge Base検索エンジン（新規）
+
+**目的:** 蓄積したAGI関連の知見（論文、日報、X投稿）を統合的に検索できるエンジンを構築
+
+**実施内容:**
+- [ ] ベクトルDB（ChromaDB）のセットアップ
+- [ ] 既存ドキュメントの埋め込み生成
+- [ ] セマンティック検索API実装
+- [ ] カテゴリフィルタ（論文/日報/投稿）実装
+- [ ] 検索結果の要約表示
+
+**技術スタック:** ChromaDB, OpenAI embeddings, Python
+
+**Priority:** P1 / **Size:** L
+**Start:** 2026-03-28 / **Target:** 2026-04-04
 
 ## コミット履歴
 
