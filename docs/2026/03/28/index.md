@@ -8,6 +8,8 @@ title: 📝 2026-03-28 日報
 
 * **企画フェーズ実施** - 定期ミーティング #342
 * **新規企画追加** - AGI Weekly Newsletter 自動生成
+* **企画フェーズ実施** - 定期ミーティング #343
+* **GitHub Project更新** - Issue #52追加、Priority/Size/Dates設定
 
 ## 新規企画
 
