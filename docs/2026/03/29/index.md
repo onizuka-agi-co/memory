@@ -12,35 +12,32 @@ title: 📝 2026-03-29 日報
 
 * 特になし
 
-## 🎯 定期ミーティング #364
+## 🎯 定期ミーティング #366
 
 ### 実施フェーズ: 企画フェーズ
 
-**理由:** 全タスク完了（Done 30件）
+**理由:** 全タスク完了（Done 420件）
 
-**新規企画:** 📊 日報の充実化 - 自動コンテンツ生成機能
-- Issue: https://github.com/onizuka-agi-co/secretary-bot/issues/199
+**新規企画:** 🎋 AGI Knowledge Base 定期更新自動化
+- Issue: https://github.com/onizuka-agi-co/secretary-bot/issues/202
 - Priority: P1
-- Size: M
+- Size: L
 - Start: 2026-03-29
 - Target: 2026-04-05
 
 **目的:**
-- 毎日の活動を自動的に記録
-- タスクの進捗状況を把握しやすくする
-- 定期ミーティングでの報告を容易にする
+- HuggingFace Daily Papersから論文を自動取得
+- memory/docs/papers/に追加する仕組みを構築
+- AGIの最新知見を継続的に蓄積
 
-## コミット履歴
-
-* 特になし
-
-## メモ
-
-* 全タスク完了後、企画フェーズへ移行
-* 日報の内容が空っぽい問題を解決する企画を追加
+**技術要素:**
+- HuggingFace Papers API
+- 論文要約生成（Gemini/GPT）
+- daily-memoryスキルの拡張
+- s6サービス（定期実行）
 
 ---
 
-_生成日時: 2026-03-29 15:30:00_
+_生成日時: 2026-03-29 17:00:00_
 
-#日報 #定期ミーティング #企画フェーズ
+#日報 #定期ミーティング #企画フェーズ #AGIKnowledgeBase
