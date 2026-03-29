@@ -1,70 +1,53 @@
 ---
-title: 📝 2026-03-30 日報
+title: 2026-03-30
 ---
 
-# 📝 2026-03-30（日）日報
+# 2026-03-30
 
-## 定期ミーティング #374
+## 🎯 企画フェーズ
 
-### 実施フェーズ: 🎯 企画フェーズ
-- **現状:** 全タスク完了（425件 Done）
-- **判断:** 新規企画が必要
-- **決定:** X自動解説Bot定期実行化
+**参加者:** Renji onizuka
+**タスク:** AGI知識ベース検索エンジン企画
+**Priority:** P1
+**Size:** L
+**Start:** 2026-03-31
+**Target:** 2026-04-07
 
-### 新規企画: 🤖 X自動解説Bot定期実行化
-- **概要:** 毎日特定の時間にXの最新投稿を自動で解説し、Discordに通知する機能
-- **スケジュール:** 毎日09:00, 21:00（設定可能）
-- **チャンネル:** #新規企画開発
-- **処理フロー:** X API → 解説生成 → Discord投稿
-### 技術要素
-- x-read スキルで最新投稿取得
-- gemini-vision または nano-banana-2 で解説画像生成
-- message tool でDiscord投稿
-- s6サービスで定期実行
-### GitHub Project
-- Issue: [#206](https://github.com/onizuka-agi-co/secretary-bot/issues/206)
-- Status: Backlog → Ready
-- Priority: P1
-- Size: M
-- Start date: 2026-03-30
-- Target date: 2026-04-06
+## 背景
 
----
+- GitHub Projectの全427タスク完了
+- 未着手0 / 進行中0 / レビュー中0
+- 新規企画が必要な状態
 
-_更新日: 2026-03-30_
+## 企画内容
 
-## 定期ミーティング #374
+### 🎋 AGI知識ベース検索エンジン
 
-### 実施フェーズ: 🎯 企画フェーズ
+**概要:**
 
-### 企画内容
+memory/docs（日報）、論文要約、X投稿など、蓄積したAGI関連知識を統合的に検索できるエンジンを構築する。
 
-**🤖 X自動解説Bot定期実行化**
+**活用シーン:**
+- 「先月の論文でRagについて言及したものは？」
+- 「API節約のアイデアを探したい」
+- 「VitePress関連の作業履歴を確認」
 
-毎日特定の時間にX（Twitter）の最新投稿を自動で解説し、Discordに通知する機能を実装する。
+**技術要素:**
+- ベクトル検索（ChromaDB / Pinecone / FAISS）
+- エンベディング生成（OpenAI / ローカルモデル）
+- CLI / Web インターフェース
 
-### 実装内容
-- Secretary Botに定期タスクとして追加
-- スケジュール: 毎日09:00, 21:00（設定可能）
-- チャンネル: #新規企画開発
-- 処理フロー: X API → 解説生成 → Discord投稿
+**関連Issue:**
+- #31: HuggingFace Daily Papers 図解投稿機能
 
-### 技術要素
-- x-read スキルで最新投稿取得
-- gemini-vision または nano-banana-2 で解説画像生成
-- message tool でDiscord投稿
-- s6サービスで定期実行
+- nano-banana-2スキル活用
 
-### Issue
-- [#206](https://github.com/onizuka-agi-co/secretary-bot/issues/206)
-- Priority: P1
-- Size: M
-- Start Date: 2026-03-30
-- Target Date: 2026-04-06
+## 次のステップ
 
-### 状況
-- 全タスク完了（425件 Done）
-- 新規企画フェーズへ移行
+- [ ] 技術選定（ベクトDB / 検索エンジを決)
+- [ ] エンベディング生成
+- [ ] CLI/Web UI構築
+- [ ] memory/docs/ をインデックスとして検索対象にする
 
 ---
 
