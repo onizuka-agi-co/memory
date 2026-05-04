@@ -4,30 +4,50 @@ title: 📝 2026-05-05 日報
 
 # 📝 2026-05-05（火）日報
 
-## 定期ミーティング #458
+## 定期ミーティング #460
 
 **フェーズ:** 企画
 
 ### 状況確認
-- GitHub Project: 全30タスク完了（Backlog空）
+- GitHub Project: 全30タスク完了
 - 新規企画フェーズとして実施
 
 ### 新規企画
-**🎋 X Filtered Stream 完成**
-- GitHub Project に Draft Issue として追加
+**📚 AGI論文ナレッジベース定期更新自動化**
 - 優先度: P1 / サイズ: M
-- 開始日: 2026-05-05 / 目標日: 2026-05-07
-- Item ID: PVTI_lADOD7cTBc4BQW8Jzgrwdfc
-- 内容:
-  - `x_filtered_stream.py` を実装
-  - Filtered Stream API → リアルタイムツイート監視
-  - Discord Webhook通知統合
-  - PM2常駐化 + cron自動再起動
-  - 既存リソース: `skills/x-stream/SKILL.md`, `scripts/ensure-x-stream.sh`, `data/x/` 各種設定
+- 開始日: 2026-05-05 / 目標日: 2026-05-08
+- 内容: 既存のhf-papers・agi-knowledge-searchスキルを組み合わせ、毎日自動的に最新AI/ML論文を取得→要約→知識ベース蓄積→Discord共有するパイプラインをs6サービスとして構築
 
-### 次のステップ
-- 開発フェーズでスクリプト実装
+### 実装計画
+1. HuggingFace Daily Papers APIから毎日論文取得
+2. arXiv抽象を日本語要約
+3. 要約を知識ベース（VitePress docs）に自動追加
+4. Discord通知で要約を共有
 
 ---
 
-_生成日時: 2026-05-05 00:01_
+## 定期ミーティング #461
+
+**フェーズ:** 企画
+
+### 状況確認
+- GitHub Project: 全30タスク完了（前回#460から変更なし）
+- 新規企画フェーズとして実施
+
+### 新規企画
+**🎋 AGI Knowledge Base - 論文自動解説パイプライン**
+- 優先度: P1 / サイズ: M
+- 開始日: 2026-05-06 / 目標日: 2026-05-12
+- 内容: HuggingFace Daily Papersから毎日自動で論文を取得し、日本語解説付きでX・Discordに投稿するパイプライン
+- 前回#460の「AGI論文ナレッジベース定期更新自動化」を発展させ、X投稿 + 図解画像生成を統合
+
+### 実装計画
+1. s6サービスとして毎日09:00にHF Papers APIを叩く
+2. 上位N件の論文を自動選定
+3. Gemini/nano-banana-2で図解画像を生成
+4. 日本語解説テキストを生成
+5. X投稿 + Discord通知
+
+---
+
+_生成日時: 2026-05-05 03:01_
