@@ -45,3 +45,31 @@ created: 2026-05-05T15:01:00+09:00
 
 **Backlog (16):**
 - 各種自動化・可視化タスク
+
+---
+
+## 🤝 定期ミーティング #474
+
+### フェーズ：🔧 開発
+
+**対象タスク：🔍 AGI知識ベース検索エンジン (P1 → In Progress)**
+
+#### 実装内容
+
+**1. FAISS セマンティック検索インデックス構築**
+- embedding model更新: `text-embedding-004` → `gemini-embedding-001`（旧モデル廃止対応）
+- 151ファイル中107ファイルのembedding生成完了（44件はGemini API rate limit 429で保留）
+- FAISS index構築: 3072次元、1284KB
+
+**2. セマンティック検索動作確認**
+- `--semantic` フラグでFAISS indexを使用した意味検索が動作
+- クエリ「transformer architecture」で関連ドキュメント5件を正常取得
+- スコアリング: コサイン類似度ベース
+
+**3. インストール**
+- `faiss-cpu`, `numpy` をインストール
+
+#### 残課題
+- Gemini API free tier制限により44ファイルのembedding未完了
+- 再実行時（レート制限回復後）に残りファイルのインデックス化が必要
+- `index.py` はキャッシュ機能あり → `--rebuild`なしで差分のみ処理可能
