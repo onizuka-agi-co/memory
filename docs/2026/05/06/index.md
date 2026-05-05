@@ -43,3 +43,39 @@ date: 2026-05-06
 - 🎭 AI研究論文ナレッジグラフ企画
 - AI研究論文自動収集・要約システム
 - 📊 AGI研究インパクト分析ダッシュボード
+
+---
+
+## 🤝 定期ミーティング #485
+
+### 実施フェーズ: 🔧 開発フェーズ
+
+### 実施内容: AGI論文ナレッジグラフ構築
+
+**Phase 1 基盤構築を完了**
+
+Neo4j Aura未設定のため、ローカルグラフエンジン（NetworkX + JSON）を実装。
+
+**新規作成:**
+- `project/agi-knowledge-graph/graph_engine.py` — ナレッジグラフ構築・検索エンジン
+
+**機能:**
+- `build` — キャッシュからグラフ構築
+- `stats` — 統計情報（論文/著者/トピック/共著）
+- `search` — キーワード検索（タイトル/アブスト/タグ）
+- `coauthors` — 共著者ネットワーク
+- `topics` — トピックランキング
+- `export` — JSON形式エクスポート
+
+**現在のデータ:**
+- 論文: 50 / 著者: 647 / トピック: 438
+- 共著関係: 28,361 / ノード: 697 / エッジ: 653
+
+**トップトピック:**
+- reinforcement learning: 5 papers
+- retrieval-augmented generation: 3
+- Large Vision-Language Models: 2
+- autoregressive models: 2
+- code generation: 2
+
+**コミット:** `#485 AGI論文ナレッジグラフ Phase1基盤構築 - ローカルグラフエンジン実装`
