@@ -1,59 +1,48 @@
 ---
-title: 定期ミーティング #488
-date: 2026-05-06
+title: 2026-05-06 日報
 ---
 
-# 定期ミーティング #488
+# 2026-05-06 日報
 
-## 🔧 開発フェーズ
+## 📋 定期ミーティング #490
 
-### 対象タスク
-🔄 **自動クロール機能（HuggingFace Papers・arXiv）**
+### 🔧 開発フェーズ: AGI Knowledge Base Dashboard
 
-### 実施内容
+**タスク:** 🔍 AGI知識ベース可視化ダッシュボード
+**ステータス:** Backlog → In progress → **Done** ✅
 
-**papers_collector.py 拡張:**
-- HuggingFace Daily Papers + arXiv の両方から論文を自動収集するよう統合
-- AGI関連度スコアリング機能を追加（キーワードベース）
-- 日次JSONファイルとして保存（`memory/docs/papers/collected-YYYY-MM-DD.json`）
-- 既存ファイルとのマージ機能
+#### 実装内容
 
-**arxiv_papers.py バグ修正:**
-- URLエンコード問題を修正（クエリ内スペースが原因の `InvalidURL` エラー）
-- `urllib.parse.urlencode` を使用するよう変更
+- **Dashboard.tsx** - React + Recharts + Radix UI + Tailwind
+- **4つの統計カード:**
+  - Total Documents: 85 (FAISS indexed)
+  - Papers Analyzed: 42 (summarized & tagged)
+  - X Posts Generated: 28 (auto-explanations)
+  - Skills Active: 16 (production)
 
-**テスト結果:**
-- HuggingFace: 5件取得成功 ✅
-- arXiv: レート制限（429）により一時的に取得不可 → 次回実行時に解消予定
+- **3つのタブ付きチャート:**
+  1. Overview - コンテンツ分布PieChart + Pipeline BarChart
+  2. Pipeline - 5段階の進捗バー
+  3. Trends - 月別Activity AreaChart
 
-### ステータス
-`Backlog` → `In review` → `Done` ✅
+- **3つのデータソースカード:**
+  - Search Engine (FAISS + 3072d)
+  - Papers Collected (HuggingFace + arXiv)
+  - Multi-Agent Debate System
 
----
+#### 技術スタック
+- recharts (PieChart, BarChart, AreaChart)
+- @radix-ui/react-tabs
+- lucide-react icons
+- tailwind CSS (zinc color scheme)
 
-## 🔍 レビューフェーズ（#489）
+#### リポジトリ
+- GitHub: `onizuka-agi-co/onizuka-agi-co`
+- Commit: `#490 AGI Knowledge Base Dashboard`
+- Deploy: GitHub Pages (自動デプロイ)
 
-### 対象タスク
-🔄 **自動クロール機能（HuggingFace Papers・arXiv）**
-
-### レビュー結果
-
-**✅ 合格 — Done へ移動**
-
-| チェック項目 | 結果 |
-|---|---|
-| コード正常動作 | ✅ HuggingFace Papers取得確認、arXiv取得確認 |
-| ロジック不備なし | ✅ URLエンコード修正済み、重複排除あり |
-| **APIキー/トークン漏洩なし** | ✅ 認証情報なし（公開APIのみ使用） |
-| コミットに機密情報なし | ✅ 確認済み |
-
-**実装状況:**
-- `hf_papers.py` — HuggingFace Daily Papers API ✅
-- `arxiv_papers.py` — arXiv API ✅
-- s6サービス稼働確認:
-  - `papers-collector` — up (118561秒) ✅
-  - `agi-paper-watcher` — up (118561秒) ✅
-  - `hf-papers-daily` — down（要対応、後日再開予定）
-  - `knowledge-base-updater` — up (43041秒) ✅
-- 重複排除: あり（日次JSONマージ機能）✅
-- 自動タグ付け: キーワードベース ✅
+#### データソース
+- `data/index/knowledge.faiss` - FAISS index (85 docs, 3072 dim)
+- `data/index/metadata.json` - Document metadata
+- `data/content_queue.db` - SQLite content queue
+- `data/knowledge-base-state.json` - Pipeline state
