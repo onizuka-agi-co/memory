@@ -177,3 +177,40 @@ _生成日時: 2026-05-06 14:01_
 - Target Date: 2026-05-21
 
 _生成日時: 2026-05-06 22:01_
+
+---
+
+## 🤝 定期ミーティング #505 - 企画フェーズ
+
+### 🎯 企画：GitHub Project #1 大規模整理
+
+**背景:**
+- Backlog 45件の多くが重複・散在
+- 実際のコードベースとProject状態が乖離
+  - x-stream: スクリプト5本存在（Projectでは未完成扱い）
+  - agi-knowledge-search: 実装済み
+
+**重複状況:**
+| テーマ | 件数 | 統合後 |
+|--------|------|--------|
+| Knowledge Search | 12件 | 1件 |
+| X Stream/Filtered | 5件 | 1件 |
+| AGI Hub i18n | 6件 | 1件 |
+| Weekly/Daily Report | 5件 | 2件 |
+| X解説Bot定期実行 | 6件 | 1件 |
+| 論文パイプライン | 3件 | 1件 |
+
+**企画内容:**
+1. 重複タスク統合（45件→約15件に削減）
+2. 実装済みタスクの確認とDone化
+3. 統合後のRoadmap再構築（6本柱）
+   - 🔍 Knowledge Search
+   - 🕸️ Knowledge Graph
+   - 🌊 X Stream Pipeline
+   - 🌐 AGI Hub i18n
+   - 📰 Weekly Report
+   - 🎨 Dashboard
+
+**インパクト:** Backlog整理による方向性の明確化
+
+_生成日時: 2026-05-06 23:01_
