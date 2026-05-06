@@ -11,12 +11,11 @@ ONIZUKA AGI Co. がお届けする、今週のAGI研究動向まとめ。
 
 ---
 
-## 📊 今週のハイライト (5 papers)
+## 📊 今週のハイライト (10 papers)
 
 ### 1. MolmoAct2: Action Reasoning Models for Real-world Deployment
 
-**Authors:** Haoquan Fang, Jiafei Duan, Donovan Clay et al. (29 authors)
-**👍 101 upvotes** | [Paper](https://huggingface.co/papers/2605.02881) | [arXiv](https://arxiv.org/abs/2605.02881)
+**🏷️ LLM** | **👍 190** | [Paper](https://huggingface.co/papers/2605.02881) | [arXiv](https://arxiv.org/abs/2605.02881)
 
 > Vision-Language-Action (VLA) models aim to provide a single generalist controller for robots, but today's systems fall short on the criteria that matter for real-world deployment. Frontier models are closed, open-weight alternatives are tied to expensive hardware, reasoning-augmented policies pay pr...
 
@@ -24,8 +23,7 @@ ONIZUKA AGI Co. がお届けする、今週のAGI研究動向まとめ。
 
 ### 2. From Context to Skills: Can Language Models Learn from Context Skillfully?
 
-**Authors:** Shuzheng Si, Haozhe Zhao, Yu Lei et al. (13 authors)
-**👍 91 upvotes** | [Paper](https://huggingface.co/papers/2604.27660) | [arXiv](https://arxiv.org/abs/2604.27660)
+**🏷️ LLM** | **👍 131** | [Paper](https://huggingface.co/papers/2604.27660) | [arXiv](https://arxiv.org/abs/2604.27660)
 
 > Many real-world tasks require language models (LMs) to reason over complex contexts that exceed their parametric knowledge. This calls for context learning, where LMs directly learn relevant knowledge from the given context. An intuitive solution is inference-time skill augmentation: extracting the ...
 
@@ -33,17 +31,28 @@ ONIZUKA AGI Co. がお届けする、今週のAGI研究動向まとめ。
 
 ### 3. UniVidX: A Unified Multimodal Framework for Versatile Video Generation via Diffusion Priors
 
-**Authors:** Houyuan Chen, Hong Li, Xianghao Kong et al. (11 authors)
-**👍 71 upvotes** | [Paper](https://huggingface.co/papers/2605.00658) | [arXiv](https://arxiv.org/abs/2605.00658)
+**🏷️ Vision** | **👍 77** | [Paper](https://huggingface.co/papers/2605.00658) | [arXiv](https://arxiv.org/abs/2605.00658)
 
 > Recent progress has shown that video diffusion models (VDMs) can be repurposed for diverse multimodal graphics tasks. However, existing methods often train separate models for each problem setting, which fixes the input-output mapping and limits the modeling of correlations across modalities. We pre...
 
 ---
 
-## 📋 その他の論文 (2 papers)
+## 📋 カテゴリ別 (7 papers)
 
-- [Web2BigTable: A Bi-Level Multi-Agent LLM System for Internet-Scale Information Search and Extraction](https://huggingface.co/papers/2604.27221) (29👍)
-- [Map2World: Segment Map Conditioned Text to 3D World Generation](https://huggingface.co/papers/2605.00781) (20👍)
+### Agents
+- [ARIS: Autonomous Research via Adversarial Multi-Agent Collaboration](https://huggingface.co/papers/2605.03042) (26👍)
+
+### LLM
+- [Web2BigTable: A Bi-Level Multi-Agent LLM System for Internet-Scale Information Search and Extraction](https://huggingface.co/papers/2604.27221) (32👍)
+- [Let ViT Speak: Generative Language-Image Pre-training](https://huggingface.co/papers/2605.00809) (21👍)
+- [From Skill Text to Skill Structure: The Scheduling-Structural-Logical Representation for Agent Skills](https://huggingface.co/papers/2604.24026) (16👍)
+
+### RL
+- [Beyond SFT-to-RL: Pre-alignment via Black-Box On-Policy Distillation for Multimodal RL](https://huggingface.co/papers/2604.28123) (32👍)
+
+### Vision
+- [Map2World: Segment Map Conditioned Text to 3D World Generation](https://huggingface.co/papers/2605.00781) (22👍)
+- [Persistent Visual Memory: Sustaining Perception for Deep Generation in LVLMs](https://huggingface.co/papers/2605.00814) (15👍)
 
 ---
 
