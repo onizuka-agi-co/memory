@@ -6,6 +6,42 @@ export default defineConfig({
   description: "Daily reports & memory - ONIZUKA AGI",
   base: "/memory/",
   ignoreDeadLinks: true,
+
+  // i18n support
+  locales: {
+    root: {
+      label: '日本語',
+      lang: 'ja',
+    },
+    en: {
+      label: 'English',
+      lang: 'en',
+      link: '/en/',
+      description: 'Daily reports & memory - ONIZUKA AGI (English)',
+      themeConfig: {
+        nav: [
+          { text: 'Home', link: '/en/' },
+          { text: '2026', link: '/en/2026/' },
+          { text: '📚 Papers', link: '/en/papers/' },
+        ],
+        sidebar,
+      }
+    },
+    zh: {
+      label: '中文',
+      lang: 'zh-CN',
+      link: '/zh/',
+      description: '每日报告与记忆 - ONIZUKA AGI (中文)',
+      themeConfig: {
+        nav: [
+          { text: '首页', link: '/zh/' },
+          { text: '2026', link: '/zh/2026/' },
+          { text: '📚 论文', link: '/zh/papers/' },
+        ],
+        sidebar,
+      }
+    }
+  },
   
   themeConfig: {
     nav: [
