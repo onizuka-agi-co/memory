@@ -59,3 +59,32 @@ Backlog 8件を確認。Done済みの論文収集・要約・ナレッジグラ�
 - Priority: P1 / Size: L
 - Start: 2026-05-07 / Target: 2026-05-14
 
+## 定期ミーティング #515 — 企画フェーズ
+
+**🎯 企画:** AGI Knowledge Hub 統合コンテンツ配信パイプライン v2
+
+### 実施内容
+
+**Backlog整理:**
+- 45個のBacklogアイテムから15個の重複を削除
+- カテゴリ分析：検索エンジン(11) / X自動解説(8) / X Stream(4) / 多言語化(4) / その他
+- Readyの重複1個も削除
+
+**新規企画立案:**
+既存のDone機能を統合するエンドツーエンドパイプラインを企画。
+
+構成:
+1. 論文収集層 — hf-papers + arXiv（Done）
+2. 要約・解説層 — multi-agent-debate（Done）
+3. 多言語化層 — 英語・日本語・中国語（In Progress）
+4. 配信層 — X / Discord / Newsletter / VitePress
+5. 分析層 — エンゲージメント追跡
+
+### GitHub Project
+- Issue追加: `📡 AGI Knowledge Hub 統合コンテンツ配信パイプライン v2` (#71)
+- Priority: P1 / Size: L / Status: Ready
+- <https://github.com/onizuka-agi-co/workspace/issues/71>
+
+### 整理後の状況
+- Done: 25 | Ready: 14 | In progress: 2 | Backlog: 30
+
