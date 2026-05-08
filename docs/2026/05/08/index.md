@@ -14,5 +14,13 @@
   - レポート生成 + Discord通知 成功
   - s6サービス定義済み（毎週月曜09:00実行）
 
+## 🤝 定期ミーティング #543
+- **フェーズ:** 企画
+- **結果:** 🌐 AGI論文自動翻訳パイプライン企画
+  - Issue: <https://github.com/onizuka-agi-co/secretary-bot/issues/210>
+  - Priority: P1 / Size: M
+  - Start: 2026-05-09 / Target: 2026-05-16
+  - 概要: HuggingFace Papers/arXiv論文要約をja/en/zhの3言語に自動翻訳しVitePress多言語コンテンツとして公開
+
 ## 📝 メモ
 weekly_digest.py新規作成: トレンド分析、Hot Topics検出、前週比比較、カテゴリ分類強化を追加。s6サービス更新済み。每周月曜に自動実行。
