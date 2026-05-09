@@ -61,4 +61,33 @@ title: 📝 2026-05-09 日報
 
 ---
 
-_生成日時: 2026-05-09 16:00_
+## 定期ミーティング #570
+
+**フェーズ:** 🔧 開発フェーズ
+
+### 状況確認
+- GitHub Project: 全30タスク Done
+- Issue #216「AGI用語解き」が未実装 → 開発フェーズで実装
+
+### 開発内容: 📖 AGI用語解き — 今日の一言叶
+
+**実装完了:**
+1. `project/agi-glossary/terms.json` — 50語のAGI用語データベース
+2. `project/agi-glossary/generate.py` — 解説生成スクリプト
+   - generate: ランダムに用語を選択しX/Discord用テキスト生成
+   - mark-posted: 投稿済みとして記録
+   - status: 進捗確認
+   - terms: 用語一覧表示
+3. `project/agi-glossary/setup-service.sh` — s6サービス設定スクリプト（毎日09:00実行）
+
+**動作確認:** ✅ generate/statusコマンド動作確認済み
+
+**コミット:**
+- `#216 AGI用語解き — 用語データベース・生成スクリプト実装`
+- `#216 用語JSON・s6セットアップ追加`
+
+**残タスク:** X/Discord配信の実際の連携設定（Webhook URL設定要）
+
+---
+
+_生成日時: 2026-05-09 17:00_
