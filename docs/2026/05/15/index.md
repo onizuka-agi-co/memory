@@ -66,4 +66,46 @@ title: 📝 2026-05-15 日報
 
 ---
 
+## 定期ミーティング #582
+
+### 実施フェーズ：🔧 開発フェーズ
+
+**現状:**
+- Done: ~30タスク
+- In Progress: 4タスク
+  - 🔍 AGI知識ベース検索エンジン - embedding生成 (P1, M)
+  - 🌐 AGI Knowledge Hub 多言語化 — 英語・中国語対応 (P1, L)
+  - 🌐 AGI Knowledge Hub 多言語化 — 英語圏への知見発信 (P1, L)
+  - 🎋 AGI用語解き — 今日の一言叶 (P1, M)
+
+**対象タスク:**
+🔍 **AGI知識ベース検索エンジン - embedding生成**
+
+### 実装内容
+
+**FAISSインデックス構築（第1弾）**
+- `skills/agi-knowledge-search/scripts/index.py` にレート制限対応追加
+- 185ファイル中80ファイルのembedding生成完了 → FAISSインデックス構築
+- Gemini Embedding API (gemini-embedding-001) 使用
+- インデックスサイズ: 960KB / Dimension: 3072
+
+**レート制限対応:**
+- 429エラー時の自動リトライ（3回、指数バックオフ）
+- キャッシュ機能による差分ビルド対応
+
+**セマンティック検索動作確認:**
+- `search.py --semantic` でFAISSインデックス検索が正常動作
+- "transformer architecture" → 3件の関連結果（スコア54-56）
+
+**残りの課題:**
+- 105ファイルのembedding未生成（Gemini APIレート制限）
+- 再実行で差分ビルド可能（キャッシュ済み80ファイルはスキップ）
+
+### 次のステップ
+- [ ] 残り105ファイルのembedding生成（API制限解除後）
+- [ ] Vector Store構築の完成
+- [ ] 検索API実装
+
+---
+
 _更新日: 2026-05-15_
