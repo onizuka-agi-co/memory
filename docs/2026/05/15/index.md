@@ -108,4 +108,74 @@ title: 📝 2026-05-15 日報
 
 ---
 
+## 定期ミーティング #583
+
+### 実施フェーズ：🔧 開発フェーズ
+
+**現状:**
+- Done: 34タスク
+- In Progress: 2タスク（2タスク完了）
+  - ✅ 🔍 AGI知識ベース検索エンジン - embedding生成 → **Done**
+  - ✅ 🎋 AGI用語解き — 今日の一言叶 → **Done**
+  - 🌐 AGI Knowledge Hub 多言語化 — 英語・中国語対応 (P1, L)
+  - 🌐 AGI Knowledge Hub 多言語化 — 英語圏への知見発信 (P1, L)
+
+### 実装内容
+
+**1. embedding生成 完成（80→185ドキュメント）**
+- 全185ファイルのembedding生成完了
+- FAISSインデックス再構築（2.2MB / Dimension: 3072）
+- セマンティック検索正常動作確認
+- `search.py "reasoning"` → 3件ヒット（スコア5-8）
+
+**2. AGI用語解きBot 完成確認**
+- `agi_term_of_day.py run --dry-run` 正常動作
+- 今日の用語: Constitutional AI
+- 画像生成（nano-banana-2）→ X投稿パイプライン動作確認
+- 日本語版・英語版ともに稼働可能
+
+**GitHub Project 更新:**
+- 2タスクを Done に移動
+
+---
+
+## 定期ミーティング #584
+
+### 実施フェーズ：🔧 開発フェーズ
+
+**現状:**
+- Done: 36タスク
+- In Progress: 2タスク（多言語化 ×2）
+
+**対象タスク:**
+🌐 **VitePress i18n設定**（多言語化のサブタスク）
+
+### 実装内容
+
+**1. VitePress i18nインデックスページ生成**
+- `memory/docs/en/index.md` — 英語トップページ（hero layout）
+- `memory/docs/zh/index.md` — 中国語トップページ（hero layout）
+- 各言語のナビゲーション・features設定
+
+**2. 自動多言語翻訳スクリプト**
+- `skills/daily-memory/scripts/i18n_translate.py`
+- 日報の日本語→英語・中国語自動翻訳
+- `translate` / `translate-recent` / `generate-index` コマンド
+- `--dry-run` オプション対応
+
+**3. 今日の日報翻訳（手動）**
+- `en/2026/05/15/index.md` — 英語版完了
+- `zh/2026/05/15/index.md` — 中国語版完了
+
+**コミット:**
+- `#27 VitePress i18n — EN/ZH index pages + daily report translation`
+- `#27 VitePress i18n — auto multilingual translation script`
+
+### 残りのサブタスク
+- [ ] 英語X アカウント運用自動化（Size: S）
+- [x] VitePress i18n設定（Size: M）← **今回完了**
+- [ ] 論文要約の自動英訳パイプライン（Size: M）
+
+---
+
 _更新日: 2026-05-15_
