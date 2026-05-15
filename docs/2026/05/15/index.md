@@ -325,3 +325,38 @@ _#594 生成日時: 2026-05-15 15:00_
 ---
 
 _#595 生成日時: 2026-05-15 16:00_
+
+## 定期ミーティング #596
+
+### 🎯 企画フェーズ実施
+
+**状況:** 全タスクDone、6本柱稼働中 → 新規企画立案
+
+**選定企画: 🧠 AGI論文自動解説パイプライン（フルオーケストレーション版）**
+
+- Issue: https://github.com/onizuka-agi-co/secretary-bot/issues/227
+- Project: https://github.com/orgs/onizuka-agi-co/projects/1
+- Status: Backlog
+- Priority: P1
+- Size: L
+- Start: 2026-05-16
+- Target: 2026-05-22
+
+#### 概要
+既存スキル群（hf-papers、agi-knowledge-search、multi-agent-debate、nano-banana-2、x-quote-explain）を統合し、**論文取得 → 知識検索 → 多角分析 → 画像生成 → X投稿** の完全自動パイプラインを構築。
+
+#### 実装ステップ
+1. HuggingFace Daily Papers から新着論文を自動取得
+2. agi-knowledge-search で関連する既存知識を検索
+3. multi-agent-debate で複数視点から分析
+4. nano-banana-2 で解説画像を生成
+5. x-quote-explain でXに解説スレッド投稿
+6. s6サービスとして定期実行（毎日09:00）
+7. エラー時はDiscord通知
+
+#### 選定背景
+各スキルは個別に完成しているが、連携するマスターオーケストレーターが存在しない。全スキルを繋ぐパイプラインを構築することで、6本柱の根幹である「自動解説」を一段強化する。
+
+---
+
+_#596 生成日時: 2026-05-15 17:04_
