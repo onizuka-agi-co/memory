@@ -130,4 +130,69 @@ title: 📝 2026-05-09 日報
 
 ---
 
-_生成日時: 2026-05-09 21:00_
+## 定期ミーティング #575
+
+### 実施フェーズ：🎯 企画フェーズ
+
+**現状：** GitHub Project 31タスク（30完了 + 1 Ready）
+
+**新規企画：** 🎋 **AGI用語解き — 今日の一言叶**
+
+蓄積したナレッジベースから毎日1つのAGI関連用語をピックアップし、短く分かりやすい解説をXに自動投稿するシステム。「AGIの知見をほどき、世界に届ける」——一つひとつの概念をほどくことも必要。
+
+**機能：**
+1. ナレッジベースから日次で1用語を自動選定（トレンド重み付け）
+2. Gemini/GLMで100字程度の簡潔な解説を生成
+3. nano-banana-2でイメージ画像を生成
+4. X投稿 + Discord Embed + VitePress用語集
+5. s6サービスで毎日07:00自動実行
+
+**既存スキル活用:** agi-knowledge-search, x-write, nano-banana-2, daily-memory
+
+**GitHub Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/220
+
+**Project設定：**
+- Status: Ready
+- Priority: P2
+- Size: M
+- Start Date: 2026-05-12
+- Target Date: 2026-05-19
+
+---
+
+## 定期ミーティング #576
+
+### 実施フェーズ：🎯 企画フェーズ
+
+**現状：** GitHub Project 全タスク Done（企画が積み上がり状態）
+
+**新規企画：** 🌐 **AGI論文インタラクティブ・エクスプローラー**
+
+蓄積したAGI論文ナレッジベースをWeb UIでインタラクティブに探索できるダッシュボード。
+
+**統合スキル：**
+- AGI Knowledge Search（セマンティック検索）
+- AGI Knowledge Graph（ナレッジグラフ）
+- HF Papers（論文自動収集）
+- Multi-Agent Debate（マルチエージェント議論）
+- nano-banana-2（画像生成）
+
+**機能：**
+1. 論文一覧表示（日付・トピック・インパクト順）
+2. セマンティック検索（自然言語クエリ）
+3. ナレッジグラフ可視化（D3.js/Cytoscape.js）
+4. 論文詳細ビュー（要約・解説・議論結果）
+5. ビジュアル要約（AI生成画像付きカード）
+
+**技術：** VitePress + Vue.js, D3.js/Cytoscape.js, GitHub Pages
+
+**Project設定：**
+- Status: Backlog
+- Priority: P1
+- Size: L
+- Start Date: 2026-05-10
+- Target Date: 2026-05-24
+
+---
+
+_生成日時: 2026-05-09 23:00_

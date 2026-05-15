@@ -1,0 +1,252 @@
+[
+  {
+    "id": "2605.05191v1",
+    "title": "LongSeeker: Elastic Context Orchestration for Long-Horizon Search Agents",
+    "summary": "Long-horizon search agents must manage a rapidly growing working context as they reason, call tools, and observe information. Naively accumulating all intermediate content can overwhelm the agent, increasing costs and the risk of errors. We propose that effective context management should be adaptive: parts of the agent's trajectory are maintained at different levels of detail depending on their current relevance to the task. To operationalize this principle, we introduce Context-ReAct, a general agentic paradigm for elastic context orchestration that integrates reasoning, context management, and tool use in a unified loop. Context-ReAct provides five atomic operations: Skip, Compress, Rollback, Snippet and Delete, which allow the agent to dynamically reshape its working context, preserving important evidence, summarizing resolved information, discarding unhelpful branches, and controlling context size. We prove that the Compress operator is expressively complete, while the other specialized operators provide efficiency and fidelity guarantees that reduce generation cost and hallucination risk. Building on this paradigm, we develop LongSeeker, a long-horizon search agent fine-tuned from Qwen3-30B-A3B on 10k synthesized trajectories. Across four representative search benchmarks, LongSeeker achieves 61.5% on BrowseComp and 62.5% on BrowseComp-ZH, substantially outperforming Tongyi DeepResearch (43.2% and 46.7%) and AgentFold (36.2% and 47.3%). These results highlight the potential of adaptive context management, showing that agents can achieve more reliable and efficient long-horizon reasoning by actively shaping their working memory.",
+    "authors": [
+      "Yijun Lu",
+      "Rui Ye",
+      "Yuwen Du",
+      "Jiajun Wang",
+      "Songhua Liu",
+      "Siheng Chen"
+    ],
+    "published": "2026-05-06T17:54:16Z",
+    "updated": "2026-05-06T17:54:16Z",
+    "link": "http://arxiv.org/abs/2605.05191v1",
+    "pdf_link": "https://arxiv.org/pdf/2605.05191v1",
+    "categories": [
+      "cs.AI"
+    ],
+    "source": "arxiv",
+    "agi_score": 2.0
+  },
+  {
+    "id": "2605.05192v1",
+    "title": "Almost-Orthogonality in Lp Spaces: A Case Study with Grok",
+    "summary": "Carbery proposed the following sharpened form of triangle inequality for many functions: for any $p\\ge 2$ and any finite sequence $(f_j)_j\\subset L^p$ we have \\[ \\Big\\|\\sum_j f_j\\Big\\|_p \\ \\le\\ \\left(\\sup_{j} \\sum_{k} α_{jk}^{\\,c}\\right)^{1/p'} \\Big(\\sum_j \\|f_j\\|_p^p\\Big)^{1/p}, \\] where $c=2$, $1/p+1/p'=1$, and $α_{jk}=\\sqrt{\\frac{\\|f_{j}f_{k}\\|_{p/2}}{\\|f_{j}\\|_{p}\\|f_{k}\\|_{p}}}$. In the first part of this paper we construct a counterexample showing that this inequality fails for every $p>2$. We then prove that if an estimate of the above form holds, the exponent must satisfy $c\\le p'$. Finally, at the critical exponent $c=p'$, we establish the inequality for all integer values $p\\ge 2$.   In the second part of the paper we obtain a sharp three-function bound \\[ \\Big\\|\\sum_{j=1}^{3} f_j\\Big\\|_p \\ \\le\\ \\left(1+2Γ^{c(p)}\\right)^{1/p'} \\Big(\\sum_{j=1}^{3} \\|f_j\\|_p^p\\Big)^{1/p}, \\] where $p \\geq 3$, $c(p) = \\frac{2\\ln(2)}{(p-2)\\ln(3)+2\\ln(2)}$ and $Γ=Γ(f_1,f_2,f_3)\\in[0,1]$ quantifies the degree of orthogonality among $f_1,f_2,f_3$. The exponent $c(p)$ is optimal, and improves upon the power $r(p) = \\frac{6}{5p-4}$ obtained previously by Carlen, Frank, and Lieb. Some intermediate lemmas and inequalities appearing in this work were explored with the assistance of the large language model Grok.",
+    "authors": [
+      "Ziang Chen",
+      "Jaume de Dios Pont",
+      "Paata Ivanisvili",
+      "Jose Madrid",
+      "Haozhu Wang"
+    ],
+    "published": "2026-05-06T17:54:51Z",
+    "updated": "2026-05-06T17:54:51Z",
+    "link": "http://arxiv.org/abs/2605.05192v1",
+    "pdf_link": "https://arxiv.org/pdf/2605.05192v1",
+    "categories": [
+      "math.CA",
+      "cs.AI",
+      "math.CO",
+      "math.PR"
+    ],
+    "source": "arxiv",
+    "agi_score": 1.0
+  },
+  {
+    "id": "2605.05179v1",
+    "title": "Estimating the expected output of wide random MLPs more efficiently than sampling",
+    "summary": "By far the most common way to estimate an expected loss in machine learning is to draw samples, compute the loss on each one, and take the empirical average. However, sampling is not necessarily optimal. Given an MLP at initialization, we show how to estimate its expected output over Gaussian inputs without running samples through the network at all. Instead, we produce approximate representations of the distributions of activations at each layer, leveraging tools such as cumulants and Hermite expansions. We show both theoretically and empirically that for sufficiently wide networks, our estimator achieves a target mean squared error using substantially fewer FLOPs than Monte Carlo sampling. We find moreover that our methods perform particularly well at estimating the probabilities of rare events, and additionally demonstrate how they can be used for model training. Together, these findings suggest a path to producing models with a greatly reduced probability of catastrophic tail risks.",
+    "authors": [
+      "Wilson Wu",
+      "Victor Lecomte",
+      "Michael Winer",
+      "George Robinson",
+      "Jacob Hilton",
+      "Paul Christiano"
+    ],
+    "published": "2026-05-06T17:46:12Z",
+    "updated": "2026-05-06T17:46:12Z",
+    "link": "http://arxiv.org/abs/2605.05179v1",
+    "pdf_link": "https://arxiv.org/pdf/2605.05179v1",
+    "categories": [
+      "cs.LG",
+      "cond-mat.dis-nn",
+      "stat.ML"
+    ],
+    "source": "arxiv",
+    "agi_score": 1.0
+  },
+  {
+    "id": "2605.05176v1",
+    "title": "Understanding In-Context Learning for Nonlinear Regression with Transformers: Attention as Featurizer",
+    "summary": "Pre-trained transformers are able to learn from examples provided as part of the prompt without any weight updates, a remarkable ability known as in-context learning (ICL). Despite its demonstrated efficacy across various domains, the theoretical understanding of ICL is still developing. Whereas most existing theory has focused on linear models, we study ICL in the nonlinear regression setting. Through the interaction mechanism in attention, we explicitly construct transformer networks to realize nonlinear features, such as polynomial or spline bases, which span a wide class of functions. Based on this construction, we establish a framework to analyze end-to-end in-context nonlinear regression with the constructed features. Our theory provides finite-sample generalization error bounds in terms of context length and training set size. We numerically validate the theory on synthetic regression tasks.",
+    "authors": [
+      "Alexander Hsu",
+      "Zhaiming Shen",
+      "Wenjing Liao",
+      "Rongjie Lai"
+    ],
+    "published": "2026-05-06T17:42:07Z",
+    "updated": "2026-05-06T17:42:07Z",
+    "link": "http://arxiv.org/abs/2605.05176v1",
+    "pdf_link": "https://arxiv.org/pdf/2605.05176v1",
+    "categories": [
+      "cs.LG",
+      "math.NA"
+    ],
+    "source": "arxiv",
+    "agi_score": 1.0
+  },
+  {
+    "id": "2605.03849",
+    "source": "huggingface",
+    "agi_score": 0.0
+  },
+  {
+    "id": "2605.04461",
+    "source": "huggingface",
+    "agi_score": 0.0
+  },
+  {
+    "id": "2605.03042",
+    "source": "huggingface",
+    "agi_score": 0.0
+  },
+  {
+    "id": "2605.05185",
+    "source": "huggingface",
+    "agi_score": 0.0
+  },
+  {
+    "id": "2605.03269",
+    "source": "huggingface",
+    "agi_score": 0.0
+  },
+  {
+    "id": "2605.05206v1",
+    "title": "Taming Outlier Tokens in Diffusion Transformers",
+    "summary": "We study outlier tokens in Diffusion Transformers (DiTs) for image generation. Prior work has shown that Vision Transformers (ViTs) can produce a small number of high-norm tokens that attract disproportionate attention while carrying limited local information, but their role in generative models remains underexplored. We show that this phenomenon appears in both the encoder and denoiser of modern Representation Autoencoder (RAE)-DiT pipelines: pretrained ViT encoders can produce outlier representations, and DiTs themselves can develop internal outlier tokens, especially in intermediate layers. Moreover, simply masking high-norm tokens does not improve performance, indicating that the problem is not only caused by a few extreme values, but is more closely related to corrupted local patch semantics. To address this issue, we introduce Dual-Stage Registers (DSR), a register-based intervention for both components: trained registers when available, recursive test-time registers otherwise, and diffusion registers for the denoiser. Across ImageNet and large-scale text-to-image generation, these interventions consistently reduce outlier artifacts and improve generation quality. Our results highlight outlier-token control as an important ingredient in building stronger DiTs.",
+    "authors": [
+      "Xiaoyu Wu",
+      "Yifei Wang",
+      "Tsu-Jui Fu",
+      "Liang-Chieh Chen",
+      "Zhe Gan",
+      "Chen Wei"
+    ],
+    "published": "2026-05-06T17:59:42Z",
+    "updated": "2026-05-06T17:59:42Z",
+    "link": "http://arxiv.org/abs/2605.05206v1",
+    "pdf_link": "https://arxiv.org/pdf/2605.05206v1",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "source": "arxiv",
+    "agi_score": 0.0
+  },
+  {
+    "id": "2605.05197v1",
+    "title": "Implicit Representations of Grammaticality in Language Models",
+    "summary": "Grammaticality and likelihood are distinct notions in human language. Pretrained language models (LMs), which are probabilistic models of language fitted to maximize corpus likelihood, generate grammatically well-formed text and discriminate well between grammatical and ungrammatical sentences in tightly controlled minimal pairs. However, their string probabilities do not sharply discriminate between grammatical and ungrammatical sentences overall. But do LMs implicitly acquire a grammaticality distinction distinct from string probability? We explore this question through studying internal representations of LMs, by training a linear probe on a dataset of grammatical and (synthetic) ungrammatical sentences obtained by applying perturbations to a naturalistic text corpus. We find that this simple grammaticality probe generalizes to human-curated grammaticality judgment benchmarks and outperforms LM probability-based grammaticality judgments. When applied to semantic plausibility benchmarks, in which both members of a minimal pair are grammatical and differ in only plausibility, the probe however performs worse than string probability. The English-trained probe also exhibits nontrivial cross-lingual generalization, outperforming string probabilities on grammaticality benchmarks in numerous other languages. Additionally, probe scores correlate only weakly with string probabilities. These results collectively suggest that LMs acquire to some extent an implicit grammaticality distinction within their hidden layers.",
+    "authors": [
+      "Yingshan Susan Wang",
+      "Linlu Qiu",
+      "Zhaofeng Wu",
+      "Roger P. Levy",
+      "Yoon Kim"
+    ],
+    "published": "2026-05-06T17:57:31Z",
+    "updated": "2026-05-06T17:57:31Z",
+    "link": "http://arxiv.org/abs/2605.05197v1",
+    "pdf_link": "https://arxiv.org/pdf/2605.05197v1",
+    "categories": [
+      "cs.CL"
+    ],
+    "source": "arxiv",
+    "agi_score": 0.0
+  },
+  {
+    "id": "2605.05193v1",
+    "title": "Grokability in five inequalities",
+    "summary": "In this note, we report five mathematical discoveries made in collaboration with Grok, all of which have been subsequently verified by the authors. These include an improved lower bound on the maximal Gaussian perimeter of convex sets in $\\mathbb{R}^n$, sharper $L_2$-$L_1$ moment comparison inequalities on the Hamming cube $\\{-1,1\\}^n$, a strengthened autoconvolution inequality, improved asymptotic bounds on the size of the largest $g$-Sidon sets in $\\{1,\\dots,n\\}$, and an optimal balanced Szarek's inequality.",
+    "authors": [
+      "Paata Ivanisvili",
+      "Xinyuan Xie"
+    ],
+    "published": "2026-05-06T17:55:15Z",
+    "updated": "2026-05-06T17:55:15Z",
+    "link": "http://arxiv.org/abs/2605.05193v1",
+    "pdf_link": "https://arxiv.org/pdf/2605.05193v1",
+    "categories": [
+      "math.PR",
+      "cs.AI",
+      "math.AP",
+      "math.CA",
+      "math.FA"
+    ],
+    "source": "arxiv",
+    "agi_score": 0.0
+  },
+  {
+    "id": "2605.05189v1",
+    "title": "Sharp Capacity Thresholds in Linear Associative Memory: From Winner-Take-All to Listwise Retrieval",
+    "summary": "How many key-value associations can a $d\\times d$ linear memory store? We show that the answer depends not only on the $d^2$ degrees of freedom in the memory matrix, but also on the retrieval criterion. In an isotropic Gaussian model for the stored pairs, we show that top-1 retrieval, where every signal must beat its largest distractor, requires the logarithmic model-size scale $d^2\\asymp n\\log n$. We prove that the correlation matrix memory construction, which stores associations by superposing key-target outer products, achieves this scale through a sharp phase transition, and that the same scaling is necessary for any linear memory. Thus the logarithm is the intrinsic extreme-value price of winner-take-all decoding.   We next consider listwise retrieval, where the correct target need not be the unique top-scoring item but should remain among the strongest candidates. To formalize this regime, we propose the Tail-Average Margin (TAM), a convex upper-tail criterion that certifies inclusion of the correct target in a controlled candidate list. Under this listwise retrieval criterion, the capacity follows the quadratic scale $d^2\\asymp n$. At load $n/d^2\\toα$, we develop an exact asymptotic theory for the TAM empirical-risk minimizer through a two-parameter scalar variational principle. The theory has a rich phenomenology: in the ridgeless limit it yields a closed-form critical load separating satisfiable and unsatisfiable phases, and it predicts the limiting laws of true scores, competitor scores, margins, and percentile profiles. Finally, a small-tail extrapolation further leads to the conjectural sharp top-1 threshold $d^2\\sim 2n\\log n$.",
+    "authors": [
+      "Nicholas Barnfield",
+      "Juno Kim",
+      "Eshaan Nichani",
+      "Jason D. Lee",
+      "Yue M. Lu"
+    ],
+    "published": "2026-05-06T17:53:20Z",
+    "updated": "2026-05-06T17:53:20Z",
+    "link": "http://arxiv.org/abs/2605.05189v1",
+    "pdf_link": "https://arxiv.org/pdf/2605.05189v1",
+    "categories": [
+      "stat.ML",
+      "cs.IT",
+      "cs.LG"
+    ],
+    "source": "arxiv",
+    "agi_score": 0.0
+  },
+  {
+    "id": "2605.05175v1",
+    "title": "MRI-Eval: A Tiered Benchmark for Evaluating LLM Performance on MRI Physics and GE Scanner Operations Knowledge",
+    "summary": "Background: Existing MRI LLM benchmarks rely mainly on review-book multiple-choice questions, where top proprietary models already score highly, limiting discrimination. No systematic benchmark has evaluated vendor-specific scanner operational knowledge central to research MRI practice. Purpose: We developed MRI-Eval, a tiered benchmark for relative model comparison on MRI physics and GE scanner operations knowledge using primary multiple-choice questions (MCQ), with stem-only and primed diagnostic conditions as complementary analyses. Methods: MRI-Eval includes 1365 scored items across nine categories and three difficulty tiers from textbooks, GE scanner manuals, programming course materials, and expert-generated questions. Five model families were evaluated (GPT-5.4, Claude Opus 4.6, Claude Sonnet 4.6, Gemini 2.5 Pro, Llama 3.3 70B). MCQ was primary; stem-only removed options and used an independent LLM judge; primed stem-only tested responses to incorrect user claims. Results: Overall MCQ accuracy was 93.2% to 97.1%. GE scanner operations was the lowest category for every model (88.2% to 94.6%). In stem-only, frontier-model accuracy fell to 58.4% to 61.1%, and Llama 3.3 70B fell to 37.1%; GE scanner operations stem-only accuracy was 13.8% to 29.8%. Conclusion: High MCQ performance can mask weak free-text recall, especially for vendor-specific operational knowledge. MRI-Eval is most informative as a relative comparison benchmark rather than an absolute competency measure and supports caution in using raw LLM outputs for GE-specific protocol guidance.",
+    "authors": [
+      "Perry E. Radau"
+    ],
+    "published": "2026-05-06T17:42:01Z",
+    "updated": "2026-05-06T17:42:01Z",
+    "link": "http://arxiv.org/abs/2605.05175v1",
+    "pdf_link": "https://arxiv.org/pdf/2605.05175v1",
+    "categories": [
+      "eess.IV",
+      "cs.CL",
+      "physics.med-ph"
+    ],
+    "source": "arxiv",
+    "agi_score": 0.0
+  },
+  {
+    "id": "2605.05172v1",
+    "title": "When Life Gives You BC, Make Q-functions: Extracting Q-values from Behavior Cloning for On-Robot Reinforcement Learning",
+    "summary": "Behavior Cloning (BC) has emerged as a highly effective paradigm for robot learning. However, BC lacks a self-guided mechanism for online improvement after demonstrations have been collected. Existing offline-to-online learning methods often cause policies to replace previously learned good actions due to a distribution mismatch between offline data and online learning. In this work, we propose Q2RL, Q-Estimation and Q-Gating from BC for Reinforcement Learning, an algorithm for efficient offline-to-online learning. Our method consists of two parts: (1) Q-Estimation extracts a Q-function from a BC policy using a few interaction steps with the environment, followed by online RL with (2) Q-Gating, which switches between BC and RL policy actions based on their respective Q-values to collect samples for RL policy training. Across manipulation tasks from D4RL and robomimic benchmarks, Q2RL outperforms SOTA offline-to-online learning baselines on success rate and time to convergence. Q2RL is efficient enough to be applied in an on-robot RL setting, learning robust policies for contact-rich and high precision manipulation tasks such as pipe assembly and kitting, in 1-2 hours of online interaction, achieving success rates of up to 100% and up to 3.75x improvement against the original BC policy. Code and video are available at https://pages.rai-inst.com/q2rl_website/",
+    "authors": [
+      "Lakshita Dodeja",
+      "Ondrej Biza",
+      "Shivam Vats",
+      "Stephen Hart",
+      "Stefanie Tellex",
+      "Robin Walters",
+      "Karl Schmeckpeper",
+      "Thomas Weng"
+    ],
+    "published": "2026-05-06T17:40:11Z",
+    "updated": "2026-05-06T17:40:11Z",
+    "link": "http://arxiv.org/abs/2605.05172v1",
+    "pdf_link": "https://arxiv.org/pdf/2605.05172v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "source": "arxiv",
+    "agi_score": 0.0
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "main_post": {
+    "text": "🔍 GeminiVRM v0.1.0 - First Release\n\nA browser-first VRM chat powered by Gemini Live native audio. This polished fork of pixiv/ChatVRM replaces the OpenAI + Koeiromap audio pipeline with streaming Gemini Live audio.\n\n🎯 Key Highlights:\n• Streaming voice + lip sync - Avatar starts speaking before full response\n• Bundled Kiyoka.vrm avatar with customization options\n• YouTube Live integration - Receive comments in-app\n• Local-first workflow - Just npm install & run\n\n💡 Perfect for VTubers and live streamers who want real-time AI avatar interaction.\n\n$ONIAGI",
+    "image_path": "memory/docs/public/geminivrm-v0.1.0-explainer.png"
+  },
+  "replies": [
+    {
+      "id": "repo",
+      "reply_to": "main",
+      "text": "📎 GitHub Repository\nBrowse the source code, star the repo, or fork it for your own customization.\nhttps://github.com/Sunwood-ai-labs/GeminiVRM"
+    },
+    {
+      "id": "release",
+      "reply_to": "main",
+      "text": "🚀 Release v0.1.0\nDownload the first public release and check the changelog.\nhttps://github.com/Sunwood-ai-labs/GeminiVRM/releases/tag/v0.1.0"
+    },
+    {
+      "id": "docs",
+      "reply_to": "main",
+      "text": "📚 Documentation (Bilingual)\nGetting started guides, architecture notes, and deployment instructions in English and Japanese.\nhttps://sunwood-ai-labs.github.io/GeminiVRM/docs/"
+    }
+  ]
+}

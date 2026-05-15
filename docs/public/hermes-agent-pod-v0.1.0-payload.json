@@ -1,0 +1,23 @@
+{
+  "main_post": {
+    "text": "🔍 Hermes Agent Pod v0.1.0 - First Public Release\n\nA local runtime kit that packages nousresearch/hermes-agent as a Kubernetes Pod or Docker Compose service. Codex delegates bounded subtasks to a nearby Hermes worker while keeping host-side control.\n\n🎯 Architecture Highlights:\n• Kind (Kubernetes) runtime + Docker Compose fallback\n• Localhost gateway API at 127.0.0.1:8642\n• Built-in Kanban dashboard at 127.0.0.1:9119\n• OpenAI-compatible /v1/chat/completions endpoint\n\n⚙️ Worker Delegation:\nThe hermes-worker wrapper sends tasks with file attachments, session continuation, and JSON output. Codex stays in charge of host files and final decisions.\n\n🔧 Default Config:\nAligned to Z.AI GLM Coding Plan — provider zai, model glm-5.1.\n\n🛡️ Security-First:\nGateway is localhost-only by default. Runtime data and secrets stay local under data/ and .env*.\n\n💡 Ideal for: Codex experimenters who want a sandboxed sub-agent without exposing API keys or host filesystem.\n\n$ONIAGI",
+    "image_path": "memory/docs/public/hermes-agent-pod-v0.1.0-explainer.png"
+  },
+  "replies": [
+    {
+      "id": "release",
+      "reply_to": "main",
+      "text": "🚀 Release v0.1.0\nFull release notes, highlights, and operator notes.\nhttps://github.com/Sunwood-ai-labs/hermes-agent-pod/releases/tag/v0.1.0"
+    },
+    {
+      "id": "repo",
+      "reply_to": "main",
+      "text": "📎 GitHub Repository\nSource code, setup scripts, and architecture documentation.\nhttps://github.com/Sunwood-ai-labs/hermes-agent-pod"
+    },
+    {
+      "id": "docs",
+      "reply_to": "main",
+      "text": "📚 Documentation (Bilingual)\nGetting started guides, walkthrough, and deployment instructions in English and Japanese.\nhttps://sunwood-ai-labs.github.io/hermes-agent-pod/"
+    }
+  ]
+}

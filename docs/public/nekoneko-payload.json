@@ -1,0 +1,18 @@
+{
+  "main_post": {
+    "text": "🐱 Nekoneko File Search Demo v1.0.0 が公開されました\n\nSunwood-ai-labs から、Gemini API の File Search を使ったマルチモーダルRAGデモが登場。架空企業「ねこねこカンパニー」の社内検索アプリとして、画像と文書を同じベクトルストアに放り込んで一括検索できる仕組みを体験できます。\n\n🔥 ポイント5つ：\n\n1️⃣ テキストと画像を統一的に検索\ngemini-embedding-2 で File Search store を作り、PNG商品写真とFAQ文書を同じストアに入れて横断検索。マルチモーダルRAGの実装例としてシンプルでわかりやすい。\n\n2️⃣ Express API Proxy で安全に運用\nAPIキーをサーバー側に隠し、フロントエンドは /api/query だけ叩く構成。セキュリティ面も考慮された作り。\n\n3️⃣ モデルフォールバックチェーン\nGEMINI_MODELS に複数モデルを指定でき、クォータ枯渇や一時的高負荷（429/503）で自動的に次モデルへフォールバック。本番運用も視野に入った設計。\n\n4️⃣ 引用カード付きの回答\n検索結果に引用元ファイル名・メタデータ・画像プレビューを表示。RAGの「根拠の可視化」をしっかり実装している点が教育的。\n\n5️⃣ メタデータフィルター＆ブートストラップスクリプト\n部署・ステータス・年次でフィルタリング可能。bootstrap スクリプト一発でストア作成→ファイルアップロード→.env.local 書き出しまで完了。\n\nReact + Vite + Gemini API の構成で、マルチモーダル検索を手軽に試したい人にぴったりのリポジトリです。\n\n$ONIAGI",
+    "image_path": "memory/docs/public/generated_1.png"
+  },
+  "replies": [
+    {
+      "id": "release",
+      "reply_to": "main",
+      "text": "📎 Release v1.0.0\nリリースノートと変更履歴はこちら。初期公開版の全ハイライトがまとまっています。\nhttps://github.com/Sunwood-ai-labs/nekoneko-file-search-demo/releases/tag/v1.0.0"
+    },
+    {
+      "id": "repo",
+      "reply_to": "main",
+      "text": "🔗 Repository\nセットアップ手順・ブートストラップ方法・モデルフォールバックの仕様はREADMEで確認できます。\nhttps://github.com/Sunwood-ai-labs/nekoneko-file-search-demo"
+    }
+  ]
+}

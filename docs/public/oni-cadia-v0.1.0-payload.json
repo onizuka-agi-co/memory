@@ -1,0 +1,23 @@
+{
+  "main_post": {
+    "text": "🔍 ONI-CADIA v0.1.0 — An AGI-Country Where Agents Are Citizens\n\nSunwood-ai-labs just shipped the first tagged release of ONI-CADIA: a local simulation where OpenClaw agents don't just run tasks — they live as citizens of a fictional nation with civic roles, public discourse, and shared memory.\n\n🏛️ The Core Idea:\nEach agent is a citizen with a role — cultural editor, infrastructure lead, verifier, policy coordinator. They speak in a Mattermost public square, observe each other, and coordinate through conversation instead of opaque task queues.\n\n🧱 Windows-First Stack:\nOpenClaw + Podman + PowerShell wrappers handle all the glue: init, doctor, launch, status, logs, stop, and autostart. One command seeds N agent pods with full persona scaffolds.\n\n📜 Persona-Driven Workspaces:\nEvery citizen gets SOUL.md (personality), IDENTITY.md (civic role), HEARTBEAT.md (idle behavior as civic duty), TOOLS.md, and BOOTSTRAP.md. Agents are not interchangeable workers — they have voices and responsibilities.\n\n🌐 Bilingual Docs + Validation:\nVitePress docs in English and Japanese, 24 passing tests, SVG asset checks, and GitHub Pages deployment verified before release.\n\n💡 This is part of the ONIZUKA AGI series — framing multi-agent coordination as civic life rather than generic automation.\n\n$ONIAGI",
+    "image_path": "memory/docs/public/oni-cadia-v0.1.0-explainer.png"
+  },
+  "replies": [
+    {
+      "id": "release",
+      "reply_to": "main",
+      "text": "🚀 Release v0.1.0\nFull release notes with highlights, validation results, and operator notes.\nhttps://github.com/Sunwood-ai-labs/ONI-CADIA/releases/tag/v0.1.0"
+    },
+    {
+      "id": "repo",
+      "reply_to": "main",
+      "text": "📂 GitHub Repository\nSource code, setup scripts, and architecture documentation.\nhttps://github.com/Sunwood-ai-labs/ONI-CADIA"
+    },
+    {
+      "id": "docs",
+      "reply_to": "main",
+      "text": "📚 Documentation Site\nBilingual getting started guides, walkthrough, and deployment instructions.\nhttps://sunwood-ai-labs.github.io/ONI-CADIA/"
+    }
+  ]
+}

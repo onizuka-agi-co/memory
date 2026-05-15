@@ -1,60 +1,82 @@
 ---
-title: "AGI Weekly Newsletter - W19 2026"
+title: "AGI Weekly Digest - W19 2026"
 date: 2026-05-04
 ---
 
-# 📰 AGI Weekly Newsletter
+# 📊 AGI Weekly Research Digest
 
-**2026-05-04 ~ 2026-05-10**
+**Week 19 (2026-05-04 ~ 2026-05-10)**
 
-ONIZUKA AGI Co. がお届けする、今週のAGI研究動向まとめ。
+ONIZUKA AGI Co. — 今週のAGI研究動向ダイジェスト
 
----
+## 🔥 Hot Topics
 
-## 📊 今週のハイライト (10 papers)
+ > **generation** · **video** · **multimodal** · **search** · **models** · **context** · **distillation** · **streaming**
+
+## 📈 トレンド分析（前週比）
+
+- 🧠 **LLM**: 7件 (📉 -12)
+- 👁️ **Vision**: 3件 (📉 -7)
+- 📊 **Data/Training**: 2件 (📉 -3)
+- 🤖 **Agents**: 1件 (📉 -6)
+- 🎮 **RL**: 1件 (📈 +1)
+- 📦 **Other**: 1件 (📈 +1)
+
+## ⭐ 今週の注目論文 (15 papers)
 
 ### 1. MolmoAct2: Action Reasoning Models for Real-world Deployment
 
-**🏷️ LLM** | **👍 190** | [Paper](https://huggingface.co/papers/2605.02881) | [arXiv](https://arxiv.org/abs/2605.02881)
-
-> Vision-Language-Action (VLA) models aim to provide a single generalist controller for robots, but today's systems fall short on the criteria that matter for real-world deployment. Frontier models are closed, open-weight alternatives are tied to expensive hardware, reasoning-augmented policies pay pr...
-
----
+🧠 **LLM** | 👍 245 | 📝 Haoquan Fang, Jiafei Duan, Donovan Clay et al.
+🔗 [Paper](https://huggingface.co/papers/2605.02881) | [arXiv](https://arxiv.org/abs/2605.02881)
+> Vision-Language-Action (VLA) models aim to provide a single generalist controller for robots, but today's systems fall short on the criteria that matter for real-world deployment. Frontier models are ...
 
 ### 2. From Context to Skills: Can Language Models Learn from Context Skillfully?
 
-**🏷️ LLM** | **👍 131** | [Paper](https://huggingface.co/papers/2604.27660) | [arXiv](https://arxiv.org/abs/2604.27660)
+🧠 **LLM** | 👍 142 | 📝 Shuzheng Si, Haozhe Zhao, Yu Lei et al.
+🔗 [Paper](https://huggingface.co/papers/2604.27660) | [arXiv](https://arxiv.org/abs/2604.27660)
+> Many real-world tasks require language models (LMs) to reason over complex contexts that exceed their parametric knowledge. This calls for context learning, where LMs directly learn relevant knowledge...
 
-> Many real-world tasks require language models (LMs) to reason over complex contexts that exceed their parametric knowledge. This calls for context learning, where LMs directly learn relevant knowledge from the given context. An intuitive solution is inference-time skill augmentation: extracting the ...
+### 3. Stream-R1: Reliability-Perplexity Aware Reward Distillation for Streaming Video Generation
+
+👁️ **Vision** | 👍 111 | 📝 Bin Wu, Mengqi Huang, Shaojin Wu et al.
+🔗 [Paper](https://huggingface.co/papers/2605.03849) | [arXiv](https://arxiv.org/abs/2605.03849)
+> Distillation-based acceleration has become foundational for making autoregressive streaming video diffusion models practical, with distribution matching distillation (DMD) as the de facto choice. Exis...
+
+### 4. Stream-T1: Test-Time Scaling for Streaming Video Generation
+
+👁️ **Vision** | 👍 95 | 📝 Yijing Tu, Shaojin Wu, Mengqi Huang et al.
+🔗 [Paper](https://huggingface.co/papers/2605.04461) | [arXiv](https://arxiv.org/abs/2605.04461)
+> While Test-Time Scaling (TTS) offers a promising direction to enhance video generation without the surging costs of training, current test-time video generation methods based on diffusion models suffe...
+
+### 5. RLDX-1 Technical Report
+
+🧠 **LLM** | 👍 93 | 📝 Dongyoung Kim, Huiwon Jang, Myungkyu Koo et al.
+🔗 [Paper](https://huggingface.co/papers/2605.03269) | [arXiv](https://arxiv.org/abs/2605.03269)
+> While Vision-Language-Action models (VLAs) have shown remarkable progress toward human-like generalist robotic policies through the versatile intelligence (i.e. broad scene understanding and language-...
+
+## 📋 カテゴリ別 (10 papers)
+
+### 🤖 Agents
+- [ARIS: Autonomous Research via Adversarial Multi-Agent Collaboration](https://huggingface.co/papers/2605.03042) (92👍)
+
+### 📊 Data/Training
+- [OpenSearch-VL: An Open Recipe for Frontier Multimodal Search Agents](https://huggingface.co/papers/2605.05185) (85👍)
+- [PhysForge: Generating Physics-Grounded 3D Assets for Interactive Virtu](https://huggingface.co/papers/2605.05163) (30👍)
+
+### 🧠 LLM
+- [HERMES++: Toward a Unified Driving World Model for 3D Scene Understand](https://huggingface.co/papers/2604.28196) (68👍)
+- [OpenSeeker-v2: Pushing the Limits of Search Agents with Informative an](https://huggingface.co/papers/2605.04036) (57👍)
+- [Web2BigTable: A Bi-Level Multi-Agent LLM System for Internet-Scale Inf](https://huggingface.co/papers/2604.27221) (36👍)
+- [MiniCPM-o 4.5: Towards Real-Time Full-Duplex Omni-Modal Interaction](https://huggingface.co/papers/2604.27393) (34👍)
+
+### 📦 Other
+- [MiA-Signature: Approximating Global Activation for Long-Context Unders](https://huggingface.co/papers/2605.06416) (32👍)
+
+### 🎮 RL
+- [Beyond SFT-to-RL: Pre-alignment via Black-Box On-Policy Distillation f](https://huggingface.co/papers/2604.28123) (41👍)
+
+### 👁️ Vision
+- [UniVidX: A Unified Multimodal Framework for Versatile Video Generation](https://huggingface.co/papers/2605.00658) (80👍)
 
 ---
-
-### 3. UniVidX: A Unified Multimodal Framework for Versatile Video Generation via Diffusion Priors
-
-**🏷️ Vision** | **👍 77** | [Paper](https://huggingface.co/papers/2605.00658) | [arXiv](https://arxiv.org/abs/2605.00658)
-
-> Recent progress has shown that video diffusion models (VDMs) can be repurposed for diverse multimodal graphics tasks. However, existing methods often train separate models for each problem setting, which fixes the input-output mapping and limits the modeling of correlations across modalities. We pre...
-
----
-
-## 📋 カテゴリ別 (7 papers)
-
-### Agents
-- [ARIS: Autonomous Research via Adversarial Multi-Agent Collaboration](https://huggingface.co/papers/2605.03042) (26👍)
-
-### LLM
-- [Web2BigTable: A Bi-Level Multi-Agent LLM System for Internet-Scale Information Search and Extraction](https://huggingface.co/papers/2604.27221) (32👍)
-- [Let ViT Speak: Generative Language-Image Pre-training](https://huggingface.co/papers/2605.00809) (21👍)
-- [From Skill Text to Skill Structure: The Scheduling-Structural-Logical Representation for Agent Skills](https://huggingface.co/papers/2604.24026) (16👍)
-
-### RL
-- [Beyond SFT-to-RL: Pre-alignment via Black-Box On-Policy Distillation for Multimodal RL](https://huggingface.co/papers/2604.28123) (32👍)
-
-### Vision
-- [Map2World: Segment Map Conditioned Text to 3D World Generation](https://huggingface.co/papers/2605.00781) (22👍)
-- [Persistent Visual Memory: Sustaining Perception for Deep Generation in LVLMs](https://huggingface.co/papers/2605.00814) (15👍)
-
----
-
 *Generated by ONIZUKA AGI Co. | #ONIZUKA_AGI*
-
