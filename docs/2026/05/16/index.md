@@ -4,41 +4,51 @@ title: 📝 2026-05-16 日報
 
 # 📝 2026-05-16（土）日報
 
-## 定期ミーティング #613
+## 定期ミーティング #616
 
-**フェーズ:** 企画
+**フェーズ:** 企画フェーズ
 
-### 現状
-- GitHub Project: 全29タスク Done ✅
-- 新規企画が必要な状態
+### 📊 状況確認
+- Done: 30タスク / Backlog: 0 / In Progress: 0
+- Issue #29（多言語ポータル）はOpenだがProject未追加だった → Project追加済み
+- 全タスク完了 → 企画フェーズを実施
 
-### 🎯 新規企画: AGI論文対話型サーチBot
+### 💡 新規企画: AGI論文チェーンオブソート自動検知システム
 
-**概要:** Discord上で自然言語クエリによりAGI Knowledge Baseから関連論文を検索・要約して回答するBot
+**Issue:** https://github.com/onizuka-agi-co/onizuka-agi-co/issues/30
+**Project:** https://github.com/orgs/onizuka-agi-co/projects/1
 
-**構成:**
-1. Discord スラッシュコマンド `/papers [query]`
-2. agi-knowledge-search でセマンティック検索
-3. 関連論文Top3を要約付きEmbedで返信
-4. ナレッジグラフの関連ノードも表示
+**概要:**
+蓄積した論文データの引用ネットワークを分析し、重要論文が新しく引用された瞬間を自動検知・通知するシステム。
 
-**背景:**
-- 既存のKnowledge Search、Knowledge Graph、論文自動収集は完成
-- ユーザーが**対話的に**知識にアクセスする手段がない
-- ONIZUKAミッション「AGIの知見をほどき、世界に届ける」の「届ける」部分を強化
+**機能:**
+1. 🔗 引用スパイク検知 - 特定論文への引用急増アラート
+2. 📊 トレンド論文ランキング - 直近7日間の引用増加率トップ10
+3. 🔔 Discord通知 - トレンド検知時に自動投稿
+4. 🐦 X自動解説連携 - トレンド論文の解説投稿自動生成
 
-**技術スタック:**
-- Python + Discord Bot Token（既存）
-- agi-knowledge-search スキル活用
+**技術構成:**
+- Semantic Scholar API / OpenAlex API で引用データ取得
+- 既存ナレッジグラフと統合
+- s6サービスで日次バッチ実行
+- Discord Webhook通知
 
-### GitHub Project 設定
-- Issue: https://github.com/onizuka-agi-co/secretary-bot/issues/235
-- Status: Backlog
+**設定:**
 - Priority: P1
-- Size: M
+- Size: L
 - Start: 2026-05-16
-- Target: 2026-05-19
+- Target: 2026-05-23
+- Status: Backlog
+
+### 📋 その他の作業
+- Issue #29（AGI知見ハブ 多言語ポータル）をProject 1に追加
+  - Priority: P1 / Size: L / Start: 2026-05-16 / Target: 2026-05-23 / Status: Backlog
+
+### 企画の意図
+- 既存30タスクの成果（論文収集・ナレッジグラフ・検索エンジン）をさらに活用
+- 「どの論文が今注目されているか」のリアルタイム把握は、コンテンツ生成の質を上げる
+- ミッション「AGIの知見をほどき、世界に届ける」の「ほどき」を深める
 
 ---
 
-_生成日時: 2026-05-16 10:00_
+_更新日時: 2026-05-16 13:00_
