@@ -4,42 +4,41 @@ title: 📝 2026-05-16 日報
 
 # 📝 2026-05-16（土）日報
 
-## 定期ミーティング #603
+## 定期ミーティング #613
 
-### 🔧 開発フェーズ実施
+**フェーズ:** 企画
 
-**状況:** Done 78 / In progress 3 / Ready 6 / Backlog 13
+### 現状
+- GitHub Project: 全29タスク Done ✅
+- 新規企画が必要な状態
 
-**対象タスク:** 🔧 ONIZUKA Service Mesh — 全自動サービス統合監視・自己修復システム
+### 🎯 新規企画: AGI論文対話型サーチBot
 
-**Issue:** https://github.com/onizuka-agi-co/secretary-bot/issues/230
-**Commit:** `f57df0d` (#603)
-**Status:** Ready → In progress → **Done**
+**概要:** Discord上で自然言語クエリによりAGI Knowledge Baseから関連論文を検索・要約して回答するBot
 
-#### 実装内容
+**構成:**
+1. Discord スラッシュコマンド `/papers [query]`
+2. agi-knowledge-search でセマンティック検索
+3. 関連論文Top3を要約付きEmbedで返信
+4. ナレッジグラフの関連ノードも表示
 
-1. **`scripts/service_mesh.sh`** — s6サービス統合監視スクリプト
-   - `check` — 全27サービスのヘルスチェック（JSON/Markdownレポート生成）
-   - `heal` — クラッシュサービスの自動再起動
-   - `report` — ヘルスチェック + Discord Webhook通知（Embed形式）
-   - `status` — 個別サービスステータス表示
-   - `json` — JSON形式のヘルスレポート出力
+**背景:**
+- 既存のKnowledge Search、Knowledge Graph、論文自動収集は完成
+- ユーザーが**対話的に**知識にアクセスする手段がない
+- ONIZUKAミッション「AGIの知見をほどき、世界に届ける」の「届ける」部分を強化
 
-2. **`/config/s6-services/service-mesh-monitor/`** — 定期監視s6サービス
-   - 6時間毎にヘルスチェック + 自動修復 + Discord通知
-   - `config.env` で間隔・ログパスを設定可能
+**技術スタック:**
+- Python + Discord Bot Token（既存）
+- agi-knowledge-search スキル活用
 
-3. **動作確認結果:**
-   - 初回チェック: 17/27 up, 5 crashed, 1 not_running (63%)
-   - 自動修復: 6サービスの再起動を試行
-   - s6サービス登録: service-mesh-monitor 追加
-
-#### 健全性スコア
-- ✅ Running: 17
-- 🔴 Crashed: 5（content-pipeline, hf-papers-auto-visual, hf-papers-daily, hf-papers-multi-agent, weekly-report）
-- ⏸️ Not running: 1（x-post-history）
-- 🆕 New service: service-mesh-monitor
+### GitHub Project 設定
+- Issue: https://github.com/onizuka-agi-co/secretary-bot/issues/235
+- Status: Backlog
+- Priority: P1
+- Size: M
+- Start: 2026-05-16
+- Target: 2026-05-19
 
 ---
 
-_#603 生成日時: 2026-05-16 00:04_
+_生成日時: 2026-05-16 10:00_
